@@ -25,6 +25,7 @@ struct Home: View{
         Card(id: 0, image:"toledo", title : "Itinerario Toledo", details: "Questo itinerario parla di blah blah blah blah blah",expand: false),
         Card(id: 1, image:"piazzadante", title: "Napoli Geniale", details: "Questo itinerario parla di blah blaah", expand: false),
         Card(id:2, image: "posillipo", title: "Posillipo Itinerario", details:"Itinerario", expand: false)
+        
     ]
     
     var body: some View{
@@ -37,7 +38,8 @@ struct Home: View{
                     ForEach(self.data){i in
                         Image(i.image)
                             .resizable()
-                            .frame(width: 380.0, height: 180)
+                            .scaledToFit()
+                            .frame(maxWidth: .infinity, minHeight: 100)
                             .cornerRadius(50)
                             .padding(.horizontal)
                         
