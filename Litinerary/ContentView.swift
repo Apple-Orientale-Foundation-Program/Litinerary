@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Litinerary
 //
-//  Created by Alina Brandizzi on 22/10/2020.
+//  Created by Smart Cookies on 22/10/2020.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         Text("Hello Smart Cookies!")
             .padding()
-            .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+            .foregroundColor(.blue)
     }
 }
 
