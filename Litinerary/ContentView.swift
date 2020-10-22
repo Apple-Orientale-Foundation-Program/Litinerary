@@ -9,13 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("Hello Smart Cookies!")
-                .padding()
-                .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-            Text("Cats")
-            Text("are cute")
-        }
+        Home()
     }
 }
 
@@ -43,8 +37,8 @@ struct Home: View{
                     ForEach(self.data){i in
                         Image(i.image)
                             .resizable()
-                            .frame(height: 250)
-                            .cornerRadius(60)
+                            .frame(width: 380.0, height: 180)
+                            .cornerRadius(50)
                             .padding(.horizontal)
                         
                     }
