@@ -22,17 +22,19 @@ struct ContentView_Previews: PreviewProvider {
 struct Home: View{
     
     @State var data = [
-        Card(id: 0, image:"toledo", title : "Itinerario Toledo", details: "Questo itinerario parla di blah blah blah blah blah",expand: false),
-        Card(id: 1, image:"piazzadante", title: "Napoli Geniale", details: "Questo itinerario parla di blah blaah", expand: false),
-        Card(id:2, image: "posillipo", title: "Posillipo Itinerario", details:"Itinerario", expand: false)
-        
+        List(id: 0, image:"toledo", title : "Itinerario Toledo", details: "Questo itinerario parla di blah blah blah blah blah",expand: false),
+        List(id: 1, image:"piazzadante", title: "Napoli Geniale", details: "Questo itinerario parla di blah blaah", expand: false),
+        List(id:2, image: "posillipo", title: "Posillipo Itinerario", details:"Itinerario", expand: false),
+        List(id:3, image: "posillipo", title: "Posillipo Itinerario", details:"Itinerario", expand: false)
     ]
     
     var body: some View{
+        NavigationView{
+            
         VStack{
             
             ScrollView(.vertical, showsIndicators: false) {
-                
+                Spacer(minLength: 15.0)
                 VStack(spacing:15){
                     
                     ForEach(self.data){i in
@@ -43,17 +45,31 @@ struct Home: View{
                             .cornerRadius(50)
                             .padding(.horizontal)
                         
+                        
                     }
                     
                     
                 }
+                
             
         }
     }
+        .navigationTitle("Itinerari")
+        
+        
+        
+            
+            
+        }
+        
+        
+        
+        
+        
 }
 
 //Sample per i dati homeview
-struct Card : Identifiable{
+struct List: Identifiable{
 var id: Int
 var image: String
 var title: String
