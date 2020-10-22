@@ -9,9 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello Smart Cookies!")
-            .padding()
-            .foregroundColor(.blue)
+        VStack {
+            Text("Hello Smart Cookies!")
+                .padding()
+                .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+            Text("Cats")
+            Text("are cute")
+        }
     }
 }
 
