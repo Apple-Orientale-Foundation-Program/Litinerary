@@ -10,10 +10,10 @@ import SwiftUI
 struct SplashView: View {
     var body: some View {
         VStack {
-            Image("AppIconSF")
+            Image("AppIcon2")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 80)
+                .frame(width: 130)
             Image("Litinerary")
         }
     }
