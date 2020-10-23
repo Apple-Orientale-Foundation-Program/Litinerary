@@ -49,6 +49,7 @@ struct Home: View{
                                     .cornerRadius(50)
                                         .padding(.horizontal)
                                     Text("Placeholder")
+                                        
                                     
                                 }
                                 
