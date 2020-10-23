@@ -2,7 +2,7 @@
 //  ItinerarySummary.swift
 //  Litinerary
 //
-//  Created by Sonia Di Nicoli on 23/10/2020.
+//  Created by Smart Cookies on 23/10/2020.
 //
 
 import SwiftUI
