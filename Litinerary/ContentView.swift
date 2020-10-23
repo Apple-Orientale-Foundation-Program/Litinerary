@@ -53,8 +53,9 @@ struct Home: View{
                                         HStack {
                                             
                                             Image(systemName: "figure.walk")
+                                                .foregroundColor(.black)
                                                 Text("5 km")
-                                                    .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                                                    .foregroundColor(.black)
                                                     
                                             
                                                
@@ -86,7 +87,7 @@ struct Home: View{
         
         .navigationBarItems(trailing: NavigationLink(
                                 destination: SegnalibriView()) {
-                                    Image(systemName: "figure.walk")
+                                    Image(systemName: "bookmark.fill")
                                 })
         
         
