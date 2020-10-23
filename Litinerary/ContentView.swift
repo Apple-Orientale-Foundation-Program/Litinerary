@@ -39,18 +39,27 @@ struct Home: View{
                 Spacer(minLength: 15.0)
                 VStack(spacing:15){
                     
-                    ForEach(self.data){i in
-                        NavigationLink(destination: ItinerarySummary()) {
-                        Image(i.image)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(maxWidth: .infinity, minHeight: 100)
-                            .cornerRadius(50)
-                            .padding(.horizontal)
+                    
+                        ForEach(self.data){i in
+                            NavigationLink(destination: ItinerarySummary()) {
+                                VStack {
+                                    Image(i.image)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(maxWidth: .infinity, minHeight: 100)
+                                    .cornerRadius(50)
+                                        .padding(.horizontal)
+                                    Text("Placeholder")
+                                        
+                                    
+                                }
+                                
+                            }
+                            
+                            
                         }
                         
-                        
-                    }
+                    
                     
                     
                 }
