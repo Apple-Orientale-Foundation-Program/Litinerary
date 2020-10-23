@@ -25,8 +25,9 @@ struct Home: View{
         List(id: 0, image:"toledo", title : "Itinerario Toledo", details: "Questo itinerario parla di blah blah blah blah blah",expand: false),
         List(id: 1, image:"piazzadante", title: "Napoli Geniale", details: "Questo itinerario parla di blah blaah", expand: false),
         List(id:2, image: "posillipo", title: "Posillipo Itinerario", details:"Itinerario", expand: false),
-        List(id:3, image: "posillipo", title: "Posillipo Itinerario", details:"Itinerario", expand: false)
+    
     ]
+    
     
     var body: some View{
         NavigationView{
@@ -44,7 +45,9 @@ struct Home: View{
                             .frame(maxWidth: .infinity, minHeight: 100)
                             .cornerRadius(50)
                             .padding(.horizontal)
-                        
+                        Text("title")
+                            .font(.title2)
+                            .fontWeight(.semibold)
                         
                     }
                     
