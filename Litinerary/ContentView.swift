@@ -41,22 +41,34 @@ struct Home: View{
                     
                         ForEach(self.data){i in
                             NavigationLink(destination: ItinerarySummary()) {
+                                
                                 VStack {
-                                    Image(i.image)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(maxWidth: .infinity, minHeight: 100)
-                                    .cornerRadius(50)
-                                        .padding(.horizontal)
+                                    ZStack {
+                                        Image(i.image)
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(maxWidth: .infinity, minHeight: 100)
+                                        .cornerRadius(50)
+                                            .padding(.horizontal)
+                                        HStack {
+                                            
+                                            Image(systemName: "figure.walk")
+                                                Text("5 km")
+                                                    .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                                                    
+                                            
+                                               
+                                        }
+                                    }
                                     Text("Placeholder")
-                                        .font(.largeTitle)
+                                        .font(.title3)
                                         .fontWeight(.semibold)
                                         .multilineTextAlignment(.center)
                                         
                                         
                                     
                                 }
-                                
+                            
                             }
                             
                             
@@ -72,6 +84,10 @@ struct Home: View{
     }
         .navigationTitle("Itinerari")
         
+        .navigationBarItems(trailing: NavigationLink(
+                                destination: ItinerarySummary()) {
+                                    Image(systemName: "figure.walk")
+                                })
         
         
             
