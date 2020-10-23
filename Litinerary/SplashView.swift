@@ -2,7 +2,7 @@
 //  SplashView.swift
 //  Litinerary
 //
-//  Created by Wanda Punzi Zarino on 23/10/2020.
+//  Created by Smart Cookies on 23/10/2020.
 //
 
 import SwiftUI
@@ -14,8 +14,9 @@ struct SplashView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 130)
+                .padding()
             Image("Litinerary")
-        }
+                        }
     }
 }
 
