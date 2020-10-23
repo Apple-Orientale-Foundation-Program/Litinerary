@@ -28,6 +28,9 @@ struct ItinerarySummary: View {
                 Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
                     VStack {
                         Image(systemName: "person.circle.fill")
+                            .resizable()
+                            .frame(width: 50, height:50)
+                        
                         Text("Inizia")
                     }
                     
