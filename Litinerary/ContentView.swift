@@ -22,6 +22,7 @@ struct ContentView_Previews: PreviewProvider {
 struct Home: View{
     
     @State var data = [
+        
         List(id: 0, image:"toledo", title : "Itinerario Toledo", details: "Questo itinerario parla di blah blah blah blah blah",expand: false),
         List(id: 1, image:"piazzadante", title: "Napoli Geniale", details: "Questo itinerario parla di blah blaah", expand: false),
         List(id:2, image: "posillipo", title: "Posillipo Itinerario", details:"Itinerario", expand: false),
@@ -39,15 +40,15 @@ struct Home: View{
                 VStack(spacing:15){
                     
                     ForEach(self.data){i in
+                        NavigationLink(destination: ItinerarySummary()) {
                         Image(i.image)
                             .resizable()
                             .scaledToFit()
                             .frame(maxWidth: .infinity, minHeight: 100)
                             .cornerRadius(50)
                             .padding(.horizontal)
-                        Text("title")
-                            .font(.title2)
-                            .fontWeight(.semibold)
+                        }
+                        
                         
                     }
                     
