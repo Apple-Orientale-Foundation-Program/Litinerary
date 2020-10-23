@@ -58,16 +58,23 @@ struct Home: View{
                                             .frame(maxWidth: .infinity, minHeight: 100)
                                             .cornerRadius(50)
                                             .padding(.horizontal)
-                                        HStack {
+                                        
+                                        HStack(alignment: .bottom, spacing: 10.0) {
                                             
                                             Image(systemName: "figure.walk")
                                                 .foregroundColor(.black)
-                                            Text("5 km")
-                                                .foregroundColor(.black)
+                                                Text("5 km")
+                                                    .foregroundColor(.black)
+                                                    
                                             Image(systemName: "timer")
-                                            Text("90 min")
-                                            
+                                                .foregroundColor(.black)
+                                                Text("90'")
+                                                    .foregroundColor(.black)
+                                                    
+                                                    
+                                               
                                         }
+                                        .padding([.top, .leading], 160.0)
                                     }
                                     Text("Placeholder")
                                         .font(.title3)
