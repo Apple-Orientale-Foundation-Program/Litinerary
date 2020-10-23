@@ -13,6 +13,7 @@
 		C750CCE72541C96A00660581 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C750CCE62541C96A00660581 /* Preview Assets.xcassets */; };
 		C750CCF22541C96A00660581 /* LitineraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750CCF12541C96A00660581 /* LitineraryTests.swift */; };
 		C750CCFD2541C96A00660581 /* LitineraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750CCFC2541C96A00660581 /* LitineraryUITests.swift */; };
+		E3F89FB42542D10B00AF8790 /* ItinerarySummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F89FB32542D10B00AF8790 /* ItinerarySummary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		C750CCF82541C96A00660581 /* LitineraryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LitineraryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C750CCFC2541C96A00660581 /* LitineraryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitineraryUITests.swift; sourceTree = "<group>"; };
 		C750CCFE2541C96A00660581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3F89FB32542D10B00AF8790 /* ItinerarySummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinerarySummary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				C750CCDF2541C96A00660581 /* LitineraryApp.swift */,
 				C750CCE12541C96A00660581 /* ContentView.swift */,
+				E3F89FB32542D10B00AF8790 /* ItinerarySummary.swift */,
 				C750CCE32541C96A00660581 /* Assets.xcassets */,
 				C750CCE82541C96A00660581 /* Info.plist */,
 				C750CCE52541C96A00660581 /* Preview Content */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C750CCE22541C96A00660581 /* ContentView.swift in Sources */,
+				E3F89FB42542D10B00AF8790 /* ItinerarySummary.swift in Sources */,
 				C750CCE02541C96A00660581 /* LitineraryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
