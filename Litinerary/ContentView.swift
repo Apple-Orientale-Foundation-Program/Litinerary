@@ -49,6 +49,10 @@ struct Home: View{
                                     .cornerRadius(50)
                                         .padding(.horizontal)
                                     Text("Placeholder")
+                                        .font(.largeTitle)
+                                        .fontWeight(.semibold)
+                                        .multilineTextAlignment(.center)
+                                        
                                         
                                     
                                 }
