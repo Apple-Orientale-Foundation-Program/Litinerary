@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Litinerary
 //
-//  Created by Alina Brandizzi on 22/10/2020.
+//  Created by Smart Cookies on 22/10/2020.
 //
 
 import SwiftUI
