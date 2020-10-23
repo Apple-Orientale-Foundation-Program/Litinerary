@@ -4,6 +4,14 @@
 //
 //  Created by Smart Cookies on 22/10/2020.
 //
+//Votaci: hand.thumbsup
+//Vai agli itinerari: book
+//Librerie: books.vertical
+//Tempo percorso: timer
+//Ascolta tappa: speaker.wave.2
+//Metti in pausa: pause.circle
+//Segnalibro vuoto: bookmark
+//Segnalibro pieno: bookmark.fill
 
 import SwiftUI
 
