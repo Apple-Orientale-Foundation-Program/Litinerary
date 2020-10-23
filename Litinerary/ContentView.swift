@@ -85,7 +85,7 @@ struct Home: View{
         .navigationTitle("Itinerari")
         
         .navigationBarItems(trailing: NavigationLink(
-                                destination: ItinerarySummary()) {
+                                destination: SegnalibriView()) {
                                     Image(systemName: "figure.walk")
                                 })
         
