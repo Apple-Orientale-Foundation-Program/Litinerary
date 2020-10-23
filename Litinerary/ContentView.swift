@@ -4,6 +4,14 @@
 //
 //  Created by Smart Cookies on 22/10/2020.
 //
+//Votaci: hand.thumbsup
+//Vai agli itinerari: book
+//Librerie: books.vertical
+//Tempo percorso: timer
+//Ascolta tappa: speaker.wave.2
+//Metti in pausa: pause.circle
+//Segnalibro vuoto: bookmark
+//Segnalibro pieno: bookmark.fill
 
 import SwiftUI
 
@@ -42,22 +50,42 @@ struct Home: View{
                     
                         ForEach(self.data){i in
                             NavigationLink(destination: ItinerarySummary()) {
+                                
                                 VStack {
-                                    Image(i.image)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(maxWidth: .infinity, minHeight: 100)
-                                    .cornerRadius(50)
-                                        .padding(.horizontal)
+                                    ZStack {
+                                        Image(i.image)
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(maxWidth: .infinity, minHeight: 100)
+                                        .cornerRadius(50)
+                                            .padding(.horizontal)
+                                        
+                                        HStack(alignment: .bottom, spacing: 10.0) {
+                                            
+                                            Image(systemName: "figure.walk")
+                                                .foregroundColor(.black)
+                                                Text("5 km")
+                                                    .foregroundColor(.black)
+                                                    
+                                            Image(systemName: "timer")
+                                                .foregroundColor(.black)
+                                                Text("90'")
+                                                    .foregroundColor(.black)
+                                                    
+                                                    
+                                               
+                                        }
+                                        .padding([.top, .leading], 160.0)
+                                    }
                                     Text("Placeholder")
-                                        .font(.largeTitle)
+                                        .font(.title3)
                                         .fontWeight(.semibold)
                                         .multilineTextAlignment(.center)
                                         
                                         
                                     
                                 }
-                                
+                            
                             }
                             
                             
@@ -73,6 +101,10 @@ struct Home: View{
     }
         .navigationTitle("Itinerari")
         
+        .navigationBarItems(trailing: NavigationLink(
+                                destination: SegnalibriView()) {
+                                    Image(systemName: "bookmark.fill")
+                                })
         
         
             
