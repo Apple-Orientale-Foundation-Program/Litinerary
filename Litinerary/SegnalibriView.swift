@@ -10,7 +10,7 @@ import SwiftUI
 struct SegnalibriView: View {
     var body: some View {
         NavigationView{
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Text("Inserire funzione per aggiungere a questa view gli itinerari preferiti")
                 .navigationTitle("Segnalibri")
         }
     }
