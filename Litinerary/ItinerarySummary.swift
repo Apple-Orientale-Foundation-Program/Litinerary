@@ -25,6 +25,7 @@ struct ItinerarySummary: View {
                     
                 
                 //placeholder for image
+                
                 Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
                     VStack {
                         Image(systemName: "person.circle.fill")
@@ -35,7 +36,7 @@ struct ItinerarySummary: View {
                     }
                     
                 }
-                
+            
                 
                 
                     
