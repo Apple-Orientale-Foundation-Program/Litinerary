@@ -11,7 +11,9 @@ struct SplashView: View {
     var body: some View {
         VStack {
             Image("AppIconSF")
-                .padding()
+                .resizable()
+                .scaledToFit()
+                .frame(width: 80)
             Image("Litinerary")
         }
     }
