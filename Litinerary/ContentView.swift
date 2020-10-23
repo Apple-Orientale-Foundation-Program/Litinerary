@@ -65,7 +65,6 @@ struct Home: View{
                                                 .foregroundColor(.black)
                                                 Text("5 km")
                                                     .foregroundColor(.black)
-                                                    
                                             Image(systemName: "timer")
                                                 .foregroundColor(.black)
                                                 Text("90'")
