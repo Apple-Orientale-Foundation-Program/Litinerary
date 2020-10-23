@@ -40,81 +40,81 @@ struct Home: View{
     var body: some View{
         NavigationView{
             
-        VStack{
-            
-            ScrollView(.vertical, showsIndicators: false) {
-                Spacer(minLength: 15.0)
-                VStack(spacing:15){
-                    
-                    
+            VStack{
+                
+                ScrollView(.vertical, showsIndicators: false) {
+                    Spacer(minLength: 15.0)
+                    VStack(spacing:15){
+                        
+                        
                         ForEach(self.data){i in
                             NavigationLink(destination: ItinerarySummary()) {
                                 
                                 VStack {
                                     ZStack {
                                         Image(i.image)
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(maxWidth: .infinity, minHeight: 100)
-                                        .cornerRadius(50)
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(maxWidth: .infinity, minHeight: 100)
+                                            .cornerRadius(50)
                                             .padding(.horizontal)
                                         HStack {
                                             
                                             Image(systemName: "figure.walk")
                                                 .foregroundColor(.black)
-                                                Text("5 km")
-                                                    .foregroundColor(.black)
-                                                    
+                                            Text("5 km")
+                                                .foregroundColor(.black)
+                                            Image(systemName: "timer")
+                                            Text("90 min")
                                             
-                                               
                                         }
                                     }
                                     Text("Placeholder")
                                         .font(.title3)
                                         .fontWeight(.semibold)
                                         .multilineTextAlignment(.center)
-                                        
-                                        
+                                    
+                                    
                                     
                                 }
-                            
+                                
                             }
                             
                             
                         }
                         
-                    
+                        
+                        
+                        
+                    }
                     
                     
                 }
-                
+            }
+            .navigationTitle("Itinerari")
+            
+            .navigationBarItems(trailing: NavigationLink(
+                destination: SegnalibriView()) {
+                Image(systemName: "bookmark.fill")
+            })
+            
+            
+            
             
         }
+        
+        
+        
+        
+        
     }
-        .navigationTitle("Itinerari")
-        
-        .navigationBarItems(trailing: NavigationLink(
-                                destination: SegnalibriView()) {
-                                    Image(systemName: "bookmark.fill")
-                                })
-        
-        
-            
-            
-        }
-        
-        
-        
-        
-        
-}
-
-//Sample per i dati homeview
-struct List: Identifiable{
-var id: Int
-var image: String
-var title: String
-var details: String
-var expand: Bool
-}
+    
+    //Sample per i dati homeview
+    struct List: Identifiable{
+        var id: Int
+        var image: String
+        var title: String
+        var details: String
+        var expand: Bool
+    }
 }
