@@ -13,7 +13,7 @@ struct SplashView: View {
                 Image("AppIcon2")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 130)
+                    .frame(width: 100)
                     .padding()
                 Image("Litinerary")
             }
