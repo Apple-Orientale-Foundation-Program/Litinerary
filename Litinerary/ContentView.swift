@@ -58,8 +58,8 @@ struct Home: View{
                     VStack(spacing:15)
                     {
                         
-                        NavigationLink(destination: ItinerarySummary())
-                        {
+                       
+                        
                         ForEach(self.data)
                         {i in
                             
@@ -102,7 +102,7 @@ struct Home: View{
                                 
                             }
                             
-                        }
+                        
                         
                         
                         
