@@ -15,7 +15,9 @@
 		C750CCE72541C96A00660581 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C750CCE62541C96A00660581 /* Preview Assets.xcassets */; };
 		C750CCF22541C96A00660581 /* LitineraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750CCF12541C96A00660581 /* LitineraryTests.swift */; };
 		C750CCFD2541C96A00660581 /* LitineraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750CCFC2541C96A00660581 /* LitineraryUITests.swift */; };
-		C783E6ED2546C45B000E73EB /* MapViewFMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C783E6EC2546C45B000E73EB /* MapViewFMS.swift */; };
+		C783E7052546C5A3000E73EB /* MapViewFMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C783E7042546C5A3000E73EB /* MapViewFMS.swift */; };
+		C783E7062546C5A3000E73EB /* MapViewFMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C783E7042546C5A3000E73EB /* MapViewFMS.swift */; };
+		C783E7072546C5A3000E73EB /* MapViewFMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C783E7042546C5A3000E73EB /* MapViewFMS.swift */; };
 		E3F89FB42542D10B00AF8790 /* ItinerarySummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F89FB32542D10B00AF8790 /* ItinerarySummary.swift */; };
 		E3F89FD32546C3E100AF8790 /* ItineraryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F89FD22546C3E100AF8790 /* ItineraryData.swift */; };
 /* End PBXBuildFile section */
@@ -52,7 +54,7 @@
 		C750CCF82541C96A00660581 /* LitineraryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LitineraryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C750CCFC2541C96A00660581 /* LitineraryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitineraryUITests.swift; sourceTree = "<group>"; };
 		C750CCFE2541C96A00660581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C783E6EC2546C45B000E73EB /* MapViewFMS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewFMS.swift; path = ../../../../Downloads/MapViewFMS.swift; sourceTree = "<group>"; };
+		C783E7042546C5A3000E73EB /* MapViewFMS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewFMS.swift; path = ../../../../Downloads/MapViewFMS.swift; sourceTree = "<group>"; };
 		E3F89FB32542D10B00AF8790 /* ItinerarySummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinerarySummary.swift; sourceTree = "<group>"; };
 		E3F89FD22546C3E100AF8790 /* ItineraryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,7 +110,7 @@
 				C750CCDF2541C96A00660581 /* LitineraryApp.swift */,
 				C750CCE12541C96A00660581 /* ContentView.swift */,
 				9E359B1525430E5E0028FB46 /* SegnalibriView.swift */,
-				C783E6EC2546C45B000E73EB /* MapViewFMS.swift */,
+				C783E7042546C5A3000E73EB /* MapViewFMS.swift */,
 				33AC999C25448EF1009A65DD /* Bookmark.swift */,
 				E3F89FB32542D10B00AF8790 /* ItinerarySummary.swift */,
 				E3F89FD22546C3E100AF8790 /* ItineraryData.swift */,
@@ -274,7 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C783E6ED2546C45B000E73EB /* MapViewFMS.swift in Sources */,
+				C783E7052546C5A3000E73EB /* MapViewFMS.swift in Sources */,
 				C750CCE22541C96A00660581 /* ContentView.swift in Sources */,
 				E3F89FB42542D10B00AF8790 /* ItinerarySummary.swift in Sources */,
 				9E359B1625430E5E0028FB46 /* SegnalibriView.swift in Sources */,
@@ -287,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C783E7062546C5A3000E73EB /* MapViewFMS.swift in Sources */,
 				C750CCF22541C96A00660581 /* LitineraryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C783E7072546C5A3000E73EB /* MapViewFMS.swift in Sources */,
 				C750CCFD2541C96A00660581 /* LitineraryUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
