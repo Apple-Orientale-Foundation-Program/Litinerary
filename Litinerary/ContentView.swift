@@ -16,9 +16,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var litineraryList: ItineraryList
     
-    @State var itinerary: Itinerary
     var body: some View {
         Home()
     }
@@ -27,15 +25,17 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         
-        ContentView(litineraryList: litineraryData, itinerary: litineraryData.listOfItineraries)
+        ContentView()
     }
 }
 
 struct Home: View{
     
+    
     @State var data = [
         
-        List(id: 0, image:"toledo", title : "Itinerario Toledo", details: "Questo itinerario parla di blah blah blah blah blah",expand: false),
+        List(id: 0, image:"toledo", title : "Blablabla", details: "Questo itinerario parla di blah blah blah blah blah",expand: false),
+        
         List(id: 1, image:"piazzadante", title: "Napoli Geniale", details: "Questo itinerario parla di blah blaah", expand: false),
         List(id:2, image: "posillipo", title: "Posillipo Itinerario", details:"Itinerario", expand: false),
     
@@ -51,11 +51,14 @@ struct Home: View{
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     Spacer(minLength: 15.0)
-                    VStack(spacing:15){
+                    VStack(spacing:15)
+                    {
                         
                         
-                        ForEach(self.data){i in
-                            NavigationLink(destination: ItinerarySummary()) {
+                        ForEach(self.data)
+                        {i in
+                            
+                             
                                 
                                 VStack {
                                     ZStack {
@@ -82,7 +85,7 @@ struct Home: View{
                                         }
                                         .padding([.top, .leading], 160.0)
                                     }
-                                    Text("Placeholder")
+                                    Text("bla")
                                         .font(.title3)
                                         .fontWeight(.semibold)
                                         .multilineTextAlignment(.center)
@@ -94,7 +97,6 @@ struct Home: View{
                             }
                             
                             
-                        }
                         
                         
                         

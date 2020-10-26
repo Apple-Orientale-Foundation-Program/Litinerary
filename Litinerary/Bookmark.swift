@@ -7,6 +7,8 @@
 
 import SwiftUI
 struct ItineraryEnd: View {
+    
+    
 var body: some View {
     NavigationView {
         VStack {
@@ -86,7 +88,7 @@ Image("MARKER")
 
 struct ItineraryEnd_Previews: PreviewProvider {
 static var previews: some View {
-ItineraryEnd()
+    ItineraryEnd()
 }
 }
 

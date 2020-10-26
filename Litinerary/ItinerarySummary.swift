@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ItinerarySummary: View {
+    @EnvironmentObject var litineraryList: ItineraryList
+    @State var itinerary: Itinerary
+    
+    
     var body: some View {
         NavigationView{ //just example structure for page
             VStack {
@@ -17,7 +21,7 @@ struct ItinerarySummary: View {
                     .frame(minHeight: 100)
                     
                 
-                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat")
+                Text(itinerary.itinerarySummary)
                     .font(.body) //also placeholder for real summary
                     .fontWeight(.regular)
                     .multilineTextAlignment(.leading)
@@ -57,6 +61,7 @@ struct ItinerarySummary: View {
 
 struct ItinerarySummary_Previews: PreviewProvider {
     static var previews: some View {
-        ItinerarySummary()
+        ItinerarySummary(itinerary: litineraryData.listOfItineraries[0])
+            .environmentObject(litineraryData)
     }
 }

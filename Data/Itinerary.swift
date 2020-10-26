@@ -2,7 +2,7 @@
 //  Itinerary.swift
 //  Litinerary
 //
-//  Created by Sonia Di Nicoli on 26/10/2020.
+//  Created by Smart Cookies on 26/10/2020.
 //
 
 import Foundation

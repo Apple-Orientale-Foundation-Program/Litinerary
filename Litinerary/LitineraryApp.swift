@@ -11,7 +11,7 @@ import SwiftUI
 struct LitineraryApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(litineraryList: <#ItineraryList#>, itinerary: <#Itinerary#>)
+            ContentView()
         }
     }
 }
