@@ -32,9 +32,10 @@ Text("Hai completato l'itinerario")
 
 
 
-Image("MARKER")
+Image("FineItinerario")
 .resizable()
-.frame(width: 200.0, height: 230.0)
+.scaledToFit()
+.frame(height: 150)
 
 
     Text("Ecco alcune cose che potrebbero servirti:")
