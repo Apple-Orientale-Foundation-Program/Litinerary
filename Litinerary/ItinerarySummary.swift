@@ -49,7 +49,19 @@ struct ItinerarySummary: View {
                     
                     
                 .navigationTitle("Itinerario")
-                
+                    
+                    .navigationBarItems(trailing: NavigationLink(
+                      destination: SegnalibriView())
+                    {
+                      Image("Wiki")
+                          .resizable()
+                          .scaledToFit()
+                          .frame(height: 30)
+                        Image("Preferiti")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 31)
+                    })
                 
                 
             }
