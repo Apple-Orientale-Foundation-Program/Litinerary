@@ -25,6 +25,7 @@ struct ContentView: View {
           VStack(spacing:15)
           {
             ForEach(itinList.listOfItineraries) {i in
+                NavigationLink(destination: ItinerarySummary()) {
               VStack {
                 ZStack {
                   Image(i.image)
@@ -53,7 +54,7 @@ struct ContentView: View {
                   .colorInvert()
                   .shadow(color: .black, radius: 0.1, x:0.5, y:0.5)
                 }
-                
+              }
                 Text(i.itineraryName)
                   .font(.title3)
                   .fontWeight(.semibold)
