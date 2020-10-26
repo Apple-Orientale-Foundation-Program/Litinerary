@@ -16,127 +16,58 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    
-    
-    
-    var body: some View {
-        
-        Home()
+  @EnvironmentObject var itinList: ItineraryList
+  var body: some View {
+    NavigationView{
+      VStack{
+        ScrollView(.vertical, showsIndicators: false) {
+          Spacer(minLength: 15.0)
+          VStack(spacing:15)
+          {
+            ForEach(itinList.listOfItineraries) {i in
+              VStack {
+                ZStack {
+                  Image(i.image)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(maxWidth: .infinity, minHeight: 100)
+                    .cornerRadius(50)
+                    .padding(.horizontal)
+                  HStack(alignment: .bottom, spacing: 10.0) {
+                    Image(systemName: "figure.walk")
+                      .foregroundColor(.black)
+                    Text("5 km")
+                      .foregroundColor(.black)
+                    Image(systemName: "timer")
+                      .foregroundColor(.black)
+                    Text("90'")
+                      .foregroundColor(.black)
+                  }
+                  .padding([.top, .leading], 160.0)
+                }
+                Text(i.itineraryName)
+                  .font(.title3)
+                  .fontWeight(.semibold)
+                  .multilineTextAlignment(.center)
+              }
+            }
+          }
+        }
+      }
+      .navigationTitle("Itinerari")
+
+      .navigationBarItems(trailing: NavigationLink(
+        destination: SegnalibriView())
+      {
+        Image(systemName: "bookmark.fill")
+      })
     }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        
-        ContentView()
-    }
+  static var previews: some View {
+    ContentView().environmentObject(litineraryData)
+  }
 }
 
-struct Home: View{
-    
-    
-    @State var data = [
-        
-        List(id: 0, image:"toledo", title : "Blablabla", details: "Questo itinerario parla di blah blah blah blah blah",expand: false),
-        
-        List(id: 1, image:"piazzadante", title: "Napoli Geniale", details: "Questo itinerario parla di blah blaah", expand: false),
-        List(id:2, image: "posillipo", title: "Posillipo Itinerario", details:"Itinerario", expand: false),
-    
-    ]
-    
-    
-    var body: some View{
-    
-        
-        NavigationView{
-            
-            VStack{
-                
-                ScrollView(.vertical, showsIndicators: false) {
-                    Spacer(minLength: 15.0)
-                    VStack(spacing:15)
-                    {
-                        
-                       
-                        
-                        ForEach(self.data)
-                        {i in
-                            
-                            
-                             
-                            
-                                VStack {
-                                    ZStack {
-                                        Image(i.image)
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(maxWidth: .infinity, minHeight: 100)
-                                            .cornerRadius(50)
-                                            .padding(.horizontal)
-                                        
-                                        HStack(alignment: .bottom, spacing: 10.0) {
-                                            
-                                            Image(systemName: "figure.walk")
-                                                .foregroundColor(.black)
-                                                Text("5 km")
-                                                    .foregroundColor(.black)
-                                            Image(systemName: "timer")
-                                                .foregroundColor(.black)
-                                                Text("90'")
-                                                    .foregroundColor(.black)
-                                                    
-                                                    
-                                               
-                                        }
-                                        .padding([.top, .leading], 160.0)
-                                    }
-                                    Text("bla")
-                                        .font(.title3)
-                                        .fontWeight(.semibold)
-                                        .multilineTextAlignment(.center)
-                                    
-                                    
-                                    
-                                }
-                                
-                            }
-                            
-                        
-                        
-                        
-                        
-                        
-                    }
-                    
-                    
-                }
-            }
-            .navigationTitle("Itinerari")
-            
-            .navigationBarItems(trailing: NavigationLink(
-                destination: SegnalibriView())
-            {
-                Image(systemName: "bookmark.fill")
-            })
-            
-            
-            
-            
-        }
-        
-        
-        
-        
-        
-    }
-    
-    //Sample per i dati homeview
-    struct List: Identifiable{
-        var id: Int
-        var image: String
-        var title: String
-        var details: String
-        var expand: Bool
-    }
-}
