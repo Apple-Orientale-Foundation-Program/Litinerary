@@ -9,6 +9,9 @@ import SwiftUI
 struct ItineraryEnd: View {
     @EnvironmentObject var litineraryList: ItineraryList
     
+    @State var itinerary: Itinerary
+    
+    
 var body: some View {
     NavigationView {
         VStack {
@@ -45,7 +48,7 @@ Image("MARKER")
                 Form {
                     NavigationLink(
                         destination: Text(""),
-                        label: {RigaSettings(options: "bookmark", titoloRiga: "Aggiungi L'amica geniale ai segnalibri")
+                        label: {RigaSettings(options: "bookmark", titoloRiga: "Aggiungi \(itinerary.itineraryName) ai segnalibri")
                         })
                     NavigationLink(
                         destination: Text(""),
@@ -65,11 +68,6 @@ Image("MARKER")
         }
     }
 
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-        }
-    }
 
     struct RigaSettings: View {
         var options = ""
@@ -88,7 +86,7 @@ Image("MARKER")
 
 struct ItineraryEnd_Previews: PreviewProvider {
 static var previews: some View {
-ItineraryEnd()
+ItineraryEnd(itinerary: litineraryData.listOfItineraries[0])
         .environmentObject(litineraryData)
 }
 }
