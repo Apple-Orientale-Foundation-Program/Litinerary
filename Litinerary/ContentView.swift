@@ -16,6 +16,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var litineraryList: ItineraryList
+    
+    @State var itinerary: Itinerary
     var body: some View {
         Home()
     }
@@ -23,7 +26,8 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        
+        ContentView(litineraryList: litineraryData, itinerary: litineraryData.listOfItineraries)
     }
 }
 
@@ -39,6 +43,8 @@ struct Home: View{
     
     
     var body: some View{
+    
+        
         NavigationView{
             
             VStack{
