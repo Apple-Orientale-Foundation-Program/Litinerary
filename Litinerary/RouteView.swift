@@ -86,7 +86,7 @@ struct mapView : UIViewRepresentable {
         func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) ->
         MKOverlayRenderer {
             let render = MKPolylineRenderer(overlay: overlay)
-            render.strokeColor = .orange
+            render.strokeColor = UIColor(named: "AccentColor")
             render.lineWidth = 4
             return render
         }
