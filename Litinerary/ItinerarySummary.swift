@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ItinerarySummary: View {
     @EnvironmentObject var litineraryList: ItineraryList
+    
     @State var itinerary: Itinerary
     
     
@@ -61,7 +62,9 @@ struct ItinerarySummary: View {
 
 struct ItinerarySummary_Previews: PreviewProvider {
     static var previews: some View {
+        
         ItinerarySummary(itinerary: litineraryData.listOfItineraries[0])
+            
             .environmentObject(litineraryData)
     }
 }

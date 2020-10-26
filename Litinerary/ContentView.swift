@@ -17,7 +17,11 @@ import SwiftUI
 
 struct ContentView: View {
     
+    
+    
+    
     var body: some View {
+        
         Home()
     }
 }
@@ -54,12 +58,14 @@ struct Home: View{
                     VStack(spacing:15)
                     {
                         
-                        
+                        NavigationLink(destination: ItinerarySummary())
+                        {
                         ForEach(self.data)
                         {i in
                             
+                            
                              
-                                
+                            
                                 VStack {
                                     ZStack {
                                         Image(i.image)
@@ -96,7 +102,7 @@ struct Home: View{
                                 
                             }
                             
-                            
+                        }
                         
                         
                         
@@ -109,7 +115,8 @@ struct Home: View{
             .navigationTitle("Itinerari")
             
             .navigationBarItems(trailing: NavigationLink(
-                destination: SegnalibriView()) {
+                destination: SegnalibriView())
+            {
                 Image(systemName: "bookmark.fill")
             })
             

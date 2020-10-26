@@ -7,7 +7,7 @@
 
 import SwiftUI
 struct ItineraryEnd: View {
-    
+    @EnvironmentObject var litineraryList: ItineraryList
     
 var body: some View {
     NavigationView {
@@ -88,7 +88,8 @@ Image("MARKER")
 
 struct ItineraryEnd_Previews: PreviewProvider {
 static var previews: some View {
-    ItineraryEnd()
+ItineraryEnd()
+        .environmentObject(litineraryData)
 }
 }
 
