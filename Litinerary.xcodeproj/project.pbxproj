@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		33AC999D25448EF1009A65DD /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AC999C25448EF1009A65DD /* EndView.swift */; };
 		9E359B1625430E5E0028FB46 /* SegnalibriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E359B1525430E5E0028FB46 /* SegnalibriView.swift */; };
+		9E4CD82725470B450001E389 /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4CD82625470B450001E389 /* RouteView.swift */; };
 		C750CCE02541C96A00660581 /* LitineraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750CCDF2541C96A00660581 /* LitineraryApp.swift */; };
 		C750CCE22541C96A00660581 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750CCE12541C96A00660581 /* ContentView.swift */; };
 		C750CCE42541C96A00660581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C750CCE32541C96A00660581 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		33AC999C25448EF1009A65DD /* EndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndView.swift; sourceTree = "<group>"; };
 		9E359B1525430E5E0028FB46 /* SegnalibriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegnalibriView.swift; sourceTree = "<group>"; };
+		9E4CD82625470B450001E389 /* RouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteView.swift; sourceTree = "<group>"; };
 		C750CCDC2541C96A00660581 /* Litinerary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Litinerary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C750CCDF2541C96A00660581 /* LitineraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitineraryApp.swift; sourceTree = "<group>"; };
 		C750CCE12541C96A00660581 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			children = (
 				C750CCDF2541C96A00660581 /* LitineraryApp.swift */,
 				C750CCE12541C96A00660581 /* ContentView.swift */,
+				9E4CD82625470B450001E389 /* RouteView.swift */,
 				9E359B1525430E5E0028FB46 /* SegnalibriView.swift */,
 				E3F8A0052546EF3B00AF8790 /* LitineraryRowView.swift */,
 				33AC999C25448EF1009A65DD /* EndView.swift */,
@@ -292,6 +295,7 @@
 				E3F89FB42542D10B00AF8790 /* ItinerarySummary.swift in Sources */,
 				9E359B1625430E5E0028FB46 /* SegnalibriView.swift in Sources */,
 				C750CCE02541C96A00660581 /* LitineraryApp.swift in Sources */,
+				9E4CD82725470B450001E389 /* RouteView.swift in Sources */,
 				33AC999D25448EF1009A65DD /* EndView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
