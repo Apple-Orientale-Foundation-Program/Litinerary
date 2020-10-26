@@ -69,7 +69,10 @@ struct ContentView: View {
       .navigationBarItems(trailing: NavigationLink(
         destination: SegnalibriView())
       {
-        Image(systemName: "bookmark.fill")
+        Image("Preferiti")
+            .resizable()
+            .scaledToFit()
+            .frame(height: 30)
       })
     }
   }
