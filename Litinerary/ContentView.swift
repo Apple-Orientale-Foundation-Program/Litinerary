@@ -16,6 +16,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var litineraryList: ItineraryList
     
     
     
@@ -102,7 +103,7 @@ struct Home: View{
                                 
                             }
                             
-                        
+                        }
                         
                         
                         
@@ -135,8 +136,8 @@ struct Home: View{
     struct List: Identifiable{
         var id: Int
         var image: String
-        var title: String
+        var title : String
         var details: String
         var expand: Bool
     }
-}
+

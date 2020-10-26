@@ -48,9 +48,10 @@ struct LitineraryRowView: View {
             
             
         }
+        }
         
     }
-    }
+
 
 
 struct LitineraryRowView_Previews: PreviewProvider {
