@@ -41,10 +41,19 @@ struct ContentView: View {
                     Image(systemName: "timer")
                       .foregroundColor(.black)
                     Text("90'")
-                      .foregroundColor(.black)
+                        .foregroundColor(.black)
+                        
+                        
+                        
+                        
+                        
                   }
+                  
                   .padding([.top, .leading], 160.0)
+                  .colorInvert()
+                  .shadow(color: .black, radius: 0.1, x:0.5, y:0.5)
                 }
+                
                 Text(i.itineraryName)
                   .font(.title3)
                   .fontWeight(.semibold)
