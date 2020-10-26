@@ -18,6 +18,7 @@
 		E3F89FB42542D10B00AF8790 /* ItinerarySummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F89FB32542D10B00AF8790 /* ItinerarySummary.swift */; };
 		E3F89FF72546D37800AF8790 /* Itinerary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F89FF62546D37800AF8790 /* Itinerary.swift */; };
 		E3F89FFC2546D47C00AF8790 /* ItineraryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F89FFB2546D47C00AF8790 /* ItineraryList.swift */; };
+		E3F8A0062546EF3B00AF8790 /* LitineraryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F8A0052546EF3B00AF8790 /* LitineraryRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		E3F89FB32542D10B00AF8790 /* ItinerarySummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinerarySummary.swift; sourceTree = "<group>"; };
 		E3F89FF62546D37800AF8790 /* Itinerary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Itinerary.swift; sourceTree = "<group>"; };
 		E3F89FFB2546D47C00AF8790 /* ItineraryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryList.swift; sourceTree = "<group>"; };
+		E3F8A0052546EF3B00AF8790 /* LitineraryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitineraryRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				C750CCDF2541C96A00660581 /* LitineraryApp.swift */,
 				C750CCE12541C96A00660581 /* ContentView.swift */,
 				9E359B1525430E5E0028FB46 /* SegnalibriView.swift */,
+				E3F8A0052546EF3B00AF8790 /* LitineraryRowView.swift */,
 				33AC999C25448EF1009A65DD /* Bookmark.swift */,
 				E3F89FB32542D10B00AF8790 /* ItinerarySummary.swift */,
 				C750CCE32541C96A00660581 /* Assets.xcassets */,
@@ -282,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F8A0062546EF3B00AF8790 /* LitineraryRowView.swift in Sources */,
 				E3F89FFC2546D47C00AF8790 /* ItineraryList.swift in Sources */,
 				C750CCE22541C96A00660581 /* ContentView.swift in Sources */,
 				E3F89FF72546D37800AF8790 /* Itinerary.swift in Sources */,
