@@ -25,12 +25,53 @@ struct MapView_Previews: PreviewProvider {
 
 struct mapView : UIViewRepresentable {
     
+    func makeCoordinator() -> mapView.Coordinator {
+        return mapView.Coordinator()
+    }
+    
     func makeUIView(context: UIViewRepresentableContext<mapView>) -> MKMapView{
         
         let map = MKMapView()
-        let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 40.839981, longitude: 14.252540), latitudinalMeters: 100000, longitudinalMeters: 100000)
+        
+        let sourceCoordinate = CLLocationCoordinate2D(latitude: 40.844877, longitude: 14.257189)
+        let destinationCoordinate = CLLocationCoordinate2D(latitude: 40.8318695, longitude: 14.2347563)
+        
+        let region = MKCoordinateRegion(center: sourceCoordinate, latitudinalMeters: 100000, longitudinalMeters: 100000)
+        
+        let sourcePin = MKPointAnnotation()
+        sourcePin.coordinate = sourceCoordinate
+        sourcePin.title = "Via Mezzocannone"
+        map.addAnnotation(sourcePin)
        
+        let destinationPin = MKPointAnnotation()
+        destinationPin.coordinate = destinationCoordinate
+        destinationPin.title = "Lungomare Caracciolo"
+        map.addAnnotation(destinationPin)
+        
+        
         map.region = region
+        map.delegate = context.coordinator
+        
+        
+        let req = MKDirections.Request()
+        req.source = MKMapItem(placemark: MKPlacemark(coordinate: sourceCoordinate))
+        req.destination = MKMapItem(placemark: MKPlacemark(coordinate: destinationCoordinate))
+        
+        let directions = MKDirections(request: req)
+        
+        directions.calculate { (direct, err) in
+            
+            if err != nil {
+                print ((err?.localizedDescription)!)
+                return
+            }
+            
+            let polyline = direct?.routes.first?.polyline
+            map.addOverlay(polyline!)
+            map.setRegion(MKCoordinateRegion(polyline!.boundingMapRect), animated: true)
+            
+        }
+
         return map
 
     }
@@ -39,8 +80,15 @@ struct mapView : UIViewRepresentable {
         
     }
 
-
-
+    class Coordinator : NSObject, MKMapViewDelegate{
+        
+        
+        func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) ->
+        MKOverlayRenderer {
+            let render = MKPolylineRenderer(overlay: overlay)
+            render.strokeColor = .orange
+            render.lineWidth = 4
+            return render
+        }
+    }
 }
-
-
