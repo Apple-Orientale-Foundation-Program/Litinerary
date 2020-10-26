@@ -50,8 +50,8 @@ Image("MARKER")
                         label: {RigaSettings(options: "books.vertical", titoloRiga: "Vedi le librerie nei dintorni")
                         })
                     NavigationLink(
-                        destination: Text(""),
-                        label: {RigaSettings(options:"book",titoloRiga:"sfoglia gli altri itinerari")
+                        destination: ContentView(),
+                        label: {RigaSettings(options:"book",titoloRiga:"Sfoglia gli altri itinerari")
                         
                         })
                     NavigationLink(
