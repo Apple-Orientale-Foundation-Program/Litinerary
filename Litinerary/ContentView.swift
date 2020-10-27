@@ -34,7 +34,7 @@ struct ContentView: View {
                       .resizable()
                       .scaledToFit()
                       .frame(maxWidth: .infinity, minHeight: 100)
-                      .cornerRadius(50)
+                      .cornerRadius(20)
                       .padding(.horizontal)
                         .shadow(color: Color.accentColor.opacity(0.3), radius: 0.3, x:0.0, y:3.8)
                     HStack(alignment: .bottom, spacing: 10.0) {
@@ -65,7 +65,7 @@ struct ContentView: View {
           }
         }
       }
-      .navigationTitle("Itinerari")
+      .navigationTitle("Passeggiate letterarie")
 
       .navigationBarItems(trailing: NavigationLink(
         destination: SegnalibriView())
