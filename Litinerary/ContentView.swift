@@ -49,9 +49,9 @@ struct ContentView: View {
                             
                       }
                       
-                      .padding([.top, .trailing], 180.0)
+                      .padding([.top, .leading], 180.0)
                       .colorInvert()
-                      .shadow(color: .black, radius: 0.1, x:0.5, y:0.5)
+                      .shadow(color: .gray, radius: 0.1, x:0.5, y:0.5)
                         }
                         
                         Text(itinerary.itineraryName)
