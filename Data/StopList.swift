@@ -30,13 +30,13 @@ let stopData = AmicaGenialeStopList(
         Stop(stopTitle: "Lungomare Caracciolo", stopDescription: "blablabla", stopAudio: "x"),
     ])
 
-class AndreuccioDaPerugiaStopList: Identifiable, ObservableObject {
-    @Published var listOfStops: [Stop]
-    init(listOfStops: [Stop])
-    {
-       self.listOfStops = listOfStops
-    }
-}
+//class AndreuccioDaPerugiaStopList: Identifiable, ObservableObject {
+//    @Published var listOfStops: [Stop]
+//    init(listOfStops: [Stop])
+//    {
+//       self.listOfStops = listOfStops
+//    }
+//}
 //sto cercando di creare una class per itinerario ma non so se va bene
 //let stopData = AndreuccioDaPerugiaStopList(
 //    listOfStops: [
