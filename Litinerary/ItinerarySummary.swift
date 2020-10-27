@@ -18,9 +18,9 @@ struct ItinerarySummary: View {
             VStack {
                 
                 MapView()
-                 .frame(height: 300)
-                    .cornerRadius(30)
-                    .padding(10)
+                 .frame(height: 350)
+                    .cornerRadius(50)
+                    .padding(20)
                     
                     
                 
@@ -38,9 +38,9 @@ struct ItinerarySummary: View {
                         Image("InizioItinerarioGrigio")
                             .resizable()
                             .scaledToFit()
-                            .frame(height:100)
-                        
+                            .frame(height:80)
                         Text("Inizia")
+                            .fontWeight(.medium)
                     }
                     
                 }
