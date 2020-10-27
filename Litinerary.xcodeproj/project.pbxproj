@@ -21,6 +21,7 @@
 		E3F89FF72546D37800AF8790 /* Itinerary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F89FF62546D37800AF8790 /* Itinerary.swift */; };
 		E3F89FFC2546D47C00AF8790 /* ItineraryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F89FFB2546D47C00AF8790 /* ItineraryList.swift */; };
 		E3F8A05D25485D9300AF8790 /* Raleway.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3F8A05C25485D9300AF8790 /* Raleway.ttf */; };
+		E3F8A062254876A100AF8790 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3F8A061254876A100AF8790 /* Raleway-Italic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		E3F89FF62546D37800AF8790 /* Itinerary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Itinerary.swift; sourceTree = "<group>"; };
 		E3F89FFB2546D47C00AF8790 /* ItineraryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryList.swift; sourceTree = "<group>"; };
 		E3F8A05C25485D9300AF8790 /* Raleway.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Raleway.ttf; sourceTree = "<group>"; };
+		E3F8A061254876A100AF8790 /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				E3F8A05C25485D9300AF8790 /* Raleway.ttf */,
+				E3F8A061254876A100AF8790 /* Raleway-Italic.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			files = (
 				C750CCE72541C96A00660581 /* Preview Assets.xcassets in Resources */,
 				C750CCE42541C96A00660581 /* Assets.xcassets in Resources */,
+				E3F8A062254876A100AF8790 /* Raleway-Italic.ttf in Resources */,
 				E3F8A05D25485D9300AF8790 /* Raleway.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
