@@ -30,6 +30,8 @@ let stopData = AmicaGenialeStopList(
         Stop(stopTitle: "Lungomare Caracciolo", stopDescription: "blablabla", stopAudio: "x"),
     ])
 
+//sto cercando di creare una class per itinerario ma non so se va bene
+//
 //class AndreuccioDaPerugiaStopList: Identifiable, ObservableObject {
 //    @Published var listOfStops: [Stop]
 //    init(listOfStops: [Stop])
@@ -37,7 +39,6 @@ let stopData = AmicaGenialeStopList(
 //       self.listOfStops = listOfStops
 //    }
 //}
-//sto cercando di creare una class per itinerario ma non so se va bene
 //let stopData = AndreuccioDaPerugiaStopList(
 //    listOfStops: [
 //        Stop(stopTitle: "Mezzocannone", stopDescription: "blablabla", stopAudio: "x"),
