@@ -21,7 +21,6 @@ Text("Complimenti!")
 .foregroundColor(.accentColor)
 .multilineTextAlignment(.center)
             
-
 Spacer()
 .frame(height: 30.0)
 
@@ -35,8 +34,6 @@ Text("\(itinerary.itineraryName)")
 .fontWeight(.semibold)
     .foregroundColor(.accentColor)
             }
-            .padding()
-                
     
 
 Image("FineItinerario")
