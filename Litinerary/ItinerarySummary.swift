@@ -33,9 +33,10 @@ struct ItinerarySummary: View {
                 
                 NavigationLink(destination: MapView()) {
                     VStack {
-                        Image(systemName: "person.circle.fill")
+                        Image("InizioItinerarioGrigio")
                             .resizable()
-                            .frame(width: 50, height:50)
+                            .scaledToFit()
+                            .frame(height:100)
                         
                         Text("Inizia")
                     }
@@ -59,10 +60,10 @@ struct ItinerarySummary: View {
                 }, trailing: NavigationLink(
                                 destination: Text("wikipedia link"),
                                 label: {
-                                    Image("Wiki")
+                                    Image("WikiRosso")
                                           .resizable()
                                           .scaledToFit()
-                                          .frame(height: 30)
+                                          .frame(height: 35)
                                 })
                 )
                 
