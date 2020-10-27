@@ -46,10 +46,6 @@ struct ContentView: View {
                         Text(itinerary.itineraryDuration)
                             .foregroundColor(.black)
                             
-                            
-                            
-                            
-                            
                       }
                       
                       .padding([.top, .leading], 160.0)
