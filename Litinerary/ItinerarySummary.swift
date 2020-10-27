@@ -31,11 +31,12 @@ struct ItinerarySummary: View {
                 
                 //placeholder for image
                 
-                Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
+                NavigationLink(destination: MapView()) {
                     VStack {
-                        Image(systemName: "person.circle.fill")
+                        Image("InizioItinerarioGrigio")
                             .resizable()
-                            .frame(width: 50, height:50)
+                            .scaledToFit()
+                            .frame(height:100)
                         
                         Text("Inizia")
                     }
@@ -49,19 +50,22 @@ struct ItinerarySummary: View {
                     
                     
                 .navigationTitle("Itinerario")
-                    
-                    .navigationBarItems(trailing: NavigationLink(
-                      destination: SegnalibriView())
-                    {
-                      Image("Wiki")
-                          .resizable()
-                          .scaledToFit()
-                          .frame(height: 30)
-                        Image(systemName: "heart")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 30)
-                    })
+                .navigationBarItems(leading: VStack {
+                    NavigationLink(
+                        destination: SegnalibriView())
+                    {Image(systemName: "heart")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 30)}
+                }, trailing: NavigationLink(
+                                destination: Text("wikipedia link"),
+                                label: {
+                                    Image("WikiRosso")
+                                          .resizable()
+                                          .scaledToFit()
+                                          .frame(height: 35)
+                                })
+                )
                 
                 
             }
