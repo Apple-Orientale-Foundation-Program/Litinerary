@@ -73,7 +73,7 @@ struct ContentView: View {
         Image("PreferitiRosso")
           .resizable()
           .scaledToFit()
-          .frame(height: 30)
+            .frame(height: 30)
       })
     }
   }
