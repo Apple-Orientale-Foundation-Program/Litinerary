@@ -14,44 +14,34 @@ struct ItinerarySummary: View {
     
     
     var body: some View {
-        NavigationView{ //just example structure for page
+        NavigationView{
             VStack {
-                
                 MapView()
-                 .frame(height: 300)
-                    .cornerRadius(30)
-                    .padding(10)
-                    
-                    
-                
-                Text(itinerary.itinerarySummary)
-                    .font(.body) //also placeholder for real summary
+                 .frame(height: 350)
+                    .cornerRadius(50)
+                    .padding(20)
+                ScrollView {
+      Text(itinerary.itinerarySummary)
+                    .font(.body)
                     .fontWeight(.regular)
                     .multilineTextAlignment(.leading)
                     .padding()
-                    
-                
-                //placeholder for image
-                
+                }
+
                 NavigationLink(destination: MapView()) {
                     VStack {
                         Image("InizioItinerarioGrigio")
                             .resizable()
                             .scaledToFit()
-                            .frame(height:100)
-                        
+                            .frame(height:80)
                         Text("Inizia")
+                            .fontWeight(.medium)
+                    
                     }
                     
                 }
-            
                 
-                
-                    
-                    
-                    
-                    
-                .navigationTitle("Itinerario")
+            .navigationTitle("Itinerario")
                 .navigationBarItems(leading: VStack {
                     NavigationLink(
                         destination: SegnalibriView())
