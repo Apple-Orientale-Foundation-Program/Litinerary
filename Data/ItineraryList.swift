@@ -20,7 +20,7 @@ class ItineraryList: Identifiable, ObservableObject {
 
 let litineraryData = ItineraryList(
     listOfItineraries: [
-        Itinerary(itineraryName: "L'Amica Geniale", itinerarySummary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", itineraryLength: "3,8 km", itineraryDuration: "50'", image: "posillipo"),
-        Itinerary(itineraryName: "Andreuccio da Perugia", itinerarySummary: "ciaooooooooooo", itineraryLength: "3,8 km", itineraryDuration: "50'", image: "andreuccio"),
-        Itinerary(itineraryName: "ancora uno", itinerarySummary: "nooooooooooooo", itineraryLength: "3,8 km", itineraryDuration: "50'", image: "toledo")
+      Itinerary(itineraryName: "L'Amica Geniale", itinerarySummary: "b", itineraryLength: "3,8 km", itineraryDuration: "50'", image: "posillipo"),
+      Itinerary(itineraryName: "Andreuccio da Perugia", itinerarySummary: "Questo itinerario ripercorre le avventure di Andreuccio da Perugia, protagonista della V novella della II giornata del Decameron, che Boccaccio ambienta nella Napoli Angioina, città che conosceva bene per averci vissuto da giovane per un lungo periodo.I luoghi attraversati dal protagonista, il Mercato, la chiesa maggiore, la Rua Catalana, i vicoli oscuri e maleodoranti, sono luoghi reali della Napoli trecentesca, di cui ancora oggi è possibile trovare delle tracce.", itineraryLength: "3,2 km", itineraryDuration: "1,5 h", image: "andreuccio"),
+      Itinerary(itineraryName: "ancora uno", itinerarySummary: "nooooooooooooo", itineraryLength: "3,8 km", itineraryDuration: "50'", image: "toledo")
     ])
