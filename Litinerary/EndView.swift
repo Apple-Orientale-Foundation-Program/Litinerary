@@ -31,7 +31,7 @@ struct ItineraryEnd: View {
                         .fontWeight(.semibold)
                         .foregroundColor(Color("darkGray"))
                     Text("\(itinerary.itineraryName)")
-                        .font(.title2)
+                        .font(.title)
                         .fontWeight(.semibold)
                         .foregroundColor(.accentColor)
                 }
@@ -41,7 +41,7 @@ struct ItineraryEnd: View {
                     .resizable()
                     .scaledToFit()
                     .frame(height: 150)
-                    .padding()
+                    .padding(30)
                 
                 
                 Text("Ecco alcune cose che potrebbero servirti:")
@@ -49,7 +49,6 @@ struct ItineraryEnd: View {
                     .fontWeight(.semibold)
                     .foregroundColor(Color("darkGray"))
                     .multilineTextAlignment(.center)
-                    .padding()
                 
                 List {
                     NavigationLink(
@@ -73,9 +72,7 @@ struct ItineraryEnd: View {
             
         }
         .onAppear {
-
               UITableView.appearance().backgroundColor = .clear
-
             }
         
     }
@@ -89,7 +86,7 @@ struct RigaSettings: View {
     var body: some View {
         HStack {
             Image(systemName: options)
-                .renderingMode(.original)
+                .foregroundColor(.accentColor)
                 .imageScale(.large)
             Text(titoloRiga)
         }
