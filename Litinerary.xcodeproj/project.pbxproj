@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		33AC999D25448EF1009A65DD /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AC999C25448EF1009A65DD /* EndView.swift */; };
 		9E359B1625430E5E0028FB46 /* SegnalibriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E359B1525430E5E0028FB46 /* SegnalibriView.swift */; };
+		9E365F3B2548223B000FEB5F /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E365F3A2548223B000FEB5F /* Route.swift */; };
 		9E4CD82725470B450001E389 /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4CD82625470B450001E389 /* RouteView.swift */; };
 		C750CCE02541C96A00660581 /* LitineraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750CCDF2541C96A00660581 /* LitineraryApp.swift */; };
 		C750CCE22541C96A00660581 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750CCE12541C96A00660581 /* ContentView.swift */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		33AC999C25448EF1009A65DD /* EndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndView.swift; sourceTree = "<group>"; };
 		9E359B1525430E5E0028FB46 /* SegnalibriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegnalibriView.swift; sourceTree = "<group>"; };
+		9E365F3A2548223B000FEB5F /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		9E4CD82625470B450001E389 /* RouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteView.swift; sourceTree = "<group>"; };
 		C750CCDC2541C96A00660581 /* Litinerary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Litinerary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C750CCDF2541C96A00660581 /* LitineraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitineraryApp.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			children = (
 				E3F89FF62546D37800AF8790 /* Itinerary.swift */,
 				E3F89FFB2546D47C00AF8790 /* ItineraryList.swift */,
+				9E365F3A2548223B000FEB5F /* Route.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E365F3B2548223B000FEB5F /* Route.swift in Sources */,
 				E3F89FFC2546D47C00AF8790 /* ItineraryList.swift in Sources */,
 				C750CCE22541C96A00660581 /* ContentView.swift in Sources */,
 				E3F89FF72546D37800AF8790 /* Itinerary.swift in Sources */,

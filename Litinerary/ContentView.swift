@@ -38,17 +38,18 @@ struct ContentView: View {
                         .padding(.horizontal)
                       HStack(alignment: .bottom, spacing: 10.0) {
                         Image(systemName: "figure.walk")
-                          .foregroundColor(.black)
+                          .foregroundColor(.white)
                         Text(itinerary.itineraryLength)
-                          .foregroundColor(.black)
+                          .foregroundColor(.white)
                         Image(systemName: "timer")
-                          .foregroundColor(.black)
+                          .foregroundColor(.white)
                         Text(itinerary.itineraryDuration)
-                            .foregroundColor(.black)
+                            .bold()
+                            .foregroundColor(.white)
                             
                       }
                       
-                      .padding([.top, .leading], 160.0)
+                      .padding([.top, .trailing], 180.0)
                       .colorInvert()
                       .shadow(color: .black, radius: 0.1, x:0.5, y:0.5)
                         }
