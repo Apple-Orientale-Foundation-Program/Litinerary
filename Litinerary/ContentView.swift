@@ -49,7 +49,7 @@ struct ContentView: View {
                             
                       }
                       
-                      .padding([.top, .leading], 160.0)
+                      .padding([.top, .leading], 180.0)
                       .colorInvert()
                       .shadow(color: .black, radius: 0.1, x:0.5, y:0.5)
                         }
