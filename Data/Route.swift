@@ -7,8 +7,6 @@
 
 import Foundation
 
-struct Route: Identifiable {
-    var id = UUID()
-    
+import UIKit
+import MapKit
 
-}
