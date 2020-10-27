@@ -17,17 +17,17 @@ struct ItinerarySummary: View {
         NavigationView{
             VStack {
                 MapView()
-                 .frame(height: 350)
+                    .frame(height: 350)
                     .cornerRadius(50)
                     .padding(20)
                 ScrollView {
-      Text(itinerary.itinerarySummary)
-                    .font(.body)
-                    .fontWeight(.regular)
-                    .multilineTextAlignment(.leading)
-                    .padding()
+                    Text(itinerary.itinerarySummary)
+                        .font(.body)
+                        .fontWeight(.regular)
+                        .multilineTextAlignment(.leading)
+                        .padding()
                 }
-
+                
                 NavigationLink(destination: MapView()) {
                     VStack {
                         Image("InizioItinerarioGrigio")
@@ -36,31 +36,31 @@ struct ItinerarySummary: View {
                             .frame(height:80)
                         Text("Inizia")
                             .fontWeight(.medium)
-                    
+                        
                     }
                     
                 }
                 
-            .navigationTitle("Itinerario")
-                .navigationBarItems(leading: VStack {
-                    NavigationLink(
-                        destination: SegnalibriView())
-                    {Image(systemName: "heart")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 30)}
-                }, trailing: NavigationLink(destination: Text("ciao"),
-                                label: {
-                                    Image("WikiRosso")
-                                          .resizable()
-                                          .scaledToFit()
-                                          .frame(height: 35)
-                                })
+                .navigationTitle("Itinerario")
+                .navigationBarItems(leading: NavigationLink(destination: Text("ciao"),
+                                                            label: {
+                                                                Image("WikiRosso")
+                                                                    .resizable()
+                                                                    .scaledToFit()
+                                                                    .frame(height: 35)
+                                                            }), trailing: VStack {
+                                                                NavigationLink(
+                                                                    destination: SegnalibriView())
+                                                                {Image(systemName: "heart")
+                                                                    .resizable()
+                                                                    .scaledToFit()
+                                                                    .frame(height: 30)}
+                                                            }
                 )
                 
                 
             }
-        
+            
             
             
         }
