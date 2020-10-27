@@ -8,94 +8,104 @@
 import SwiftUI
 import MapKit
 
-struct MapView: View {
-    var body: some View {
-        
-        mapView()
-        
+func initAnnotations()->[MKAnnotation]{
+  map.removeAnnotations(map.annotations)
+  let sourceCoordinate = CLLocationCoordinate2D(latitude: 40.844877, longitude: 14.257189)
+  let twoCoordinate = CLLocationCoordinate2D(latitude: 40.8461097, longitude: 14.2541287)
+  let destinationCoordinate = CLLocationCoordinate2D(latitude: 40.8318695, longitude: 14.2347563)
+  let sourcePin = MKPointAnnotation()
+  sourcePin.coordinate = sourceCoordinate
+  sourcePin.title = "Via Mezzocannone"
+  map.addAnnotation(sourcePin)
+  let twoPin = MKPointAnnotation()
+  twoPin.coordinate = twoCoordinate
+  twoPin.title = "Libreria Dante & Descartes"
+  map.addAnnotation(twoPin)
+
+  let destinationPin = MKPointAnnotation()
+  destinationPin.coordinate = destinationCoordinate
+  destinationPin.title = "Lungomare Caracciolo"
+  map.addAnnotation(destinationPin)
+
+  let req = MKDirections.Request()
+  req.source = MKMapItem(placemark: MKPlacemark(coordinate: sourceCoordinate))
+  req.destination = MKMapItem(placemark: MKPlacemark(coordinate: destinationCoordinate))
+
+  let directions = MKDirections(request: req)
+
+  directions.calculate { (direct, err) in
+    if err != nil {
+      print ((err?.localizedDescription)!)
+      return
     }
+    let polyline = direct?.routes.first?.polyline
+    map.addOverlay(polyline!)
+  }
+  map.scaleOnAllAnnotations(spanFactor: 1.4)
+  return map.annotations
 }
 
-struct MapView_Previews: PreviewProvider {
-    static var previews: some View {
-        MapView()
-    }
-}
-
+let map = MKMapView()
 
 struct mapView : UIViewRepresentable {
-    
-    func makeCoordinator() -> mapView.Coordinator {
-        return mapView.Coordinator()
+
+  @State var annotations: [MKAnnotation]
+
+  func makeCoordinator() -> mapView.Coordinator {
+    return mapView.Coordinator()
+  }
+
+  func makeUIView(context: UIViewRepresentableContext<mapView>) -> MKMapView{
+
+    _ = initAnnotations()
+    map.delegate = context.coordinator
+    return map
+  }
+
+  func updateUIView(_ uiView: MKMapView, context: UIViewRepresentableContext<mapView>) {
+
+  }
+
+  class Coordinator : NSObject, MKMapViewDelegate{
+
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) ->
+    MKOverlayRenderer {
+      let render = MKPolylineRenderer(overlay: overlay)
+      render.strokeColor = UIColor(named: "AccentColor")
+      render.lineWidth = 4
+      return render
     }
-    
-    func makeUIView(context: UIViewRepresentableContext<mapView>) -> MKMapView{
-        
-        let map = MKMapView()
-        
-        let sourceCoordinate = CLLocationCoordinate2D(latitude: 40.844877, longitude: 14.257189)
-        
-        let twoCoordinate = CLLocationCoordinate2D(latitude: 40.8461097, longitude: 14.2541287)
-        
-        let destinationCoordinate = CLLocationCoordinate2D(latitude: 40.8318695, longitude: 14.2347563)
-        
-        let region = MKCoordinateRegion(center: sourceCoordinate, latitudinalMeters: 100000, longitudinalMeters: 100000)
-        
-        let sourcePin = MKPointAnnotation()
-        sourcePin.coordinate = sourceCoordinate
-        sourcePin.title = "Via Mezzocannone"
-        map.addAnnotation(sourcePin)
-        
-        let twoPin = MKPointAnnotation()
-        twoPin.coordinate = twoCoordinate
-        twoPin.title = "Libreria Dante & Descartes"
-        map.addAnnotation(twoPin)
-        
-        let destinationPin = MKPointAnnotation()
-        destinationPin.coordinate = destinationCoordinate
-        destinationPin.title = "Lungomare Caracciolo"
-        map.addAnnotation(destinationPin)
-        
-        
-        map.region = region
-        map.delegate = context.coordinator
-        
-        
-        let req = MKDirections.Request()
-        req.source = MKMapItem(placemark: MKPlacemark(coordinate: sourceCoordinate))
-        req.destination = MKMapItem(placemark: MKPlacemark(coordinate: destinationCoordinate))
-        
-        let directions = MKDirections(request: req)
-        
-        directions.calculate { (direct, err) in
-            
-            if err != nil {
-                print ((err?.localizedDescription)!)
-                return
-            }
-            
-            let polyline = direct?.routes.first?.polyline
-            map.addOverlay(polyline!)
-            map.setRegion(MKCoordinateRegion(polyline!.boundingMapRect), animated: true)
-            
-        }
+  }
+}
 
-        return map
+extension MKMapView{
+  func centerMap(lat:Double, long: Double) {
+    map.setCenter(CLLocationCoordinate2DMake(lat, long), animated: true)
+  }
 
+  func scaleOnAllAnnotations(spanFactor: Double = 1.2){
+    var minLat = 1000.0
+    var minLon = 1000.0
+    var maxLat = 0.0
+    var maxLon = 0.0
+    for ann in map.annotations {
+      if ann.coordinate.latitude > maxLat {
+        maxLat = ann.coordinate.latitude
+      }
+      if ann.coordinate.latitude < minLat {
+        minLat = ann.coordinate.latitude
+      }
+      if ann.coordinate.longitude > maxLon {
+        maxLon = ann.coordinate.longitude
+      }
+      if ann.coordinate.longitude < minLon {
+        minLon = ann.coordinate.longitude
+      }
     }
 
-    func updateUIView(_ uiView: MKMapView, context: UIViewRepresentableContext<mapView>) {
-        
-    }
-
-    class Coordinator : NSObject, MKMapViewDelegate{
-        
-        func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) ->
-        MKOverlayRenderer {
-            let render = MKPolylineRenderer(overlay: overlay)
-            render.strokeColor = UIColor(named: "AccentColor")
-            render.lineWidth = 4
-            return render
-        }
-    }
+    let span = ((maxLat-minLat)*spanFactor,(maxLon-minLon)*spanFactor)
+    let center = ((maxLat+minLat)/2,(maxLon+minLon)/2)
+    centerMap(lat: center.0, long: center.1)
+    map.setRegion(MKCoordinateRegion(center: CLLocationCoordinate2DMake(center.0, center.1), span: MKCoordinateSpan(latitudeDelta: span.0, longitudeDelta: span.1)), animated: true)
+  }
 }

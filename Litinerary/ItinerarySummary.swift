@@ -6,16 +6,15 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct ItinerarySummary: View {
     @EnvironmentObject var litineraryList: ItineraryList
-    
     @State var itinerary: Itinerary
-    
-    
+
     var body: some View {
             VStack {
-                MapView()
+                mapView(annotations: initAnnotations())
                     .frame(height: 300)
                     .cornerRadius(35)
                     .padding(.horizontal)
@@ -27,7 +26,7 @@ struct ItinerarySummary: View {
                         .font(Font.custom("Raleway", size: 18))
                 }
                 
-                NavigationLink(destination: MapView()) {
+                NavigationLink(destination: mapView(annotations: initAnnotations())) {
                     VStack {
                         Image("InizioItinerarioGrigio")
                             .resizable()
