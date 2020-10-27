@@ -57,8 +57,7 @@ struct ItinerarySummary: View {
                         .resizable()
                         .scaledToFit()
                         .frame(height: 30)}
-                }, trailing: NavigationLink(
-                    destination: Link(itinerary.wikiLink, destination: itinerary.wikiLink),
+                }, trailing: NavigationLink(destination: Text("ciao"),
                                 label: {
                                     Image("WikiRosso")
                                           .resizable()
