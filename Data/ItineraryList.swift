@@ -21,6 +21,6 @@ class ItineraryList: Identifiable, ObservableObject {
 let litineraryData = ItineraryList(
     listOfItineraries: [
       Itinerary(itineraryName: "L'Amica Geniale", itinerarySummary: "blablablablablabla", itineraryLength: "3,8 km", itineraryDuration: "50'", image: "posillipo"),
-      Itinerary(itineraryName: "un altro", itinerarySummary: "ciaooooooooooo", itineraryLength: "3,8 km", itineraryDuration: "50'", image: "piazzadante"),
+      Itinerary(itineraryName: "Andreuccio da Perugia", itinerarySummary: "ciaooooooooooo", itineraryLength: "3,8 km", itineraryDuration: "50'", image: "andreuccio"),
       Itinerary(itineraryName: "ancora uno", itinerarySummary: "nooooooooooooo", itineraryLength: "3,8 km", itineraryDuration: "50'", image: "toledo")
     ])
