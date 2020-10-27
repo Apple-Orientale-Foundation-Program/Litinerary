@@ -43,6 +43,7 @@ Image("FineItinerario")
 .fontWeight(.semibold)
 .foregroundColor(Color("darkGray"))
 .multilineTextAlignment(.center)
+        .padding()
 
 
             
