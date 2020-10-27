@@ -51,7 +51,7 @@ struct ItineraryEnd: View {
                     .multilineTextAlignment(.center)
                     .padding()
                 
-                Form {
+                List {
                     NavigationLink(
                         destination: Text(""),
                         label: {RigaSettings(options: "heart", titoloRiga: "Aggiungi \(itinerary.itineraryName) ai preferiti")
@@ -72,6 +72,11 @@ struct ItineraryEnd: View {
             }
             
         }
+        .onAppear {
+
+              UITableView.appearance().backgroundColor = .clear
+
+            }
         
     }
     
