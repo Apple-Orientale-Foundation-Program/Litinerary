@@ -17,9 +17,9 @@ struct ItinerarySummary: View {
         NavigationView{
             VStack {
                 MapView()
-                    .frame(height: 350)
-                    .cornerRadius(50)
-                    .padding(20)
+                    .frame(height: 300)
+                    .cornerRadius(35)
+                    .padding(.horizontal)
                 ScrollView {
                     Text(itinerary.itinerarySummary)
                         .font(.body)
