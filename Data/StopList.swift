@@ -60,11 +60,12 @@ let RenatoCaccioppolistopData = RenatoCaccioppoliStopList(
     listOfStops: [
         Stop(stopTitle: "Libreria Antiquaria Colonnese", stopDescription: "blablabla", stopAudio: "x"),
         Stop(stopTitle: "Università Federico II di Napoli", stopDescription: "blablabla", stopAudio: "x"),
-        Stop(stopTitle: "Via Mezzocannone", stopDescription: "blablabla", stopAudio: "x"),
-        Stop(stopTitle: "San Domenico", stopDescription: "blablabla", stopAudio: "x"),
+//        bisogna scegliere come strutturare questo itinerario per quanto riguarda le location (singole o multiple per descrizione?)
+//        Stop(stopTitle: "Via Mezzocannone", stopDescription: "blablabla", stopAudio: "x"),
+//        Stop(stopTitle: "San Domenico", stopDescription: "blablabla", stopAudio: "x"),
         Stop(stopTitle: "Via Roma", stopDescription: "blablabla", stopAudio: "x"),
         Stop(stopTitle: "Castel dell'Ovo", stopDescription: "blablabla", stopAudio: "x"),
-        Stop(stopTitle: "San Carlo", stopDescription: "blablabla", stopAudio: "x"),
-        Stop(stopTitle: "Piazza Trieste e Trento", stopDescription: "blablabla", stopAudio: "x"),
+//        Stop(stopTitle: "San Carlo", stopDescription: "blablabla", stopAudio: "x"),
+//        Stop(stopTitle: "Piazza Trieste e Trento", stopDescription: "blablabla", stopAudio: "x"),
         Stop(stopTitle: "Gambrinus", stopDescription: "blablabla", stopAudio: "x")
     ])
