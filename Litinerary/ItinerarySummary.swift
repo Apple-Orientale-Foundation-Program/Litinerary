@@ -57,10 +57,10 @@ struct ItinerarySummary: View {
                           .resizable()
                           .scaledToFit()
                           .frame(height: 30)
-                        Image("Preferiti")
+                        Image(systemName: "heart")
                             .resizable()
                             .scaledToFit()
-                            .frame(height: 31)
+                            .frame(height: 30)
                     })
                 
                 
