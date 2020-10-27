@@ -40,6 +40,7 @@ struct ContentView: View {
                         Image(systemName: "figure.walk")
                           .foregroundColor(.white)
                         Text(itinerary.itineraryLength)
+                            .bold()
                           .foregroundColor(.white)
                         Image(systemName: "timer")
                           .foregroundColor(.white)
