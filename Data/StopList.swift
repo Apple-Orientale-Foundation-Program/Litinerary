@@ -6,24 +6,46 @@
 //
 
 import Foundation
-
 import UIKit
 
-//
 //in questo file vengono scritti tutti i dati da inserire nelle modali delle tappe
-//
-//per capire a che itinerario si riferiscono ho aggiunto una sigla nell'id (AG = amica geniale, AP = andreuccio da perugia) ma dovrebbe esserci un modo migliore
-//
-//mezzocannoneAG: titolo, descri, audio.wav
-//dantedescaAG: titolo, descri, audio.wav
-//liceovittorioemaAG: titolo, descri, audio.wav
-//port'alba: titoloAG, descri, audio.wav
-//piazza municipioAG: titolo, descri, audio.wav
-//via chiaiaAG: titolo, descri, audio.wav
-//piazza dei martiriAG: titolo, descri, audio.wav
-//via caraccioloAG: titolo, descri, audio.wav
-//piazzadanteAP: titolo, descri, audio.wav
-//blabla: titolo, descri, audio.wav
-//blabla: titolo, descri, audio.wav
-//blabla: titolo, descri, audio.wav
-//blabla: titolo, descri, audio.wav
+
+class AmicaGenialeStopList: Identifiable, ObservableObject {
+    @Published var listOfStops: [Stop]
+    init(listOfStops: [Stop])
+    {
+       self.listOfStops = listOfStops
+    }
+}
+
+let stopData = AmicaGenialeStopList(
+    listOfStops: [
+        Stop(stopTitle: "Mezzocannone", stopDescription: "blablabla", stopAudio: "x"),
+        Stop(stopTitle: "Libreria Dante & Descartes", stopDescription: "blablabla", stopAudio: "x"),
+        Stop(stopTitle: "Liceo Vittorio Emanuele II", stopDescription: "blablabla", stopAudio: "x"),
+        Stop(stopTitle: "Port'Alba", stopDescription: "blablabla", stopAudio: "x"),
+        Stop(stopTitle: "Piazza Municipio", stopDescription: "blablabla", stopAudio: "x"),
+        Stop(stopTitle: "Via Chiaia", stopDescription: "blablabla", stopAudio: "x"),
+        Stop(stopTitle: "Piazza dei Martiri", stopDescription: "blablabla", stopAudio: "x"),
+        Stop(stopTitle: "Lungomare Caracciolo", stopDescription: "blablabla", stopAudio: "x"),
+    ])
+
+class AndreuccioDaPerugiaStopList: Identifiable, ObservableObject {
+    @Published var listOfStops: [Stop]
+    init(listOfStops: [Stop])
+    {
+       self.listOfStops = listOfStops
+    }
+}
+//sto cercando di creare una class per itinerario ma non so se va bene
+//let stopData = AndreuccioDaPerugiaStopList(
+//    listOfStops: [
+//        Stop(stopTitle: "Mezzocannone", stopDescription: "blablabla", stopAudio: "x"),
+//        Stop(stopTitle: "Libreria Dante & Descartes", stopDescription: "blablabla", stopAudio: "x"),
+//        Stop(stopTitle: "Liceo Vittorio Emanuele II", stopDescription: "blablabla", stopAudio: "x"),
+//        Stop(stopTitle: "Port'Alba", stopDescription: "blablabla", stopAudio: "x"),
+//        Stop(stopTitle: "Piazza Municipio", stopDescription: "blablabla", stopAudio: "x"),
+//        Stop(stopTitle: "Via Chiaia", stopDescription: "blablabla", stopAudio: "x"),
+//        Stop(stopTitle: "Piazza dei Martiri", stopDescription: "blablabla", stopAudio: "x"),
+//        Stop(stopTitle: "Lungomare Caracciolo", stopDescription: "blablabla", stopAudio: "x"),
+//    ])

@@ -66,7 +66,7 @@ func initAnnotations()->[MKAnnotation]{
     
     let directions = MKDirections(request: req)
 
-    //    let routeLine = MKPolyline(coordinates: [sourceCoordinate, twoCoordinate, threeCoordinate, fourCoordinate, fiveCoordinate, sixCoordinate, sevenCoordinate, destinationCoordinate], count:8)
+//    _ = MKPolyline(coordinates: [sourceCoordinate, twoCoordinate, destinationCoordinate], count:3)
 
     directions.calculate { (direct, err) in
         if err != nil {
