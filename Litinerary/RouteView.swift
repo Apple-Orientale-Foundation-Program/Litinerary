@@ -34,6 +34,9 @@ struct mapView : UIViewRepresentable {
         let map = MKMapView()
         
         let sourceCoordinate = CLLocationCoordinate2D(latitude: 40.844877, longitude: 14.257189)
+        
+        let twoCoordinate = CLLocationCoordinate2D(latitude: 40.8461097, longitude: 14.2541287)
+        
         let destinationCoordinate = CLLocationCoordinate2D(latitude: 40.8318695, longitude: 14.2347563)
         
         let region = MKCoordinateRegion(center: sourceCoordinate, latitudinalMeters: 100000, longitudinalMeters: 100000)
@@ -42,7 +45,12 @@ struct mapView : UIViewRepresentable {
         sourcePin.coordinate = sourceCoordinate
         sourcePin.title = "Via Mezzocannone"
         map.addAnnotation(sourcePin)
-       
+        
+        let twoPin = MKPointAnnotation()
+        twoPin.coordinate = twoCoordinate
+        twoPin.title = "Libreria Dante & Descartes"
+        map.addAnnotation(twoPin)
+        
         let destinationPin = MKPointAnnotation()
         destinationPin.coordinate = destinationCoordinate
         destinationPin.title = "Lungomare Caracciolo"
