@@ -49,19 +49,22 @@ struct ItinerarySummary: View {
                     
                     
                 .navigationTitle("Itinerario")
-                    
-                    .navigationBarItems(trailing: NavigationLink(
-                      destination: SegnalibriView())
-                    {
-                      Image("Wiki")
-                          .resizable()
-                          .scaledToFit()
-                          .frame(height: 30)
-                        Image(systemName: "heart")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 30)
-                    })
+                .navigationBarItems(leading: VStack {
+                    NavigationLink(
+                        destination: SegnalibriView())
+                    {Image(systemName: "heart")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 30)}
+                }, trailing: NavigationLink(
+                                destination: Text("wikipedia link"),
+                                label: {
+                                    Image("Wiki")
+                                          .resizable()
+                                          .scaledToFit()
+                                          .frame(height: 30)
+                                })
+                )
                 
                 
             }
