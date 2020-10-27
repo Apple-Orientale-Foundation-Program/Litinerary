@@ -13,8 +13,10 @@ import UIKit
 struct Stop: Identifiable {
     
     var id = UUID()
-        
+            
     var stopTitle: String
     var stopDescription: String
     var stopAudio: String
+    var latitude: Double
+    var longitude: Double
 }
