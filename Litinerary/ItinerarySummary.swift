@@ -18,8 +18,10 @@ struct ItinerarySummary: View {
             VStack {
                 
                 MapView()
-                    
                  .frame(height: 300)
+                    .cornerRadius(30)
+                    .padding(10)
+                    
                     
                 
                 Text(itinerary.itinerarySummary)
