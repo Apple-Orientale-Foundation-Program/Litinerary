@@ -60,7 +60,7 @@ struct ItineraryEnd: View {
                         label: {RigaSettings(options: "books.vertical", titoloRiga: "Vedi le librerie nei dintorni")
                         })
                     NavigationLink(
-                        destination: ContentView(),
+                        destination: ContentView().environmentObject(litineraryData),
                         label: {RigaSettings(options:"book",titoloRiga:"Sfoglia gli altri itinerari")
                         })
                     NavigationLink(

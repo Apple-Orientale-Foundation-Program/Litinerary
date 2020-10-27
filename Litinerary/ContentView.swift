@@ -26,46 +26,40 @@ struct ContentView: View {
           VStack(spacing:15)
           {
             ForEach(itinList.listOfItineraries) {itinerary in
-                NavigationLink (destination: ItinerarySummary (itinerary: itinerary))
-                     {
-              
-                    VStack {
-                        ZStack {
-                      Image(itinerary.image)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(maxWidth: .infinity, minHeight: 100)
-                        .cornerRadius(50)
-                        .padding(.horizontal)
-                        .shadow(color: .accentColor, radius: 0.3, x:0.0, y:3.8)
-                      HStack(alignment: .bottom, spacing: 10.0) {
-                        Image(systemName: "figure.walk")
-                          .foregroundColor(.white)
-                        Text(itinerary.itineraryLength)
-                            .bold()
-                          .foregroundColor(.white)
-                        Image(systemName: "timer")
-                          .foregroundColor(.white)
-                        Text(itinerary.itineraryDuration)
-                            .bold()
-                            .foregroundColor(.white)
-                            
-                      }
-                      
-                      .padding([.top, .leading], 170.0)
-                      .colorInvert()
-                      .shadow(color: .gray, radius: 0.1, x:0.5, y:0.5)
-                        }
-                        
-                        Text(itinerary.itineraryName)
-                            .font(Font.custom("Raleway", size: 20))
-                            .fontWeight(.semibold)
-                            .foregroundColor(Color("darkGray"))
-                           
-                        
+              NavigationLink (destination: ItinerarySummary (itinerary: itinerary))
+              {
+                VStack {
+                  ZStack {
+                    Image(itinerary.image)
+                      .resizable()
+                      .scaledToFit()
+                      .frame(maxWidth: .infinity, minHeight: 100)
+                      .cornerRadius(50)
+                      .padding(.horizontal)
+                      .shadow(color: .accentColor, radius: 0.3, x:0.0, y:3.8)
+                    HStack(alignment: .bottom, spacing: 10.0) {
+                      Image(systemName: "figure.walk")
+                        .foregroundColor(.white)
+                      Text(itinerary.itineraryLength)
+                        .bold()
+                        .foregroundColor(.white)
+                      Image(systemName: "timer")
+                        .foregroundColor(.white)
+                      Text(itinerary.itineraryDuration)
+                        .bold()
+                        .foregroundColor(.white)
+
                     }
-              
-                
+                    .padding([.top, .leading], 170.0)
+                    .colorInvert()
+                    .shadow(color: .gray, radius: 0.1, x:0.5, y:0.5)
+                  }
+
+                  Text(itinerary.itineraryName)
+                    .font(Font.custom("Raleway", size: 20))
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color("darkGray"))
+                }
               }
             }
           }
@@ -77,9 +71,9 @@ struct ContentView: View {
         destination: SegnalibriView())
       {
         Image("PreferitiRosso")
-            .resizable()
-            .scaledToFit()
-            .frame(height: 30)
+          .resizable()
+          .scaledToFit()
+          .frame(height: 30)
       })
     }
   }
