@@ -65,7 +65,7 @@ struct ItineraryEnd: View {
                         })
                     NavigationLink(
                         destination: Text(""),
-                        label: {RigaSettings(options: "hand.thumbsup", titoloRiga: "Vota Litinerary sull'App store")
+                        label: {RigaSettings(options: "hand.thumbsup", titoloRiga: "Vota Litinerary sull'app store")
                         })
                 }
             }
