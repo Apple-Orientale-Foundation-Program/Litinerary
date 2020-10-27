@@ -20,6 +20,7 @@
 		E3F89FB42542D10B00AF8790 /* ItinerarySummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F89FB32542D10B00AF8790 /* ItinerarySummary.swift */; };
 		E3F89FF72546D37800AF8790 /* Itinerary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F89FF62546D37800AF8790 /* Itinerary.swift */; };
 		E3F89FFC2546D47C00AF8790 /* ItineraryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F89FFB2546D47C00AF8790 /* ItineraryList.swift */; };
+		E3F8A05D25485D9300AF8790 /* Raleway.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3F8A05C25485D9300AF8790 /* Raleway.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		E3F89FB32542D10B00AF8790 /* ItinerarySummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItinerarySummary.swift; sourceTree = "<group>"; };
 		E3F89FF62546D37800AF8790 /* Itinerary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Itinerary.swift; sourceTree = "<group>"; };
 		E3F89FFB2546D47C00AF8790 /* ItineraryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryList.swift; sourceTree = "<group>"; };
+		E3F8A05C25485D9300AF8790 /* Raleway.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Raleway.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		C750CCD32541C96900660581 = {
 			isa = PBXGroup;
 			children = (
+				E3F8A05B25485D8500AF8790 /* fonts */,
 				E3F89FF52546D36700AF8790 /* Data */,
 				C750CCDE2541C96A00660581 /* Litinerary */,
 				C750CCF02541C96A00660581 /* LitineraryTests */,
@@ -157,6 +160,14 @@
 				9E365F3A2548223B000FEB5F /* Route.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		E3F8A05B25485D8500AF8790 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E3F8A05C25485D9300AF8790 /* Raleway.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +275,7 @@
 			files = (
 				C750CCE72541C96A00660581 /* Preview Assets.xcassets in Resources */,
 				C750CCE42541C96A00660581 /* Assets.xcassets in Resources */,
+				E3F8A05D25485D9300AF8790 /* Raleway.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

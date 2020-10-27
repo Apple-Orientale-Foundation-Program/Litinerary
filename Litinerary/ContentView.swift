@@ -36,6 +36,7 @@ struct ContentView: View {
                         .frame(maxWidth: .infinity, minHeight: 100)
                         .cornerRadius(50)
                         .padding(.horizontal)
+                        .shadow(color: .pink, radius: 0.3, x:1.2, y:1.2)
                       HStack(alignment: .bottom, spacing: 10.0) {
                         Image(systemName: "figure.walk")
                           .foregroundColor(.white)
@@ -50,14 +51,15 @@ struct ContentView: View {
                             
                       }
                       
-                      .padding([.top, .leading], 180.0)
+                      .padding([.top, .leading], 170.0)
                       .colorInvert()
                       .shadow(color: .gray, radius: 0.1, x:0.5, y:0.5)
                         }
                         
                         Text(itinerary.itineraryName)
-                            .font(.headline)
-                            .fontWeight(.medium)
+                            .font(Font.custom("Raleway", size: 20))
+                            .fontWeight(.semibold)
+                           
                         
                     }
               

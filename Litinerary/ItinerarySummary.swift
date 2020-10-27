@@ -22,10 +22,10 @@ struct ItinerarySummary: View {
                     .padding(.horizontal)
                 ScrollView {
                     Text(itinerary.itinerarySummary)
-                        .font(.body)
                         .fontWeight(.regular)
                         .multilineTextAlignment(.leading)
                         .padding()
+                        .font(Font.custom("Raleway", size: 18))
                 }
                 
                 NavigationLink(destination: MapView()) {
@@ -36,12 +36,14 @@ struct ItinerarySummary: View {
                             .frame(height:80)
                         Text("Inizia")
                             .fontWeight(.medium)
+                            .font(Font.custom("Raleway", size: 18))
                         
                     }
                     
                 }
                 
                 .navigationTitle(itinerary.itineraryName)
+                
                 .navigationBarItems(leading: NavigationLink(destination: Text("ciao"),
                                                             label: {
                                                                 Image("WikiRosso")
