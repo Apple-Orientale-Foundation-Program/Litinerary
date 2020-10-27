@@ -14,5 +14,5 @@ struct Itinerary: Identifiable {
     var itinerarySummary: String
     var itineraryLength: String
     var itineraryDuration: String
-  var image: String
+    var image: String
 }

@@ -13,6 +13,9 @@ class ItineraryList: Identifiable, ObservableObject {
     {
        self.listOfItineraries = listOfItineraries
     }
+    
+    func itineraryIndex(itinerary: Itinerary) -> Int {listOfItineraries.firstIndex{currentItinerary in currentItinerary.id == itinerary.id}!
+}
 }
 
 let litineraryData = ItineraryList(

@@ -24,11 +24,12 @@ struct ContentView: View {
           Spacer(minLength: 15.0)
           VStack(spacing:15)
           {
-            ForEach(itinList.listOfItineraries) {i in
-                NavigationLink(destination: ItinerarySummary()) {
-              VStack {
+            ForEach(itinList.listOfItineraries) {itinerary in
+                NavigationLink (destination: ItinerarySummary (itinerary: itinerary))
+                     {
+              
                 ZStack {
-                  Image(i.image)
+                  Image(itinerary.image)
                     .resizable()
                     .scaledToFit()
                     .frame(maxWidth: .infinity, minHeight: 100)
@@ -37,11 +38,11 @@ struct ContentView: View {
                   HStack(alignment: .bottom, spacing: 10.0) {
                     Image(systemName: "figure.walk")
                       .foregroundColor(.black)
-                    Text("5 km")
+                    Text(itinerary.itineraryLength)
                       .foregroundColor(.black)
                     Image(systemName: "timer")
                       .foregroundColor(.black)
-                    Text("90'")
+                    Text(itinerary.itineraryDuration)
                         .foregroundColor(.black)
                         
                         
@@ -54,11 +55,8 @@ struct ContentView: View {
                   .colorInvert()
                   .shadow(color: .black, radius: 0.1, x:0.5, y:0.5)
                 }
-              }
-                Text(i.itineraryName)
-                  .font(.title3)
-                  .fontWeight(.semibold)
-                  .multilineTextAlignment(.center)
+              
+                
               }
             }
           }
