@@ -37,7 +37,7 @@ struct ContentView: View {
                         .frame(maxWidth: .infinity, minHeight: 100)
                         .cornerRadius(50)
                         .padding(.horizontal)
-                        .shadow(color: .pink, radius: 0.3, x:0.0, y:3.8)
+                        .shadow(color: .accentColor, radius: 0.3, x:0.0, y:3.8)
                       HStack(alignment: .bottom, spacing: 10.0) {
                         Image(systemName: "figure.walk")
                           .foregroundColor(.white)
