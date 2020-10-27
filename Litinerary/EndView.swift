@@ -20,22 +20,30 @@ Text("Complimenti!")
 .fontWeight(.bold)
 .foregroundColor(.accentColor)
 .multilineTextAlignment(.center)
+            
 
 Spacer()
-.frame(height: 50.0)
+.frame(height: 30.0)
 
-Text("Hai completato l'itinerario")
+            VStack {
+                Text("Hai completato l'itinerario")
 .font(.title2)
 .fontWeight(.semibold)
 .foregroundColor(Color("darkGray"))
-
-
-
+Text("\(itinerary.itineraryName)")
+.font(.title2)
+.fontWeight(.semibold)
+    .foregroundColor(.accentColor)
+            }
+            .padding()
+                
+    
 
 Image("FineItinerario")
 .resizable()
 .scaledToFit()
 .frame(height: 150)
+    .padding()
 
 
     Text("Ecco alcune cose che potrebbero servirti:")
@@ -50,7 +58,7 @@ Image("FineItinerario")
                 Form {
                     NavigationLink(
                         destination: Text(""),
-                        label: {RigaSettings(options: "bookmark", titoloRiga: "Aggiungi \(itinerary.itineraryName) ai segnalibri")
+                        label: {RigaSettings(options: "heart", titoloRiga: "Aggiungi \(itinerary.itineraryName) ai preferiti")
                         })
                     NavigationLink(
                         destination: Text(""),
