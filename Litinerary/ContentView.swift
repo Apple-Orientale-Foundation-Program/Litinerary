@@ -18,6 +18,7 @@ import SwiftUI
 struct ContentView: View {
   @EnvironmentObject var itinList: ItineraryList
   var body: some View {
+    
     NavigationView{
       VStack{
         ScrollView(.vertical, showsIndicators: false) {

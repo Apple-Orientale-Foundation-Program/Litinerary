@@ -14,7 +14,6 @@ struct ItinerarySummary: View {
     
     
     var body: some View {
-        NavigationView{
             VStack {
                 MapView()
                     .frame(height: 300)
@@ -41,9 +40,7 @@ struct ItinerarySummary: View {
                     }
                     
                 }
-                
-                .navigationTitle(itinerary.itineraryName)
-                
+                                
                 .navigationBarItems(leading: NavigationLink(destination: Text("ciao"),
                                                             label: {
                                                                 Image("WikiRosso")
@@ -67,8 +64,6 @@ struct ItinerarySummary: View {
             
         }
     }
-}
-
 struct ItinerarySummary_Previews: PreviewProvider {
     static var previews: some View {
         
