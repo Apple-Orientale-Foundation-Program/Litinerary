@@ -74,7 +74,7 @@ struct ContentView: View {
       .navigationBarItems(trailing: NavigationLink(
         destination: SegnalibriView())
       {
-        Image("Preferiti")
+        Image("PreferitiRosso")
             .resizable()
             .scaledToFit()
             .frame(height: 30)
