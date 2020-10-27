@@ -16,10 +16,12 @@ struct ItinerarySummary: View {
     var body: some View {
         NavigationView{ //just example structure for page
             VStack {
-                Rectangle() //placeholder for map
+                
+                MapView()
+                 .frame(height: 300)
                     .cornerRadius(30)
-                    .scaledToFit()
-                    .frame(minHeight: 100)
+                    .padding(10)
+                    
                     
                 
                 Text(itinerary.itinerarySummary)
