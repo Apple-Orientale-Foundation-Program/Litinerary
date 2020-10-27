@@ -41,7 +41,7 @@ struct ItinerarySummary: View {
                     
                 }
                 
-                .navigationTitle("Itinerario")
+                .navigationTitle(itinerary.itineraryName)
                 .navigationBarItems(leading: NavigationLink(destination: Text("ciao"),
                                                             label: {
                                                                 Image("WikiRosso")
