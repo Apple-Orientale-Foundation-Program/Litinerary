@@ -60,6 +60,7 @@ struct ContentView: View {
                         Text(itinerary.itineraryName)
                             .font(Font.custom("Raleway", size: 20))
                             .fontWeight(.semibold)
+                            .foregroundColor(Color("darkGray"))
                            
                         
                     }
