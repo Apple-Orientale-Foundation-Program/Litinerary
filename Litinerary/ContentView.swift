@@ -28,33 +28,40 @@ struct ContentView: View {
                 NavigationLink (destination: ItinerarySummary (itinerary: itinerary))
                      {
               
-                ZStack {
-                  Image(itinerary.image)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(maxWidth: .infinity, minHeight: 100)
-                    .cornerRadius(50)
-                    .padding(.horizontal)
-                  HStack(alignment: .bottom, spacing: 10.0) {
-                    Image(systemName: "figure.walk")
-                      .foregroundColor(.black)
-                    Text(itinerary.itineraryLength)
-                      .foregroundColor(.black)
-                    Image(systemName: "timer")
-                      .foregroundColor(.black)
-                    Text(itinerary.itineraryDuration)
-                        .foregroundColor(.black)
+                    VStack {
+                        ZStack {
+                      Image(itinerary.image)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(maxWidth: .infinity, minHeight: 100)
+                        .cornerRadius(50)
+                        .padding(.horizontal)
+                      HStack(alignment: .bottom, spacing: 10.0) {
+                        Image(systemName: "figure.walk")
+                          .foregroundColor(.black)
+                        Text(itinerary.itineraryLength)
+                          .foregroundColor(.black)
+                        Image(systemName: "timer")
+                          .foregroundColor(.black)
+                        Text(itinerary.itineraryDuration)
+                            .foregroundColor(.black)
+                            
+                            
+                            
+                            
+                            
+                      }
+                      
+                      .padding([.top, .leading], 160.0)
+                      .colorInvert()
+                      .shadow(color: .black, radius: 0.1, x:0.5, y:0.5)
+                        }
                         
+                        Text(itinerary.itineraryName)
+                            .font(.headline)
+                            .fontWeight(.medium)
                         
-                        
-                        
-                        
-                  }
-                  
-                  .padding([.top, .leading], 160.0)
-                  .colorInvert()
-                  .shadow(color: .black, radius: 0.1, x:0.5, y:0.5)
-                }
+                    }
               
                 
               }
