@@ -27,4 +27,18 @@ class StopList: Identifiable, ObservableObject {
 //        viaChiaia (stopTitle: "Via Chiaia", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00),
 //        piazzaMartiri (stopTitle: "Piazza dei Martiri", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00),
 //        lungomareCaracciolo (stopTitle: "Lungomare Caracciolo", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00)
-//    ])
+//        piazzaMercato(stopTitle: "Piazza Mercato", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00),
+//        quartiereMalpertugio(stopTitle: "Quartiere Malpertugio (oggi via Medina)", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00),
+//        ruaCatalana(stopTitle: "Rua Catalana", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00),
+//        duomo(stopTitle: "Duomo", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00),
+//        libreriaColonnese(stopTitle: "Libreria Antiquaria Colonnese", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00),
+//        federicoII(stopTitle: "Università Federico II di Napoli", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00),
+//        mezzocannoneRC(stopTitle: "Via Mezzocannone", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00),
+//        sanDomenico(stopTitle: "San Domenico", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00),
+//        viaRoma(stopTitle: "Via Roma", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00),
+//        castelDellOvo(stopTitle: "Castel dell'Ovo", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00),
+//        sanCarlo(stopTitle: "San Carlo", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00),
+//        piazzaTriesteTrento(stopTitle: "Piazza Trieste e Trento", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00),
+//        gambrinus(stopTitle: "Gambrinus", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00)
+//])
+

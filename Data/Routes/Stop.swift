@@ -23,4 +23,5 @@ struct Stop: Identifiable {
     
 }
 
-//let xhoihioCoordinate = CLLocationCoordinate2D(latitude: 40.844877, longitude: 14.257189)
+//esempio di come il MapKit vuole formattate le coordinate:
+//let xhoihioCostopordinate = CLLocationCoordinate2D(latitude: 40.844877, longitude: 14.257189)
