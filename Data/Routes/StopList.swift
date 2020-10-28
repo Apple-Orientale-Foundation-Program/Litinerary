@@ -20,13 +20,13 @@ class StopList: Identifiable, ObservableObject {
 //let StopData = StopList(
 //    listOfStops: [
 //        mezzocannoneAG(stopTitle: "Mezzocannone", stopDescription: "blabla", stopAudio: "audio", stopLatitude: 40.844877, stopLongitude: 14.257189),
-//        danteDescartes (stopTitle: "Libreria Dante & Descartes", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00),
-//        liceoVittorio (stopTitle: "Liceo Vittorio Emanuele II", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00),
-//        portAlba (stopTitle: "Port'Alba", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00),
-//        piazzaMunicipio (stopTitle: "Piazza Municipio", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00),
-//        viaChiaia (stopTitle: "Via Chiaia", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00),
-//        piazzaMartiri (stopTitle: "Piazza dei Martiri", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00),
-//        lungomareCaracciolo (stopTitle: "Lungomare Caracciolo", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00)
+//        danteDescartes (stopTitle: "Libreria Dante & Descartes", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 40.8461097, stopLongitude: 14.2541287),
+//        liceoVittorio (stopTitle: "Liceo Vittorio Emanuele II", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 40.8461297, stopLongitude: 14.2475626),
+//        portAlba (stopTitle: "Port'Alba", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 40.849438, stopLongitude: 14.251902),
+//        piazzaMunicipio (stopTitle: "Piazza Municipio", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 40.8399021, stopLongitude: 14.2531124),
+//        viaChiaia (stopTitle: "Via Chiaia", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 40.836984, stopLongitude: 14.248613),
+//        piazzaMartiri (stopTitle: "Piazza dei Martiri", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 40.8342492, stopLongitude: 14.2418517),
+//        lungomareCaracciolo (stopTitle: "Lungomare Caracciolo", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 40.8318695, stopLongitude: 14.2347563)
 //        piazzaMercato(stopTitle: "Piazza Mercato", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00),
 //        quartiereMalpertugio(stopTitle: "Quartiere Malpertugio (oggi via Medina)", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00),
 //        ruaCatalana(stopTitle: "Rua Catalana", stopDescription: "blablabla", stopAudio: "x", stopLatitude: 00, stopLongitude: 00),
