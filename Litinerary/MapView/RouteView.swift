@@ -111,6 +111,6 @@ extension MKMapView{
 
 struct RouteView_Previews: PreviewProvider {
   static var previews: some View {
-    mapView(itinerario: itinerario2)
+    mapView(itinerario: itinerario1)
   }
 }
