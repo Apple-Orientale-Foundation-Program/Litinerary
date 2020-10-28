@@ -11,6 +11,7 @@ import SwiftUI
 struct LitineraryApp: App {
     @EnvironmentObject var litineraryList: ItineraryList
     
+    
     var body: some Scene {
         WindowGroup {
           ContentView().environmentObject(litineraryData)

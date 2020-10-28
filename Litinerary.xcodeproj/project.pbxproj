@@ -25,6 +25,7 @@
 		E3F89FFC2546D47C00AF8790 /* ItineraryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F89FFB2546D47C00AF8790 /* ItineraryList.swift */; };
 		E3F8A05D25485D9300AF8790 /* Raleway.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3F8A05C25485D9300AF8790 /* Raleway.ttf */; };
 		E3F8A062254876A100AF8790 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3F8A061254876A100AF8790 /* Raleway-Italic.ttf */; };
+		E3F8A0762549781700AF8790 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F8A0752549781700AF8790 /* Favorites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		E3F89FFB2546D47C00AF8790 /* ItineraryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryList.swift; sourceTree = "<group>"; };
 		E3F8A05C25485D9300AF8790 /* Raleway.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Raleway.ttf; sourceTree = "<group>"; };
 		E3F8A061254876A100AF8790 /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		E3F8A0752549781700AF8790 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				E3F89FF62546D37800AF8790 /* Itinerary.swift */,
+				E3F8A0752549781700AF8790 /* Favorites.swift */,
 				E3F89FFB2546D47C00AF8790 /* ItineraryList.swift */,
 			);
 			path = Itinerary;
@@ -343,6 +346,7 @@
 				C750CCE22541C96A00660581 /* ContentView.swift in Sources */,
 				C7E3F2962549646A00E453E1 /* ItineraryStops.swift in Sources */,
 				E3F89FF72546D37800AF8790 /* Itinerary.swift in Sources */,
+				E3F8A0762549781700AF8790 /* Favorites.swift in Sources */,
 				33326B2C254966FF00073D37 /* ModalView.swift in Sources */,
 				E3F89FB42542D10B00AF8790 /* ItinerarySummary.swift in Sources */,
 				9E359B1625430E5E0028FB46 /* SegnalibriView.swift in Sources */,
