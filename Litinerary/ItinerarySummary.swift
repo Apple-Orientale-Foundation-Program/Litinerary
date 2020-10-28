@@ -42,7 +42,7 @@ struct ItinerarySummary: View {
             }
             
             .navigationBarItems(leading:NavigationLink(
-                                    destination: SegnalibriView())
+                                    destination: PreferitiView())
                                     {Image(systemName: "heart")
                                             .resizable()
                                             .scaledToFit()
