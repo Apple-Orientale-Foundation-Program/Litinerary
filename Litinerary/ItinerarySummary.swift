@@ -9,6 +9,7 @@ import SwiftUI
 import MapKit
 
 struct ItinerarySummary: View {
+    @EnvironmentObject var favorites: Favorites
     @EnvironmentObject var litineraryList: ItineraryList
     @State var itinerary: Itinerary
     
@@ -41,13 +42,15 @@ struct ItinerarySummary: View {
                 }
                 
             }
-            
-            .navigationBarItems(trailing:NavigationLink(
-                                    destination: PreferitiView())
-                                    {Image(systemName: "heart")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(height: 30)}
+            .navigationTitle(itinerary.itineraryName)
+            .navigationBarItems(trailing:Button(favorites.contains(itinerary) ? "Remove from Favorites" : "Add to Favorites") {
+                if self.favorites.contains(self.itinerary) {
+                    self.favorites.remove(self.itinerary)
+                } else {
+                    self.favorites.add(self.itinerary)
+                }
+            }
+            .padding()
                     )}
     }
     }

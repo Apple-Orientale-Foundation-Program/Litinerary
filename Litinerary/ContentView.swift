@@ -16,7 +16,8 @@
 import SwiftUI
 
 struct ContentView: View {
-  @EnvironmentObject var itinList: ItineraryList
+ @EnvironmentObject var itinList: ItineraryList
+ 
   var body: some View {
     
     NavigationView{

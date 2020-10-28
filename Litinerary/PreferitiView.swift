@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PreferitiView: View {
     @EnvironmentObject var litineraryList: ItineraryList
+    @ObservedObject var favorites = Favorites()
     
     
     var body: some View {
