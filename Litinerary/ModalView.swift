@@ -11,9 +11,10 @@ struct ModalView: View {
     var body: some View {
         
         VStack{
-            
-            Image("MicrosoftTeams-image")
+            Image("Skyline1")
                 .resizable()
+                .frame(width: 380.0, height: 220.0)
+                .scaledToFit()
                 .overlay(
                     HStack {
                         Text("Via Mezzocannone")
