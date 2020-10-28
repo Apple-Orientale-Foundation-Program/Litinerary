@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
-//amica geniale = [mezzocannone, dantedesca, port'alba]
+//amicageniale = [mezzocannoneAG.coordinate, dantedesca.coordinate, liceovittorioema, portalba, piazzamunicipio, viachiaia, piazzamartiri, lungomare]
 //andreuccio = [piazza mercato, etc]
