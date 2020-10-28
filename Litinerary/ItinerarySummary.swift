@@ -43,7 +43,7 @@ struct ItinerarySummary: View {
                 
             }
             .navigationTitle(itinerary.itineraryName)
-          .navigationBarItems(trailing:Button(favorites.contains(itinerary) ? "Remove from Favorites" : "Add to Favorites") {
+          .navigationBarItems(trailing:Button(favorites.contains(itinerary) ? "Remove From Favorites" : "Add To Favorites") {
                if self.favorites.contains(self.itinerary) {
                  self.favorites.remove(self.itinerary)
              } else {

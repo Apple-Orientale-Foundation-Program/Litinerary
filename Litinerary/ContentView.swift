@@ -41,19 +41,30 @@ struct ContentView: View {
                         .shadow(color: Color.accentColor.opacity(0.3), radius: 0.3, x:0.0, y:3.8)
                     HStack(alignment: .bottom, spacing: 10.0) {
                       Image(systemName: "figure.walk")
+                        .colorInvert()
                         .foregroundColor(.white)
                       Text(itinerary.itineraryLength)
                         .bold()
                         .foregroundColor(.white)
+                        .colorInvert()
                       Image(systemName: "timer")
                         .foregroundColor(.white)
+                        .colorInvert()
                       Text(itinerary.itineraryDuration)
                         .bold()
                         .foregroundColor(.white)
-
+                        .colorInvert()
+if self.favorites.contains(itinerary) {
+                    Image(systemName: "heart.fill")
+                    .accessibility(label: Text("This is a favorite resort"))
+                        .foregroundColor(.accentColor)
+                }
+else {Image(systemName: "heart")
+    .accessibility(label: Text("This is a favorite resort"))
+        .foregroundColor(.accentColor)}
+                        
                     }
                     .padding([.top, .leading], 170.0)
-                    .colorInvert()
                     .shadow(color: .gray, radius: 0.1, x:0.5, y:0.5)
                   }
 
@@ -63,12 +74,7 @@ struct ContentView: View {
                     .foregroundColor(Color("darkGray"))
                 }
               }
-                if self.favorites.contains(itinerary) {
-                Spacer()
-                Image(systemName: "heart.fill")
-                .accessibility(label: Text("This is a favorite resort"))
-                    .foregroundColor(.red)
-            }
+                
             }
           }
         }
