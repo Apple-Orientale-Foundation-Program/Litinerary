@@ -12,47 +12,53 @@ func initAnnotations()->[MKAnnotation]{
     map.removeAnnotations(map.annotations)
     let sourceCoordinate = CLLocationCoordinate2D(latitude: 40.844877, longitude: 14.257189)
     let twoCoordinate = CLLocationCoordinate2D(latitude: 40.8461097, longitude: 14.2541287)
-//    let threeCoordinate = CLLocationCoordinate2D(latitude: 40.8461297, longitude: 14.2475626)
-//    let fourCoordinate = CLLocationCoordinate2D(latitude: 40.849438, longitude: 14.251902)
-//    let fiveCoordinate = CLLocationCoordinate2D(latitude: 40.8399021, longitude: 14.2531124)
-//    let sixCoordinate = CLLocationCoordinate2D(latitude: 40.836984, longitude: 14.248613)
-//    let sevenCoordinate = CLLocationCoordinate2D(latitude: 40.8342492, longitude: 14.2418517)
+    let threeCoordinate = CLLocationCoordinate2D(latitude: 40.8461297, longitude: 14.2475626)
+    let fourCoordinate = CLLocationCoordinate2D(latitude: 40.849438, longitude: 14.251902)
+    let fiveCoordinate = CLLocationCoordinate2D(latitude: 40.8399021, longitude: 14.2531124)
+    let sixCoordinate = CLLocationCoordinate2D(latitude: 40.836984, longitude: 14.248613)
+    let sevenCoordinate = CLLocationCoordinate2D(latitude: 40.8342492, longitude: 14.2418517)
     let destinationCoordinate = CLLocationCoordinate2D(latitude: 40.8318695, longitude: 14.2347563)
+    
+//    let sourceCoordinate = CLLocationCoordinate2D(latitude: 40.844877, longitude: 14.257189)
+//    let p1 = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 40.844877, longitude: 14.257189))
+    
+//    let annotationView = MKMarkerAnnotationView()
     
     let sourcePin = MKPointAnnotation()
     sourcePin.coordinate = sourceCoordinate
     sourcePin.title = "Via Mezzocannone"
     map.addAnnotation(sourcePin)
+//    annotationView.glyphImage = UIImage(named: "TappaChiusa")
     
     let twoPin = MKPointAnnotation()
     twoPin.coordinate = twoCoordinate
     twoPin.title = "Libreria Dante & Descartes"
     map.addAnnotation(twoPin)
     
-//    let threePin = MKPointAnnotation()
-//    threePin.coordinate = threeCoordinate
-//    threePin.title = "Liceo Vittorio Emanuele II"
-//    map.addAnnotation(twoPin)
-//
-//    let fourPin = MKPointAnnotation()
-//    fourPin.coordinate = fourCoordinate
-//    fourPin.title = "Port'Alba"
-//    map.addAnnotation(twoPin)
-//
-//    let fivePin = MKPointAnnotation()
-//    fivePin.coordinate = fiveCoordinate
-//    fivePin.title = "Piazza Municipio"
-//    map.addAnnotation(twoPin)
-//
-//    let sixPin = MKPointAnnotation()
-//    sixPin.coordinate = sixCoordinate
-//    sixPin.title = "Via Chiaia"
-//    map.addAnnotation(twoPin)
-//
-//    let sevenPin = MKPointAnnotation()
-//    sevenPin.coordinate = sevenCoordinate
-//    sevenPin.title = "Piazza dei Martiri"
-//    map.addAnnotation(twoPin)
+    let threePin = MKPointAnnotation()
+    threePin.coordinate = threeCoordinate
+    threePin.title = "Liceo Vittorio Emanuele II"
+    map.addAnnotation(threePin)
+
+    let fourPin = MKPointAnnotation()
+    fourPin.coordinate = fourCoordinate
+    fourPin.title = "Port'Alba"
+    map.addAnnotation(fourPin)
+
+    let fivePin = MKPointAnnotation()
+    fivePin.coordinate = fiveCoordinate
+    fivePin.title = "Piazza Municipio"
+    map.addAnnotation(fivePin)
+
+    let sixPin = MKPointAnnotation()
+    sixPin.coordinate = sixCoordinate
+    sixPin.title = "Via Chiaia"
+    map.addAnnotation(sixPin)
+
+    let sevenPin = MKPointAnnotation()
+    sevenPin.coordinate = sevenCoordinate
+    sevenPin.title = "Piazza dei Martiri"
+    map.addAnnotation(sevenPin)
     
     let destinationPin = MKPointAnnotation()
     destinationPin.coordinate = destinationCoordinate
@@ -61,12 +67,16 @@ func initAnnotations()->[MKAnnotation]{
     
     let req = MKDirections.Request()
     req.source = MKMapItem(placemark: MKPlacemark(coordinate: sourceCoordinate))
+//    req.twoPin = MKMapItem(placemark: MKPlacemark(coordinate: twoCoordinate))
+//    req.threePin = MKMapItem(placemark: MKPlacemark(coordinate: threeCoordinate))
+//    req.fourPin = MKMapItem(placemark: MKPlacemark(coordinate: fourCoordinate))
+//    req.fivePin = MKMapItem(placemark: MKPlacemark(coordinate: fiveCoordinate))
+//    req.sixPin = MKMapItem(placemark: MKPlacemark(coordinate: sixCoordinate))
+//    req.sevenPin = MKMapItem(placemark: MKPlacemark(coordinate: sevenCoordinate))
     req.destination = MKMapItem(placemark: MKPlacemark(coordinate: destinationCoordinate))
     
     
     let directions = MKDirections(request: req)
-
-//    _ = MKPolyline(coordinates: [sourceCoordinate, twoCoordinate, destinationCoordinate], count:3)
 
     directions.calculate { (direct, err) in
         if err != nil {
@@ -76,6 +86,7 @@ func initAnnotations()->[MKAnnotation]{
         let polyline = direct?.routes.first?.polyline
         map.addOverlay(polyline!)
         
+//        let routeLine = MKPolyline(coordinates: [sourceCoordinate, twoCoordinate, threeCoordinate, fourCoordinate, twoCoordinate, threeCoordinate, fourCoordinate, fiveCoordinate, sixCoordinate, sevenCoordinate, destinationCoordinate], count:8)
         
     }
     map.scaleOnAllAnnotations(spanFactor: 1.4)
@@ -112,6 +123,8 @@ struct mapView : UIViewRepresentable {
             render.lineWidth = 4
             return render
         }
+        
+        
     }
 }
 
