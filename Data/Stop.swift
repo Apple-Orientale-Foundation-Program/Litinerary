@@ -17,8 +17,8 @@ struct Stop: Identifiable {
     var stopTitle: String
     var stopDescription: String
     var stopAudio: String
-    var latitude: Double
-    var longitude: Double
+    var stopLatitude: Double
+    var stopLongitude: Double
+    var stopFirst: String
     
-//    let coordinate = CLLocationCoordinate2D(latitude: 40.8399021, longitude: 14.2531124)
 }

@@ -6,13 +6,14 @@
 //
 
 import Foundation
-
-//mezzocannononeAG (title, description, description, coordinate, audio)
-//mezzocannononeAP (title, description, coordinate, audio)
-//sogjsopg
-//d
-//asg
-//asf
-//safa
-
+import MapKit
+import UIKit
+class StopList: Identifiable, ObservableObject {
+    @Published var listOfStops: [Stop]
+    init(listOfItineraries: [Stop])
+    {
+       self.listOfItineraries = listOfItineraries
+    }
+    
+}
 
