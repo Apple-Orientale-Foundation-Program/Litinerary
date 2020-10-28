@@ -162,6 +162,6 @@ extension MKMapView{
 
 struct RouteView_Previews: PreviewProvider {
     static var previews: some View {
-        Text("Hello, World!")
+        mapView(annotations: initAnnotations())
     }
 }
