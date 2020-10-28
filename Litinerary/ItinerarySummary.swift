@@ -57,12 +57,11 @@ struct ItinerarySummary: View {
     
     }
 
-//struct ItinerarySummary_Previews: PreviewProvider {
-//    static var previews: some View {
-////        
-////        ItinerarySummary(itinerary: litineraryData.listOfItineraries[0])
-////            
-////            .environmentObject(litineraryData)
-////            .environmentObject(favorites)
-//    }
-//}
+struct ItinerarySummary_Previews: PreviewProvider {
+    static var previews: some View {
+        
+        ItinerarySummary(itinerary: litineraryData.listOfItineraries[0])
+            
+            .environmentObject(litineraryData)
+    }
+}
