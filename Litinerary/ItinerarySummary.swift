@@ -13,6 +13,7 @@ struct ItinerarySummary: View {
     @State var itinerary: Itinerary
     
     var body: some View {
+        NavigationView{
         VStack {
             mapView(annotations: initAnnotations())
                 .frame(height: 300)
@@ -41,13 +42,14 @@ struct ItinerarySummary: View {
                 
             }
             
-            .navigationBarItems(leading:NavigationLink(
+            .navigationBarItems(trailing:NavigationLink(
                                     destination: PreferitiView())
                                     {Image(systemName: "heart")
                                             .resizable()
                                             .scaledToFit()
                                             .frame(height: 30)}
                     )}
+    }
     }
 }
 struct ItinerarySummary_Previews: PreviewProvider {
