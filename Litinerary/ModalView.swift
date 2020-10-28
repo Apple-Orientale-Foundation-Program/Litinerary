@@ -11,9 +11,9 @@ struct ModalView: View {
     var body: some View {
         
         VStack{
-            Image("Skyline1")
+            Image("Skyline2")
                 .resizable()
-                .frame(width: 380.0, height: 220.0)
+                .frame(height: 170.0)
                 .scaledToFit()
                 .overlay(
                     HStack {
