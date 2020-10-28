@@ -125,6 +125,7 @@
 				C750CCE12541C96A00660581 /* ContentView.swift */,
 				9E4CD82625470B450001E389 /* RouteView.swift */,
 				9E359B1525430E5E0028FB46 /* SegnalibriView.swift */,
+				33326B2B254966FF00073D37 /* ModalView.swift */,
 				33AC999C25448EF1009A65DD /* EndView.swift */,
 				E3F89FB32542D10B00AF8790 /* ItinerarySummary.swift */,
 				C750CCE32541C96A00660581 /* Assets.xcassets */,
@@ -167,7 +168,6 @@
 				E3F89FFB2546D47C00AF8790 /* ItineraryList.swift */,
 				9E365F3A2548223B000FEB5F /* Stop.swift */,
 				C7E3F2902549643900E453E1 /* StopList.swift */,
-				33326B2B254966FF00073D37 /* ModalView.swift */,
 				C7E3F2952549646A00E453E1 /* ItineraryStops.swift */,
 			);
 			path = Data;
