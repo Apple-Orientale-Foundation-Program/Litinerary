@@ -14,6 +14,7 @@ struct ModalView: View {
                 .font(Font.custom("Raleway", size: 38))
                 .fontWeight(.bold)
                 .foregroundColor(Color("darkGray"))
+                .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
             Text("Lenù cerca di separarsi da Lila dopo essersi sentita umiliata da lei durante una festa a casa della professoressa Galiani. Decisa a voler comprare a sue spese i libri scolastici, inizia a lavorare in una libreria in via Mezzocannone. Il figlio della professoressa, colpito dai discorsi fatti da Elena alla festa, va a trovarla a lavoro.")
                 .fontWeight(.semibold)
                 .multilineTextAlignment(.leading)
