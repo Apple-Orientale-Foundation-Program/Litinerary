@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import MapKit
 
 struct Itinerary: Identifiable {
     let id = UUID().uuidString
@@ -14,6 +15,9 @@ struct Itinerary: Identifiable {
     var itineraryLength: String
     var itineraryDuration: String
     var image: String
+    var itinerario: [Pin]
 //    var route: String
 //    questa variabile è il nome dell'itinerario (di ItineraryStops) che associa a ogni itinerario una serie di tappe
 }
+
+
