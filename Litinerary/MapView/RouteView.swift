@@ -67,7 +67,7 @@ func initAnnotations()->[MKAnnotation]{
     
     let req = MKDirections.Request()
     req.source = MKMapItem(placemark: MKPlacemark(coordinate: oneCoordinate))
-    req.destination = MKMapItem(placemark: MKPlacemark(coordinate: destinationCoordinate))
+    req.destination = MKMapItem(placemark: MKPlacemark(coordinate: eightCoordinate))
     req.transportType = .walking
     
     let req2 = MKDirections.Request()
