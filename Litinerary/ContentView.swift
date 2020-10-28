@@ -63,6 +63,12 @@ struct ContentView: View {
                     .foregroundColor(Color("darkGray"))
                 }
               }
+                if self.favorites.contains(itinerary) {
+                Spacer()
+                Image(systemName: "heart.fill")
+                .accessibility(label: Text("This is a favorite resort"))
+                    .foregroundColor(.red)
+            }
             }
           }
         }
