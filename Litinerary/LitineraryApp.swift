@@ -10,11 +10,13 @@ import SwiftUI
 @main
 struct LitineraryApp: App {
     @EnvironmentObject var litineraryList: ItineraryList
-    
+    @EnvironmentObject var favorites: Favorites
     
     var body: some Scene {
         WindowGroup {
           ContentView().environmentObject(litineraryData)
+            
+            
         }
     }
 }

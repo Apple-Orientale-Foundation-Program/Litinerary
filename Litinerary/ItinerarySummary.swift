@@ -43,23 +43,26 @@ struct ItinerarySummary: View {
                 
             }
             .navigationTitle(itinerary.itineraryName)
-            .navigationBarItems(trailing:Button(favorites.contains(itinerary) ? "Remove from Favorites" : "Add to Favorites") {
-                if self.favorites.contains(self.itinerary) {
-                    self.favorites.remove(self.itinerary)
-                } else {
-                    self.favorites.add(self.itinerary)
-                }
-            }
-            .padding()
+          .navigationBarItems(trailing:Button(favorites.contains(itinerary) ? "Remove from Favorites" : "Add to Favorites") {
+               if self.favorites.contains(self.itinerary) {
+                 self.favorites.remove(self.itinerary)
+             } else {
+                self.favorites.add(self.itinerary)
+              }
+          }
+           .padding()
                     )}
+        }
+   }
+    
     }
-    }
-}
-struct ItinerarySummary_Previews: PreviewProvider {
-    static var previews: some View {
-        
-        ItinerarySummary(itinerary: litineraryData.listOfItineraries[0])
-            
-            .environmentObject(litineraryData)
-    }
-}
+
+//struct ItinerarySummary_Previews: PreviewProvider {
+//    static var previews: some View {
+////        
+////        ItinerarySummary(itinerary: litineraryData.listOfItineraries[0])
+////            
+////            .environmentObject(litineraryData)
+////            .environmentObject(favorites)
+//    }
+//}

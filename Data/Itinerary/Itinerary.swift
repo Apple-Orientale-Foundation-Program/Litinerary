@@ -8,8 +8,7 @@
 import Foundation
 
 struct Itinerary: Identifiable {
-    
-    var id = UUID()
+    let id = UUID().uuidString
     var itineraryName: String
     var itinerarySummary: String
     var itineraryLength: String

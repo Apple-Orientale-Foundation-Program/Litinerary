@@ -16,7 +16,7 @@
 import SwiftUI
 
 struct ContentView: View {
-@ObservedObject var favorites = Favorites()
+    @ObservedObject var favorites = Favorites()
  @EnvironmentObject var itinList: ItineraryList
  
   var body: some View {
@@ -77,13 +77,15 @@ struct ContentView: View {
           .scaledToFit()
             .frame(height: 30)
       })
+      
     }
+    .environmentObject(favorites)
   }
 }
-
-struct ContentView_Previews: PreviewProvider {
-  static var previews: some View {
-    ContentView().environmentObject(litineraryData)
-  }
-}
+//
+//struct ContentView_Previews: PreviewProvider {
+//  static var previews: some View {
+//    ContentView().environmentObject(litineraryData, favorites)
+//  }
+//}
 
