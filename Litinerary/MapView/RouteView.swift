@@ -65,13 +65,6 @@ func initAnnotations()->[MKAnnotation]{
     destinationPin.title = "Lungomare Caracciolo"
     map.addAnnotation(destinationPin)
     
-    //    req.twoPin = MKMapItem(placemark: MKPlacemark(coordinate: twoCoordinate))
-    //    req.threePin = MKMapItem(placemark: MKPlacemark(coordinate: threeCoordinate))
-    //    req.fourPin = MKMapItem(placemark: MKPlacemark(coordinate: fourCoordinate))
-    //    req.fivePin = MKMapItem(placemark: MKPlacemark(coordinate: fiveCoordinate))
-    //    req.sixPin = MKMapItem(placemark: MKPlacemark(coordinate: sixCoordinate))
-    //    req.sevenPin = MKMapItem(placemark: MKPlacemark(coordinate: sevenCoordinate))
-    
     let req = MKDirections.Request()
     req.source = MKMapItem(placemark: MKPlacemark(coordinate: sourceCoordinate))
     req.destination = MKMapItem(placemark: MKPlacemark(coordinate: destinationCoordinate))
@@ -106,9 +99,7 @@ func initAnnotations()->[MKAnnotation]{
         if err != nil {
             print ((err?.localizedDescription)!)
             return
-            
-//            var transportType: MKDirectionsTransportType voglio mettere a piedi
-            
+
         }
         let polyline = direct?.routes.first?.polyline
         map.addOverlay(polyline!)
