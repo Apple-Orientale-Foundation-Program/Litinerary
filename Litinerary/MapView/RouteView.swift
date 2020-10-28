@@ -73,26 +73,32 @@ func initAnnotations()->[MKAnnotation]{
     let req2 = MKDirections.Request()
     req2.source = MKMapItem(placemark: MKPlacemark(coordinate: twoCoordinate))
     req2.destination = MKMapItem(placemark: MKPlacemark(coordinate: threeCoordinate))
+    req.transportType = .walking
 
     let req3 = MKDirections.Request()
     req3.source = MKMapItem(placemark: MKPlacemark(coordinate: threeCoordinate))
     req3.destination = MKMapItem(placemark: MKPlacemark(coordinate: fourCoordinate))
+    req.transportType = .walking
 
     let req4 = MKDirections.Request()
     req4.source = MKMapItem(placemark: MKPlacemark(coordinate: fourCoordinate))
     req4.destination = MKMapItem(placemark: MKPlacemark(coordinate: fiveCoordinate))
+    req.transportType = .walking
 
     let req5 = MKDirections.Request()
     req5.source = MKMapItem(placemark: MKPlacemark(coordinate: fiveCoordinate))
     req5.destination = MKMapItem(placemark: MKPlacemark(coordinate: sixCoordinate))
+    req.transportType = .walking
 
     let req6 = MKDirections.Request()
     req6.source = MKMapItem(placemark: MKPlacemark(coordinate: sixCoordinate))
     req6.destination = MKMapItem(placemark: MKPlacemark(coordinate: sevenCoordinate))
+    req.transportType = .walking
 
     let req7 = MKDirections.Request()
     req7.source = MKMapItem(placemark: MKPlacemark(coordinate: sevenCoordinate))
     req7.destination = MKMapItem(placemark: MKPlacemark(coordinate: destinationCoordinate))
+    req.transportType = .walking
     
     let directions = MKDirections(request: req)
 
