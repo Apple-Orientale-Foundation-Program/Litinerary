@@ -10,9 +10,9 @@ import MapKit
 import UIKit
 class StopList: Identifiable, ObservableObject {
     @Published var listOfStops: [Stop]
-    init(listOfItineraries: [Stop])
+    init(listOfStops: [Stop])
     {
-       self.listOfStops = listOfItineraries
+       self.listOfStops = listOfStops
     }
     
 }
