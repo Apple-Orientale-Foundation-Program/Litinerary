@@ -10,24 +10,24 @@ import MapKit
 
 func initAnnotations()->[MKAnnotation]{
     map.removeAnnotations(map.annotations)
-    let sourceCoordinate = CLLocationCoordinate2D(latitude: 40.844877, longitude: 14.257189)
+    let oneCoordinate = CLLocationCoordinate2D(latitude: 40.844877, longitude: 14.257189)
     let twoCoordinate = CLLocationCoordinate2D(latitude: 40.8461097, longitude: 14.2541287)
     let threeCoordinate = CLLocationCoordinate2D(latitude: 40.848586, longitude: 14.252477)
     let fourCoordinate = CLLocationCoordinate2D(latitude: 40.849539, longitude: 14.250640)
     let fiveCoordinate = CLLocationCoordinate2D(latitude: 40.8399021, longitude: 14.2531124)
     let sixCoordinate = CLLocationCoordinate2D(latitude: 40.836984, longitude: 14.248613)
     let sevenCoordinate = CLLocationCoordinate2D(latitude: 40.8342492, longitude: 14.2418517)
-    let destinationCoordinate = CLLocationCoordinate2D(latitude: 40.8318695, longitude: 14.2347563)
+    let eightCoordinate = CLLocationCoordinate2D(latitude: 40.8318695, longitude: 14.2347563)
     
 //    let sourceCoordinate = CLLocationCoordinate2D(latitude: 40.844877, longitude: 14.257189)
 //    let p1 = MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: 40.844877, longitude: 14.257189))
     
 //    let annotationView = MKMarkerAnnotationView()
     
-    let sourcePin = MKPointAnnotation()
-    sourcePin.coordinate = sourceCoordinate
-    sourcePin.title = "Via Mezzocannone"
-    map.addAnnotation(sourcePin)
+    let onePin = MKPointAnnotation()
+    onePin.coordinate = oneCoordinate
+    onePin.title = "Via Mezzocannone"
+    map.addAnnotation(onePin)
 //    annotationView.glyphImage = UIImage(named: "TappaChiusa")
     
     let twoPin = MKPointAnnotation()
@@ -60,13 +60,13 @@ func initAnnotations()->[MKAnnotation]{
     sevenPin.title = "Piazza dei Martiri"
     map.addAnnotation(sevenPin)
     
-    let destinationPin = MKPointAnnotation()
-    destinationPin.coordinate = destinationCoordinate
-    destinationPin.title = "Lungomare Caracciolo"
-    map.addAnnotation(destinationPin)
+    let eightPin = MKPointAnnotation()
+    eightPin.coordinate = eightCoordinate
+    eightPin.title = "Lungomare Caracciolo"
+    map.addAnnotation(eightPin)
     
     let req = MKDirections.Request()
-    req.source = MKMapItem(placemark: MKPlacemark(coordinate: sourceCoordinate))
+    req.source = MKMapItem(placemark: MKPlacemark(coordinate: oneCoordinate))
     req.destination = MKMapItem(placemark: MKPlacemark(coordinate: destinationCoordinate))
     req.transportType = .walking
     
@@ -97,10 +97,10 @@ func initAnnotations()->[MKAnnotation]{
 
     let req7 = MKDirections.Request()
     req7.source = MKMapItem(placemark: MKPlacemark(coordinate: sevenCoordinate))
-    req7.destination = MKMapItem(placemark: MKPlacemark(coordinate: destinationCoordinate))
+    req7.destination = MKMapItem(placemark: MKPlacemark(coordinate: eightCoordinate))
     req7.transportType = .walking
     
-    let directions = MKDirections(request: req4)
+    let directions = MKDirections(request: req)
 
     directions.calculate { (direct, err) in
         if err != nil {
