@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ModalView: View {
     var body: some View {
-        ZStack{
+        
         VStack{
+            
             Image("MicrosoftTeams-image")
                 .resizable()
                 .overlay(
@@ -25,6 +26,7 @@ struct ModalView: View {
                             .font(Font.system(.largeTitle))
                     }
                 )
+            ScrollView{
             Text("Lenù cerca di separarsi da Lila dopo essersi sentita umiliata da lei durante una festa a casa della professoressa Galiani. Decisa a voler comprare a sue spese i libri scolastici, inizia a lavorare in una libreria in via Mezzocannone. Il figlio della professoressa, colpito dai discorsi fatti da Elena alla festa, va a trovarla a lavoro.")
                 .fontWeight(.semibold)
                 .multilineTextAlignment(.leading)
@@ -38,7 +40,7 @@ struct ModalView: View {
             }
             }
     }
-}
+
 
 struct ModalView_Previews: PreviewProvider {
     static var previews: some View {
@@ -46,4 +48,4 @@ struct ModalView_Previews: PreviewProvider {
     }
 }
 
-
+}
