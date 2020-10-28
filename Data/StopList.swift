@@ -12,7 +12,7 @@ class StopList: Identifiable, ObservableObject {
     @Published var listOfStops: [Stop]
     init(listOfItineraries: [Stop])
     {
-       self.listOfItineraries = listOfItineraries
+       self.listOfStops = listOfItineraries
     }
     
 }
