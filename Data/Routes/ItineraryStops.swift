@@ -8,5 +8,6 @@
 import Foundation
 import UIKit
 
-//amicageniale = [mezzocannoneAG.coordinate, dantedesca.coordinate, liceovittorioema, portalba, piazzamunicipio, viachiaia, piazzamartiri, lungomare]
-//andreuccio = [piazza mercato, etc]
+//amicageniale = [mezzocannoneAG, danteDescartes, liceoVittorio, portAlba, piazzaMunicipio, viaChiaia, piazzaMartiri, lungomareCaracciolo]
+//andreuccio = [piazzaMercato, quartiereMalpertugio, ruaCatalana, duomo]
+//renatocaccioppolo = [libreriaColonnese, federicoII, mezzocannoneRC, sanDomenico, viaRoma, castelDellOvo, sanCarlo, piazzaTriesteTrento, gambrinus]
