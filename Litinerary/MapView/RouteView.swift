@@ -11,11 +11,11 @@ import MapKit
 func initAnnotations()->[MKAnnotation]{
     map.removeAnnotations(map.annotations)
     let oneCoordinate = CLLocationCoordinate2D(latitude: 40.844877, longitude: 14.257189)
-    let twoCoordinate = CLLocationCoordinate2D(latitude: 40.8461097, longitude: 14.2541287)
+    let twoCoordinate = CLLocationCoordinate2D(latitude: 40.846120, longitude: 14.256317)
     let threeCoordinate = CLLocationCoordinate2D(latitude: 40.848586, longitude: 14.252477)
     let fourCoordinate = CLLocationCoordinate2D(latitude: 40.849539, longitude: 14.250640)
-    let fiveCoordinate = CLLocationCoordinate2D(latitude: 40.8399021, longitude: 14.2531124)
-    let sixCoordinate = CLLocationCoordinate2D(latitude: 40.836984, longitude: 14.248613)
+    let fiveCoordinate = CLLocationCoordinate2D(latitude: 40.840177, longitude: 14.252188)
+    let sixCoordinate = CLLocationCoordinate2D(latitude: 40.836637, longitude: 14.246969)
     let sevenCoordinate = CLLocationCoordinate2D(latitude: 40.8342492, longitude: 14.2418517)
     let eightCoordinate = CLLocationCoordinate2D(latitude: 40.8318695, longitude: 14.2347563)
     
