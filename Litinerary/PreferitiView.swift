@@ -7,21 +7,21 @@
 
 import SwiftUI
 
-struct SegnalibriView: View {
+struct PreferitiView: View {
     @EnvironmentObject var litineraryList: ItineraryList
     
     
     var body: some View {
         NavigationView{
             Text("Inserire funzione per aggiungere a questa view gli itinerari preferiti")
-                .navigationTitle("Segnalibri")
+                .navigationTitle("Preferiti")
         }
     }
 }
 
-struct SegnalibriView_Previews: PreviewProvider {
+struct PreferitiView_Previews: PreviewProvider {
     static var previews: some View {
-        SegnalibriView()
+        PreferitiView()
             .environmentObject(litineraryData)
     }
 }

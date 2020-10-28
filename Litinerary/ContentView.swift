@@ -68,7 +68,7 @@ struct ContentView: View {
       .navigationTitle("Passeggiate letterarie")
 
       .navigationBarItems(trailing: NavigationLink(
-        destination: SegnalibriView())
+        destination: PreferitiView())
       {
         Image("PreferitiRosso")
           .resizable()
