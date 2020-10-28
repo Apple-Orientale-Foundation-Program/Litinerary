@@ -82,10 +82,10 @@ struct ContentView: View {
     .environmentObject(favorites)
   }
 }
-//
-//struct ContentView_Previews: PreviewProvider {
-//  static var previews: some View {
-//    ContentView().environmentObject(litineraryData, favorites)
-//  }
-//}
+
+struct ContentView_Previews: PreviewProvider {
+  static var previews: some View {
+    ContentView().environmentObject(litineraryData)
+  }
+}
 
