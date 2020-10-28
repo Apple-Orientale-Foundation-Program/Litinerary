@@ -96,6 +96,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E365F7825497393000FEB5F /* Itinerary */ = {
+			isa = PBXGroup;
+			children = (
+				E3F89FF62546D37800AF8790 /* Itinerary.swift */,
+				E3F89FFB2546D47C00AF8790 /* ItineraryList.swift */,
+			);
+			path = Itinerary;
+			sourceTree = "<group>";
+		};
+		9E365F79254973F8000FEB5F /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				C7E3F2952549646A00E453E1 /* ItineraryStops.swift */,
+				C7E3F2902549643900E453E1 /* StopList.swift */,
+				9E365F3A2548223B000FEB5F /* Stop.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		9E365F7D25497435000FEB5F /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				9E4CD82625470B450001E389 /* RouteView.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
 		C750CCD32541C96900660581 = {
 			isa = PBXGroup;
 			children = (
@@ -121,9 +148,9 @@
 		C750CCDE2541C96A00660581 /* Litinerary */ = {
 			isa = PBXGroup;
 			children = (
+				9E365F7D25497435000FEB5F /* MapView */,
 				C750CCDF2541C96A00660581 /* LitineraryApp.swift */,
 				C750CCE12541C96A00660581 /* ContentView.swift */,
-				9E4CD82625470B450001E389 /* RouteView.swift */,
 				9E359B1525430E5E0028FB46 /* SegnalibriView.swift */,
 				33326B2B254966FF00073D37 /* ModalView.swift */,
 				33AC999C25448EF1009A65DD /* EndView.swift */,
@@ -164,11 +191,8 @@
 		E3F89FF52546D36700AF8790 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				E3F89FF62546D37800AF8790 /* Itinerary.swift */,
-				E3F89FFB2546D47C00AF8790 /* ItineraryList.swift */,
-				9E365F3A2548223B000FEB5F /* Stop.swift */,
-				C7E3F2902549643900E453E1 /* StopList.swift */,
-				C7E3F2952549646A00E453E1 /* ItineraryStops.swift */,
+				9E365F79254973F8000FEB5F /* Routes */,
+				9E365F7825497393000FEB5F /* Itinerary */,
 			);
 			path = Data;
 			sourceTree = "<group>";
