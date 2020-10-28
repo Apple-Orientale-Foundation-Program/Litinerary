@@ -34,7 +34,7 @@ struct ItinerarySummary: View {
                         .frame(height:80)
                     Text("Inizia")
                         .fontWeight(.medium)
-                        .font(Font.custom("Raleway", size: 18))
+                        .font(Font.custom("Raleway", size: 20))
                         .foregroundColor(Color("darkGray"))
                     
                 }
