@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		33326B2C254966FF00073D37 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33326B2B254966FF00073D37 /* ModalView.swift */; };
 		33AC999D25448EF1009A65DD /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AC999C25448EF1009A65DD /* EndView.swift */; };
-		9E359B1625430E5E0028FB46 /* SegnalibriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E359B1525430E5E0028FB46 /* SegnalibriView.swift */; };
+		9E359B1625430E5E0028FB46 /* PreferitiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E359B1525430E5E0028FB46 /* PreferitiView.swift */; };
 		9E365F3B2548223B000FEB5F /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E365F3A2548223B000FEB5F /* Stop.swift */; };
 		9E4CD82725470B450001E389 /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4CD82625470B450001E389 /* RouteView.swift */; };
 		C750CCE02541C96A00660581 /* LitineraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750CCDF2541C96A00660581 /* LitineraryApp.swift */; };
@@ -47,7 +47,7 @@
 /* Begin PBXFileReference section */
 		33326B2B254966FF00073D37 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		33AC999C25448EF1009A65DD /* EndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndView.swift; sourceTree = "<group>"; };
-		9E359B1525430E5E0028FB46 /* SegnalibriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegnalibriView.swift; sourceTree = "<group>"; };
+		9E359B1525430E5E0028FB46 /* PreferitiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferitiView.swift; sourceTree = "<group>"; };
 		9E365F3A2548223B000FEB5F /* Stop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
 		9E4CD82625470B450001E389 /* RouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteView.swift; sourceTree = "<group>"; };
 		C750CCDC2541C96A00660581 /* Litinerary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Litinerary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,7 +151,7 @@
 				9E365F7D25497435000FEB5F /* MapView */,
 				C750CCDF2541C96A00660581 /* LitineraryApp.swift */,
 				C750CCE12541C96A00660581 /* ContentView.swift */,
-				9E359B1525430E5E0028FB46 /* SegnalibriView.swift */,
+				9E359B1525430E5E0028FB46 /* PreferitiView.swift */,
 				33326B2B254966FF00073D37 /* ModalView.swift */,
 				33AC999C25448EF1009A65DD /* EndView.swift */,
 				E3F89FB32542D10B00AF8790 /* ItinerarySummary.swift */,
@@ -345,7 +345,7 @@
 				E3F89FF72546D37800AF8790 /* Itinerary.swift in Sources */,
 				33326B2C254966FF00073D37 /* ModalView.swift in Sources */,
 				E3F89FB42542D10B00AF8790 /* ItinerarySummary.swift in Sources */,
-				9E359B1625430E5E0028FB46 /* SegnalibriView.swift in Sources */,
+				9E359B1625430E5E0028FB46 /* PreferitiView.swift in Sources */,
 				C750CCE02541C96A00660581 /* LitineraryApp.swift in Sources */,
 				9E4CD82725470B450001E389 /* RouteView.swift in Sources */,
 				33AC999D25448EF1009A65DD /* EndView.swift in Sources */,
