@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33326B2C254966FF00073D37 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33326B2B254966FF00073D37 /* ModalView.swift */; };
 		33AC999D25448EF1009A65DD /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AC999C25448EF1009A65DD /* EndView.swift */; };
 		9E359B1625430E5E0028FB46 /* SegnalibriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E359B1525430E5E0028FB46 /* SegnalibriView.swift */; };
 		9E365F3B2548223B000FEB5F /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E365F3A2548223B000FEB5F /* Stop.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33326B2B254966FF00073D37 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		33AC999C25448EF1009A65DD /* EndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndView.swift; sourceTree = "<group>"; };
 		9E359B1525430E5E0028FB46 /* SegnalibriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegnalibriView.swift; sourceTree = "<group>"; };
 		9E365F3A2548223B000FEB5F /* Stop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				E3F89FFB2546D47C00AF8790 /* ItineraryList.swift */,
 				9E365F3A2548223B000FEB5F /* Stop.swift */,
 				C7E3F2902549643900E453E1 /* StopList.swift */,
+				33326B2B254966FF00073D37 /* ModalView.swift */,
 				C7E3F2952549646A00E453E1 /* ItineraryStops.swift */,
 			);
 			path = Data;
@@ -316,6 +319,7 @@
 				C750CCE22541C96A00660581 /* ContentView.swift in Sources */,
 				C7E3F2962549646A00E453E1 /* ItineraryStops.swift in Sources */,
 				E3F89FF72546D37800AF8790 /* Itinerary.swift in Sources */,
+				33326B2C254966FF00073D37 /* ModalView.swift in Sources */,
 				E3F89FB42542D10B00AF8790 /* ItinerarySummary.swift in Sources */,
 				9E359B1625430E5E0028FB46 /* SegnalibriView.swift in Sources */,
 				C750CCE02541C96A00660581 /* LitineraryApp.swift in Sources */,
