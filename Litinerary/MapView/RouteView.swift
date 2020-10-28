@@ -12,8 +12,8 @@ func initAnnotations()->[MKAnnotation]{
     map.removeAnnotations(map.annotations)
     let sourceCoordinate = CLLocationCoordinate2D(latitude: 40.844877, longitude: 14.257189)
     let twoCoordinate = CLLocationCoordinate2D(latitude: 40.8461097, longitude: 14.2541287)
-    let threeCoordinate = CLLocationCoordinate2D(latitude: 40.8461297, longitude: 14.2475626)
-    let fourCoordinate = CLLocationCoordinate2D(latitude: 40.849438, longitude: 14.251902)
+    let threeCoordinate = CLLocationCoordinate2D(latitude: 40.848586, longitude: 14.252477)
+    let fourCoordinate = CLLocationCoordinate2D(latitude: 40.849539, longitude: 14.250640)
     let fiveCoordinate = CLLocationCoordinate2D(latitude: 40.8399021, longitude: 14.2531124)
     let sixCoordinate = CLLocationCoordinate2D(latitude: 40.836984, longitude: 14.248613)
     let sevenCoordinate = CLLocationCoordinate2D(latitude: 40.8342492, longitude: 14.2418517)
@@ -67,21 +67,46 @@ func initAnnotations()->[MKAnnotation]{
     
     let req = MKDirections.Request()
     req.source = MKMapItem(placemark: MKPlacemark(coordinate: sourceCoordinate))
-//    req.twoPin = MKMapItem(placemark: MKPlacemark(coordinate: twoCoordinate))
-//    req.threePin = MKMapItem(placemark: MKPlacemark(coordinate: threeCoordinate))
-//    req.fourPin = MKMapItem(placemark: MKPlacemark(coordinate: fourCoordinate))
-//    req.fivePin = MKMapItem(placemark: MKPlacemark(coordinate: fiveCoordinate))
-//    req.sixPin = MKMapItem(placemark: MKPlacemark(coordinate: sixCoordinate))
-//    req.sevenPin = MKMapItem(placemark: MKPlacemark(coordinate: sevenCoordinate))
     req.destination = MKMapItem(placemark: MKPlacemark(coordinate: destinationCoordinate))
+    req.transportType = .walking
     
+    let req2 = MKDirections.Request()
+    req2.source = MKMapItem(placemark: MKPlacemark(coordinate: twoCoordinate))
+    req2.destination = MKMapItem(placemark: MKPlacemark(coordinate: threeCoordinate))
+    req2.transportType = .walking
+
+    let req3 = MKDirections.Request()
+    req3.source = MKMapItem(placemark: MKPlacemark(coordinate: threeCoordinate))
+    req3.destination = MKMapItem(placemark: MKPlacemark(coordinate: fourCoordinate))
+    req3.transportType = .walking
+
+    let req4 = MKDirections.Request()
+    req4.source = MKMapItem(placemark: MKPlacemark(coordinate: fourCoordinate))
+    req4.destination = MKMapItem(placemark: MKPlacemark(coordinate: fiveCoordinate))
+    req4.transportType = .walking
+
+    let req5 = MKDirections.Request()
+    req5.source = MKMapItem(placemark: MKPlacemark(coordinate: fiveCoordinate))
+    req5.destination = MKMapItem(placemark: MKPlacemark(coordinate: sixCoordinate))
+    req5.transportType = .walking
+
+    let req6 = MKDirections.Request()
+    req6.source = MKMapItem(placemark: MKPlacemark(coordinate: sixCoordinate))
+    req6.destination = MKMapItem(placemark: MKPlacemark(coordinate: sevenCoordinate))
+    req6.transportType = .walking
+
+    let req7 = MKDirections.Request()
+    req7.source = MKMapItem(placemark: MKPlacemark(coordinate: sevenCoordinate))
+    req7.destination = MKMapItem(placemark: MKPlacemark(coordinate: destinationCoordinate))
+    req7.transportType = .walking
     
-    let directions = MKDirections(request: req)
+    let directions = MKDirections(request: req4)
 
     directions.calculate { (direct, err) in
         if err != nil {
             print ((err?.localizedDescription)!)
             return
+
         }
         let polyline = direct?.routes.first?.polyline
         map.addOverlay(polyline!)
