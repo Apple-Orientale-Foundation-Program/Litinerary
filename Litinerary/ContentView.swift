@@ -16,6 +16,7 @@
 import SwiftUI
 
 struct ContentView: View {
+@ObservedObject var favorites = Favorites()
  @EnvironmentObject var itinList: ItineraryList
  
   var body: some View {
