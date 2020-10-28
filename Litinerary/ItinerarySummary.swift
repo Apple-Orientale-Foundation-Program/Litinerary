@@ -16,7 +16,7 @@ struct ItinerarySummary: View {
     var body: some View {
         NavigationView{
         VStack {
-            mapView(annotations: initAnnotations())
+            mapView(itinerario: itinerario1)
                 .frame(height: 300)
                 .cornerRadius(35)
                 .padding(.horizontal)
@@ -28,7 +28,7 @@ struct ItinerarySummary: View {
                     .font(Font.custom("Raleway", size: 18))
             }
             
-            NavigationLink(destination: mapView(annotations: initAnnotations())) {
+            NavigationLink(destination: mapView(itinerario: itinerario1)) {
                 VStack {
                     Image("InizioItinerarioGrigio")
                         .resizable()
