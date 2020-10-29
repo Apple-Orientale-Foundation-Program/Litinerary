@@ -27,8 +27,12 @@ var AmicaGenialeStops = [
 
 
 var AndreuccioStops = [
-    Stop(title: "bla", description: "bla", content: "bla"),
-    Stop(title: "bla", description: "bla", content: "bla"),
+    Stop(title: "Piazza Mercato", description: "Andreuccio da Perugia si reca a napoli per acquistare cavalli con una borsa di", content: """
+        [...] la seguente mattina fu in sul Mercato, e molti ne vide e assai ne gli piacquero e di più e più mercato tenne, né di niuno potendosi accordare, per mostrare che per comperar fosse, sì come rozzo e poco cauto più volte in presenza di chi andava e di chi veniva trasse fuori questa sua borsa de’ fiorini che aveva.
+E in questi trattati stando, avendo esso la sua borsa mostrata, avvenne che una giovane ciciliana bellissima, ma disposta per piccol pregio a compiacere a qualunque uomo, senza vederla egli, passò appresso di lui e la sua borsa vide e subito seco disse: – Chi starebbe meglio di me se quegli denari fosser miei? – e passò oltre.
+Era con questa giovane una vecchia similmente ciciliana, la quale, come vide Andreuccio, lasciata oltre la giovane andare, affettuosamente corse a abbracciarlo: il che la giovane veggendo, senza dire alcuna cosa, da una delle parti la cominciò a attendere. Andreuccio, alla vecchia rivoltosi e conosciutala, le fece gran festa, e promettendogli essa di venire a lui all’albergo, senza quivi tenere troppo lungo sermone, si partì: e Andreuccio si tornò a mercatare ma niente comperò la mattina[...]
+"""),
+    Stop(title: "Quartiere Malpertugio (oggi Via Medina)", description: "bla", content: "bla"),
     Stop(title: "bla", description: "bla", content: "bla"),
     Stop(title: "bla", description: "bla", content: "bla"),
 ]
