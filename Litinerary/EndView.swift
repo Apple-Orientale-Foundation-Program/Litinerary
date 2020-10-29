@@ -36,7 +36,6 @@ struct ItineraryEnd: View {
                         .foregroundColor(.accentColor)
                 }
                 
-                
                 Image("FineItinerario")
                     .resizable()
                     .scaledToFit()

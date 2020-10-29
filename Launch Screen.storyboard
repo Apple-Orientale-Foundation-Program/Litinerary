@@ -42,7 +42,7 @@
     </scenes>
     <color key="tintColor" name="AccentColor"/>
     <resources>
-        <image name="LitineraryLaunchScreen" width="343" height="115"/>
+        <image name="LitineraryLaunchScreen" width="209" height="70"/>
         <namedColor name="AccentColor">
             <color red="0.85882352941176465" green="0.30588235294117649" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
