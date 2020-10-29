@@ -11,6 +11,7 @@
 		33AC999D25448EF1009A65DD /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AC999C25448EF1009A65DD /* EndView.swift */; };
 		9E359B1625430E5E0028FB46 /* PreferitiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E359B1525430E5E0028FB46 /* PreferitiView.swift */; };
 		9E4CD82725470B450001E389 /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4CD82625470B450001E389 /* RouteView.swift */; };
+		C707B1BB254ABB7E00E69470 /* StopContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C707B1BA254ABB7E00E69470 /* StopContent.swift */; };
 		C750CCE02541C96A00660581 /* LitineraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750CCDF2541C96A00660581 /* LitineraryApp.swift */; };
 		C750CCE22541C96A00660581 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750CCE12541C96A00660581 /* ContentView.swift */; };
 		C750CCE42541C96A00660581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C750CCE32541C96A00660581 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		33AC999C25448EF1009A65DD /* EndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndView.swift; sourceTree = "<group>"; };
 		9E359B1525430E5E0028FB46 /* PreferitiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferitiView.swift; sourceTree = "<group>"; };
 		9E4CD82625470B450001E389 /* RouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteView.swift; sourceTree = "<group>"; };
+		C707B1BA254ABB7E00E69470 /* StopContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopContent.swift; sourceTree = "<group>"; };
 		C750CCDC2541C96A00660581 /* Litinerary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Litinerary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C750CCDF2541C96A00660581 /* LitineraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitineraryApp.swift; sourceTree = "<group>"; };
 		C750CCE12541C96A00660581 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				C7E3F2952549646A00E453E1 /* ItineraryStops.swift */,
+				C707B1BA254ABB7E00E69470 /* StopContent.swift */,
 			);
 			path = Routes;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3F89FFC2546D47C00AF8790 /* ItineraryList.swift in Sources */,
+				C707B1BB254ABB7E00E69470 /* StopContent.swift in Sources */,
 				C750CCE22541C96A00660581 /* ContentView.swift in Sources */,
 				C7E3F2962549646A00E453E1 /* ItineraryStops.swift in Sources */,
 				E3F89FF72546D37800AF8790 /* Itinerary.swift in Sources */,
