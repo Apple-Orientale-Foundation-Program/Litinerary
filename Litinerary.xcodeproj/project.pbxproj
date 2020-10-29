@@ -17,6 +17,7 @@
 		9EB438E2254B0F5F000199B5 /* agletturacinque.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EB438DD254B0F5E000199B5 /* agletturacinque.wav */; };
 		9EB438E3254B0F5F000199B5 /* agletturasei.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EB438DE254B0F5F000199B5 /* agletturasei.wav */; };
 		9EB438E4254B0F5F000199B5 /* agletturatre.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EB438DF254B0F5F000199B5 /* agletturatre.wav */; };
+		9EB438F5254B1413000199B5 /* agletturadue.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EB438F4254B1413000199B5 /* agletturadue.wav */; };
 		C707B1C6254AC3FA00E69470 /* StopContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C707B1C5254AC3FA00E69470 /* StopContent.swift */; };
 		C750CCE02541C96A00660581 /* LitineraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750CCDF2541C96A00660581 /* LitineraryApp.swift */; };
 		C750CCE22541C96A00660581 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750CCE12541C96A00660581 /* ContentView.swift */; };
@@ -61,6 +62,7 @@
 		9EB438DD254B0F5E000199B5 /* agletturacinque.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = agletturacinque.wav; sourceTree = "<group>"; };
 		9EB438DE254B0F5F000199B5 /* agletturasei.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = agletturasei.wav; sourceTree = "<group>"; };
 		9EB438DF254B0F5F000199B5 /* agletturatre.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = agletturatre.wav; sourceTree = "<group>"; };
+		9EB438F4254B1413000199B5 /* agletturadue.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = agletturadue.wav; sourceTree = "<group>"; };
 		C707B1C5254AC3FA00E69470 /* StopContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopContent.swift; sourceTree = "<group>"; };
 		C750CCDC2541C96A00660581 /* Litinerary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Litinerary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C750CCDF2541C96A00660581 /* LitineraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitineraryApp.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				9EB438DB254B0F5C000199B5 /* agletturaquattro.wav */,
 				9EB438DE254B0F5F000199B5 /* agletturasei.wav */,
 				9EB438DF254B0F5F000199B5 /* agletturatre.wav */,
+				9EB438F4254B1413000199B5 /* agletturadue.wav */,
 				E3F8A05B25485D8500AF8790 /* fonts */,
 				E3F89FF52546D36700AF8790 /* Data */,
 				C750CCDE2541C96A00660581 /* Litinerary */,
@@ -336,6 +339,7 @@
 				E3F8A05D25485D9300AF8790 /* Raleway.ttf in Resources */,
 				9EB438E3254B0F5F000199B5 /* agletturasei.wav in Resources */,
 				9EB438E0254B0F5F000199B5 /* agletturaquattro.wav in Resources */,
+				9EB438F5254B1413000199B5 /* agletturadue.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
