@@ -80,9 +80,9 @@ struct mapView : UIViewRepresentable {
 
   class Coordinator : NSObject, MKMapViewDelegate{
     
-    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-          print(view.annotation?.coordinate)
-        }
+//    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+//          print(view.annotation?.coordinate)
+//        }
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) ->
     MKOverlayRenderer {
@@ -98,7 +98,7 @@ struct mapView : UIViewRepresentable {
       let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "customView")
       annotationView.canShowCallout = true
       //Your custom image icon
-      annotationView.image = UIImage(named: "TappaChiusa")
+      annotationView.image = UIImage(named: "TappaAperta")
       return annotationView
      }
 

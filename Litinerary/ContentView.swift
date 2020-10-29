@@ -4,14 +4,6 @@
 //
 //  Created by Smart Cookies on 22/10/2020.
 //
-//Votaci: hand.thumbsup
-//Vai agli itinerari: book
-//Librerie: books.vertical
-//Tempo percorso: timer
-//Ascolta tappa: speaker.wave.2
-//Metti in pausa: pause.circle
-//Segnalibro vuoto: bookmark
-//Segnalibro pieno: bookmark.fill
 
 import SwiftUI
 
@@ -59,8 +51,7 @@ if self.favorites.contains(itinerary) {
                     .accessibility(label: Text("Itinerario Preferito"))
                         .foregroundColor(.accentColor)
                 }
-//else {Image(systemName: "heart") 
-//        .foregroundColor(.accentColor)}
+
                         
                     }
                     .padding([.top, .leading], 170.0)
