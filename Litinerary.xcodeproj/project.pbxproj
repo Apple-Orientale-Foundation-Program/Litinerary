@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		33326B2C254966FF00073D37 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33326B2B254966FF00073D37 /* ModalView.swift */; };
 		33AC999D25448EF1009A65DD /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AC999C25448EF1009A65DD /* EndView.swift */; };
 		33E82379254AB8BE0048C2EF /* AudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E82378254AB8BE0048C2EF /* AudioModel.swift */; };
 		9E359B1625430E5E0028FB46 /* PreferitiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E359B1525430E5E0028FB46 /* PreferitiView.swift */; };
@@ -20,6 +19,7 @@
 		9EB438F5254B1413000199B5 /* agletturadue.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EB438F4254B1413000199B5 /* agletturadue.wav */; };
 		9EB438FA254B2A1B000199B5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB438F9254B2A1B000199B5 /* DetailView.swift */; };
 		C707B1C6254AC3FA00E69470 /* StopContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C707B1C5254AC3FA00E69470 /* StopContent.swift */; };
+		C7147B84254B43FB0067E69E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7147B83254B43FB0067E69E /* Launch Screen.storyboard */; };
 		C750CCE02541C96A00660581 /* LitineraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750CCDF2541C96A00660581 /* LitineraryApp.swift */; };
 		C750CCE22541C96A00660581 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750CCE12541C96A00660581 /* ContentView.swift */; };
 		C750CCE42541C96A00660581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C750CCE32541C96A00660581 /* Assets.xcassets */; };
@@ -53,7 +53,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		33326B2B254966FF00073D37 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		33AC999C25448EF1009A65DD /* EndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndView.swift; sourceTree = "<group>"; };
 		33E82378254AB8BE0048C2EF /* AudioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioModel.swift; sourceTree = "<group>"; };
 		9E359B1525430E5E0028FB46 /* PreferitiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferitiView.swift; sourceTree = "<group>"; };
@@ -66,6 +65,7 @@
 		9EB438F4254B1413000199B5 /* agletturadue.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = agletturadue.wav; sourceTree = "<group>"; };
 		9EB438F9254B2A1B000199B5 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		C707B1C5254AC3FA00E69470 /* StopContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopContent.swift; sourceTree = "<group>"; };
+		C7147B83254B43FB0067E69E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		C750CCDC2541C96A00660581 /* Litinerary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Litinerary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C750CCDF2541C96A00660581 /* LitineraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitineraryApp.swift; sourceTree = "<group>"; };
 		C750CCE12541C96A00660581 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -144,6 +144,7 @@
 		C750CCD32541C96900660581 = {
 			isa = PBXGroup;
 			children = (
+				C7147B83254B43FB0067E69E /* Launch Screen.storyboard */,
 				9EB438DD254B0F5E000199B5 /* agletturacinque.wav */,
 				9EB438D6254B0F50000199B5 /* agletturauno.wav */,
 				9EB438DB254B0F5C000199B5 /* agletturaquattro.wav */,
@@ -176,7 +177,6 @@
 				C750CCDF2541C96A00660581 /* LitineraryApp.swift */,
 				C750CCE12541C96A00660581 /* ContentView.swift */,
 				9E359B1525430E5E0028FB46 /* PreferitiView.swift */,
-				33326B2B254966FF00073D37 /* ModalView.swift */,
 				33AC999C25448EF1009A65DD /* EndView.swift */,
 				E3F89FB32542D10B00AF8790 /* ItinerarySummary.swift */,
 				C750CCE32541C96A00660581 /* Assets.xcassets */,
@@ -339,6 +339,7 @@
 				C750CCE42541C96A00660581 /* Assets.xcassets in Resources */,
 				E3F8A062254876A100AF8790 /* Raleway-Italic.ttf in Resources */,
 				9EB438D7254B0F50000199B5 /* agletturauno.wav in Resources */,
+				C7147B84254B43FB0067E69E /* Launch Screen.storyboard in Resources */,
 				E3F8A05D25485D9300AF8790 /* Raleway.ttf in Resources */,
 				9EB438E3254B0F5F000199B5 /* agletturasei.wav in Resources */,
 				9EB438E0254B0F5F000199B5 /* agletturaquattro.wav in Resources */,
@@ -373,7 +374,6 @@
 				9EB438FA254B2A1B000199B5 /* DetailView.swift in Sources */,
 				C7E3F2962549646A00E453E1 /* ItineraryStops.swift in Sources */,
 				E3F89FF72546D37800AF8790 /* Itinerary.swift in Sources */,
-				33326B2C254966FF00073D37 /* ModalView.swift in Sources */,
 				E3F89FB42542D10B00AF8790 /* ItinerarySummary.swift in Sources */,
 				9E359B1625430E5E0028FB46 /* PreferitiView.swift in Sources */,
 				C750CCE02541C96A00660581 /* LitineraryApp.swift in Sources */,
