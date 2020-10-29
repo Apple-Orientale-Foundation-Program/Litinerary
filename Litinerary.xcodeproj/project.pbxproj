@@ -14,7 +14,6 @@
 		9E4CD82725470B450001E389 /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4CD82625470B450001E389 /* RouteView.swift */; };
 		9EB438D7254B0F50000199B5 /* agletturauno.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EB438D6254B0F50000199B5 /* agletturauno.wav */; };
 		9EB438E0254B0F5F000199B5 /* agletturaquattro.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EB438DB254B0F5C000199B5 /* agletturaquattro.wav */; };
-		9EB438E1254B0F5F000199B5 /* agletturadue.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EB438DC254B0F5C000199B5 /* agletturadue.wav */; };
 		9EB438E2254B0F5F000199B5 /* agletturacinque.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EB438DD254B0F5E000199B5 /* agletturacinque.wav */; };
 		9EB438E3254B0F5F000199B5 /* agletturasei.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EB438DE254B0F5F000199B5 /* agletturasei.wav */; };
 		9EB438E4254B0F5F000199B5 /* agletturatre.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EB438DF254B0F5F000199B5 /* agletturatre.wav */; };
@@ -59,7 +58,6 @@
 		9E4CD82625470B450001E389 /* RouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteView.swift; sourceTree = "<group>"; };
 		9EB438D6254B0F50000199B5 /* agletturauno.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = agletturauno.wav; sourceTree = "<group>"; };
 		9EB438DB254B0F5C000199B5 /* agletturaquattro.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = agletturaquattro.wav; sourceTree = "<group>"; };
-		9EB438DC254B0F5C000199B5 /* agletturadue.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = agletturadue.wav; path = ../../Downloads/letture_amicageniale/agletturadue.wav; sourceTree = "<group>"; };
 		9EB438DD254B0F5E000199B5 /* agletturacinque.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = agletturacinque.wav; sourceTree = "<group>"; };
 		9EB438DE254B0F5F000199B5 /* agletturasei.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = agletturasei.wav; sourceTree = "<group>"; };
 		9EB438DF254B0F5F000199B5 /* agletturatre.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = agletturatre.wav; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 			children = (
 				9EB438DD254B0F5E000199B5 /* agletturacinque.wav */,
 				9EB438D6254B0F50000199B5 /* agletturauno.wav */,
-				9EB438DC254B0F5C000199B5 /* agletturadue.wav */,
 				9EB438DB254B0F5C000199B5 /* agletturaquattro.wav */,
 				9EB438DE254B0F5F000199B5 /* agletturasei.wav */,
 				9EB438DF254B0F5F000199B5 /* agletturatre.wav */,
@@ -335,7 +332,6 @@
 				9EB438E4254B0F5F000199B5 /* agletturatre.wav in Resources */,
 				C750CCE42541C96A00660581 /* Assets.xcassets in Resources */,
 				E3F8A062254876A100AF8790 /* Raleway-Italic.ttf in Resources */,
-				9EB438E1254B0F5F000199B5 /* agletturadue.wav in Resources */,
 				9EB438D7254B0F50000199B5 /* agletturauno.wav in Resources */,
 				E3F8A05D25485D9300AF8790 /* Raleway.ttf in Resources */,
 				9EB438E3254B0F5F000199B5 /* agletturasei.wav in Resources */,
