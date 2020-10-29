@@ -92,15 +92,15 @@ struct mapView : UIViewRepresentable {
       return render
     }
     
-//    func mapView(_ mapView: MKMapView, viewFor
-//         annotation: MKAnnotation) -> MKAnnotationView?{
-//      //Custom View for Annotation
-//      let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "customView")
-//      annotationView.canShowCallout = true
-//      //Your custom image icon
-//      annotationView.image = UIImage(named: "TappaChiusa")
-//      return annotationView
-//     }
+    func mapView(_ mapView: MKMapView, viewFor
+         annotation: MKAnnotation) -> MKAnnotationView?{
+      //Custom View for Annotation
+      let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "customView")
+      annotationView.canShowCallout = true
+      //Your custom image icon
+      annotationView.image = UIImage(named: "TappaChiusa")
+      return annotationView
+     }
 
   }
 }
