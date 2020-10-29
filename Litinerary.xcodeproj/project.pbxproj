@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		33326B2C254966FF00073D37 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33326B2B254966FF00073D37 /* ModalView.swift */; };
 		33AC999D25448EF1009A65DD /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AC999C25448EF1009A65DD /* EndView.swift */; };
+		33E82379254AB8BE0048C2EF /* AudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E82378254AB8BE0048C2EF /* AudioModel.swift */; };
 		9E359B1625430E5E0028FB46 /* PreferitiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E359B1525430E5E0028FB46 /* PreferitiView.swift */; };
 		9E4CD82725470B450001E389 /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4CD82625470B450001E389 /* RouteView.swift */; };
 		C750CCE02541C96A00660581 /* LitineraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750CCDF2541C96A00660581 /* LitineraryApp.swift */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		33326B2B254966FF00073D37 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		33AC999C25448EF1009A65DD /* EndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndView.swift; sourceTree = "<group>"; };
+		33E82378254AB8BE0048C2EF /* AudioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioModel.swift; sourceTree = "<group>"; };
 		9E359B1525430E5E0028FB46 /* PreferitiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferitiView.swift; sourceTree = "<group>"; };
 		9E4CD82625470B450001E389 /* RouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteView.swift; sourceTree = "<group>"; };
 		C750CCDC2541C96A00660581 /* Litinerary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Litinerary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +151,7 @@
 				C750CCDF2541C96A00660581 /* LitineraryApp.swift */,
 				C750CCE12541C96A00660581 /* ContentView.swift */,
 				9E359B1525430E5E0028FB46 /* PreferitiView.swift */,
+				33E82378254AB8BE0048C2EF /* AudioModel.swift */,
 				33326B2B254966FF00073D37 /* ModalView.swift */,
 				33AC999C25448EF1009A65DD /* EndView.swift */,
 				E3F89FB32542D10B00AF8790 /* ItinerarySummary.swift */,
@@ -336,6 +339,7 @@
 			files = (
 				E3F89FFC2546D47C00AF8790 /* ItineraryList.swift in Sources */,
 				C750CCE22541C96A00660581 /* ContentView.swift in Sources */,
+				33E82379254AB8BE0048C2EF /* AudioModel.swift in Sources */,
 				C7E3F2962549646A00E453E1 /* ItineraryStops.swift in Sources */,
 				E3F89FF72546D37800AF8790 /* Itinerary.swift in Sources */,
 				33326B2C254966FF00073D37 /* ModalView.swift in Sources */,
