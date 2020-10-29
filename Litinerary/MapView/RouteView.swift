@@ -126,6 +126,6 @@ extension MKMapView{
 
 struct RouteView_Previews: PreviewProvider {
   static var previews: some View {
-    mapView(itinerario: RenatoCaccioppoli)
+    mapView(itinerario: AmicaGeniale)
   }
 }

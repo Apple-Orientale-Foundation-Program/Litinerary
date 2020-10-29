@@ -9,7 +9,15 @@ import Foundation
 import AVFoundation
 
 // Play Audio
+// nella view dobbiamo aggiungere
+// playSound (sound:String, type: String)
+//es. playSound (sound:"lettura1", type: "mp3")
+// o così var body: some View {
+//Button(action: {
+//    self.isPlaying.toggle()
+//    Sounds.playSounds(soundfile: "0.wav")
 
+// }, label: {
 
  class Sounds {
 
