@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
-
+import AVFoundation
 struct ModalView: View {
+    @State var isPlaying = false
     var body: some View {
         
         VStack{
@@ -23,10 +24,17 @@ struct ModalView: View {
                             .foregroundColor(Color("darkGray"))
                             .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                             .padding(.trailing, 20.0)
-                        Image(systemName: "speaker.wave.2.circle")
-                            .font(Font.system(.largeTitle))
-                    }
-                )
+                        
+                        Button(action: {
+                                self.isPlaying.toggle()
+                                Sounds.playSounds(soundfile: "agletturadue.wav")
+
+                        }
+                        ){Image(systemName: "speaker.wave.2.circle")
+                                .font(Font.system(.largeTitle))                        }
+                
+                      
+                    
             ScrollView{
             Text("Lenù cerca di separarsi da Lila dopo essersi sentita umiliata da lei durante una festa a casa della professoressa Galiani. Decisa a voler comprare a sue spese i libri scolastici, inizia a lavorare in una libreria in via Mezzocannone. Il figlio della professoressa, colpito dai discorsi fatti da Elena alla festa, va a trovarla a lavoro.")
                 .fontWeight(.semibold)
@@ -40,13 +48,15 @@ struct ModalView: View {
                 .font(Font.custom("Raleway", size: 20))
             }
             }
-    }
+    )
 
 
-struct ModalView_Previews: PreviewProvider {
-    static var previews: some View {
-        ModalView()
-    }
+//struct ModalView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ModalView()
+//    }
 }
 
 }
+}
+
