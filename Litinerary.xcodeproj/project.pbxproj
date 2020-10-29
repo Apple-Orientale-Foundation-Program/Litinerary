@@ -18,6 +18,7 @@
 		9EB438E3254B0F5F000199B5 /* agletturasei.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EB438DE254B0F5F000199B5 /* agletturasei.wav */; };
 		9EB438E4254B0F5F000199B5 /* agletturatre.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EB438DF254B0F5F000199B5 /* agletturatre.wav */; };
 		9EB438F5254B1413000199B5 /* agletturadue.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EB438F4254B1413000199B5 /* agletturadue.wav */; };
+		9EB438FA254B2A1B000199B5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB438F9254B2A1B000199B5 /* DetailView.swift */; };
 		C707B1C6254AC3FA00E69470 /* StopContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C707B1C5254AC3FA00E69470 /* StopContent.swift */; };
 		C750CCE02541C96A00660581 /* LitineraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750CCDF2541C96A00660581 /* LitineraryApp.swift */; };
 		C750CCE22541C96A00660581 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750CCE12541C96A00660581 /* ContentView.swift */; };
@@ -63,6 +64,7 @@
 		9EB438DE254B0F5F000199B5 /* agletturasei.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = agletturasei.wav; sourceTree = "<group>"; };
 		9EB438DF254B0F5F000199B5 /* agletturatre.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = agletturatre.wav; sourceTree = "<group>"; };
 		9EB438F4254B1413000199B5 /* agletturadue.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = agletturadue.wav; sourceTree = "<group>"; };
+		9EB438F9254B2A1B000199B5 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		C707B1C5254AC3FA00E69470 /* StopContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopContent.swift; sourceTree = "<group>"; };
 		C750CCDC2541C96A00660581 /* Litinerary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Litinerary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C750CCDF2541C96A00660581 /* LitineraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LitineraryApp.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				9E4CD82625470B450001E389 /* RouteView.swift */,
+				9EB438F9254B2A1B000199B5 /* DetailView.swift */,
 			);
 			path = MapView;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				E3F89FFC2546D47C00AF8790 /* ItineraryList.swift in Sources */,
 				C750CCE22541C96A00660581 /* ContentView.swift in Sources */,
 				33E82379254AB8BE0048C2EF /* AudioModel.swift in Sources */,
+				9EB438FA254B2A1B000199B5 /* DetailView.swift in Sources */,
 				C7E3F2962549646A00E453E1 /* ItineraryStops.swift in Sources */,
 				E3F89FF72546D37800AF8790 /* Itinerary.swift in Sources */,
 				33326B2C254966FF00073D37 /* ModalView.swift in Sources */,
