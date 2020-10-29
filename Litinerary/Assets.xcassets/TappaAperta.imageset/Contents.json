@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "Group 1@1x.pdf",
+      "filename" : "TappaAperta.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Group 1@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Group 1@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
