@@ -23,7 +23,7 @@ struct DetailView: View {
                     .resizable()
                     .frame(height: 170.0)
                     .scaledToFit()
-                    .padding(.bottom, 600.0)
+                    .padding(.bottom, 550.0)
                     
             VStack{
                         HStack {
@@ -36,7 +36,7 @@ struct DetailView: View {
 
                             Button(action: {
                                     self.isPlaying.toggle()
-                                    Sounds.playSounds(soundfile: stop.audio) }
+                                    Sounds.playSounds( soundfile: stop.audio) }
                             ){Image(systemName: "speaker.wave.2.circle")
                                     .font(Font.system(.largeTitle))                        }
                         }
@@ -45,6 +45,7 @@ struct DetailView: View {
 //
 //
 //
+                ScrollView{
                             VStack {
                                 Text(stop.description)
                         .fontWeight(.semibold)
@@ -68,6 +69,7 @@ struct DetailView: View {
                         .padding()
                         .font(Font.custom("Raleway", size: 20))
                             }
+                }
                         
                 }
                     }
