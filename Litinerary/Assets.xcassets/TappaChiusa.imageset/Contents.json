@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "TappaChiusa@1x.pdf",
+      "filename" : "TappaChiusa.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "TappaChiusa@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "TappaChiusa@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -7,14 +7,16 @@
 
 import SwiftUI
 import AVFoundation
+
 struct ModalView: View {
+    
     @State var audioPlayer:AVAudioPlayer?
 //    @State var player : AVAudioPlayer!
     @State var isPlaying = false
     var body: some View {
         
         VStack{
-            Image("Skyline2")
+            Image("Skyline")
                 .resizable()
                 .frame(height: 170.0)
                 .scaledToFit()
