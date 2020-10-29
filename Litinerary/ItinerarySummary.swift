@@ -14,7 +14,7 @@ struct ItinerarySummary: View {
     @State var itinerary: Itinerary
     
     var body: some View {
-       
+        
         VStack {
             mapView(itinerario: self.itinerary.itinerario)
                 .frame(height: 300)
@@ -43,24 +43,38 @@ struct ItinerarySummary: View {
                 
             }
             .navigationTitle(itinerary.itineraryName)
-          .navigationBarItems(trailing:Button(favorites.contains(itinerary) ? "Rimuovi" : "Aggiungi ai preferiti") {
-               if self.favorites.contains(self.itinerary) {
-                 self.favorites.remove(self.itinerary)
-             } else {
-                self.favorites.add(self.itinerary)
-              }
-          }
-           .padding()
-                    )}
+            .navigationBarItems(trailing: Button(action: {
+                                                    if self.favorites.contains(self.itinerary) {
+                                                        self.favorites.remove(self.itinerary)
+                                                    } else {
+                                                        self.favorites.add(self.itinerary)
+                                                    }}) {
+                if (favorites.contains(itinerary)) {
+                    Image(systemName: "heart.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 25)
+                }
+                else {
+                    Image(systemName: "heart")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 25)
+                }
+            }
+            )
+            .padding()
+            
+        }
         
-   }
-    
     }
+    
+}
 
 struct ItinerarySummary_Previews: PreviewProvider {
     static var previews: some View {
         
         ItinerarySummary(itinerary: litineraryData.listOfItineraries[0])
-           .environmentObject(litineraryData)
+            .environmentObject(litineraryData)
     }
 }
