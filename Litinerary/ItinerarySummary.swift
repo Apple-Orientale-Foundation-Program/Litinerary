@@ -16,7 +16,7 @@ struct ItinerarySummary: View {
     var body: some View {
         NavigationView{
         VStack {
-          mapView(itinerario: itinerary.itinerario)
+            mapView(itinerario: self.itinerary.itinerario)
                 .frame(height: 300)
                 .cornerRadius(35)
                 .padding(.horizontal)
@@ -28,7 +28,7 @@ struct ItinerarySummary: View {
                     .font(Font.custom("Raleway", size: 18))
             }
             
-            NavigationLink(destination: mapView(itinerario: itinerary.itinerario)) {
+            NavigationLink(destination: mapView(itinerario: self.itinerary.itinerario)) {
                 VStack {
                     Image("InizioItinerarioGrigio")
                         .resizable()
