@@ -30,7 +30,7 @@ struct ItinerarySummary: View {
             
             NavigationLink(destination: ModalView ()) {
                 VStack {
-                    Image("InizioItinerarioGrigio")
+                    Image("InizioItinerarioRosso")
                         .resizable()
                         .scaledToFit()
                         .frame(height:80)
@@ -43,7 +43,7 @@ struct ItinerarySummary: View {
                 
             }
             .navigationTitle(itinerary.itineraryName)
-          .navigationBarItems(trailing:Button(favorites.contains(itinerary) ? "Remove From Favorites" : "Add To Favorites") {
+          .navigationBarItems(trailing:Button(favorites.contains(itinerary) ? "Rimuovi" : "Aggiungi ai preferiti") {
                if self.favorites.contains(self.itinerary) {
                  self.favorites.remove(self.itinerary)
              } else {
