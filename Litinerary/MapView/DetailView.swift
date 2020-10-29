@@ -23,7 +23,7 @@ struct DetailView: View {
                     .resizable()
                     .frame(height: 170.0)
                     .scaledToFit()
-                    .padding(.bottom, 630.0)
+                    .padding(.bottom, 600.0)
                     
             VStack{
                         HStack {
