@@ -16,7 +16,7 @@ struct PreferitiView: View {
     var body: some View {
         NavigationView{
             
-            Text("ciauuuu")
+            Text("Non funzionante")
                 .navigationTitle("Preferiti")
         }
     }
