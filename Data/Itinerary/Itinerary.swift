@@ -16,8 +16,6 @@ struct Itinerary: Identifiable {
     var itineraryDuration: String
     var image: String
     var itinerario: [Pin]
-//    var route: String
-//    questa variabile è il nome dell'itinerario (di ItineraryStops) che associa a ogni itinerario una serie di tappe
 }
 
 
