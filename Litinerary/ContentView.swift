@@ -59,8 +59,7 @@ if self.favorites.contains(itinerary) {
                     .accessibility(label: Text("Itinerario Preferito"))
                         .foregroundColor(.accentColor)
                 }
-//else {Image(systemName: "heart")
-//    .accessibility(label: Text("This is a favorite resort"))
+//else {Image(systemName: "heart") 
 //        .foregroundColor(.accentColor)}
                         
                     }
