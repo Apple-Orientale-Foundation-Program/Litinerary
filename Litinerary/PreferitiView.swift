@@ -9,12 +9,14 @@ import SwiftUI
 
 struct PreferitiView: View {
     @EnvironmentObject var litineraryList: ItineraryList
-    @ObservedObject var favorites = Favorites()
+    @EnvironmentObject var favorites: Favorites
+    
     
     
     var body: some View {
         NavigationView{
-            Text("Inserire funzione per aggiungere a questa view gli itinerari preferiti")
+            
+            Text("ciauuuu")
                 .navigationTitle("Preferiti")
         }
     }

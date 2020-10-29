@@ -14,7 +14,7 @@ struct ItinerarySummary: View {
     @State var itinerary: Itinerary
     
     var body: some View {
-        NavigationView{
+       
         VStack {
             mapView(itinerario: self.itinerary.itinerario)
                 .frame(height: 300)
@@ -52,7 +52,7 @@ struct ItinerarySummary: View {
           }
            .padding()
                     )}
-        }
+        
    }
     
     }

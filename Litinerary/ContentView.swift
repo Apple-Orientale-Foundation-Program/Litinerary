@@ -56,7 +56,7 @@ struct ContentView: View {
                         .colorInvert()
 if self.favorites.contains(itinerary) {
                     Image(systemName: "heart.fill")
-                    .accessibility(label: Text("This is a favorite resort"))
+                    .accessibility(label: Text("Itinerario Preferito"))
                         .foregroundColor(.accentColor)
                 }
 //else {Image(systemName: "heart")
