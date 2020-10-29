@@ -100,5 +100,3 @@ struct ItineraryEnd_Previews: PreviewProvider {
             .environmentObject(litineraryData)
     }
 }
-
-
