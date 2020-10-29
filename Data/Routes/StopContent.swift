@@ -33,8 +33,8 @@ E in questi trattati stando, avendo esso la sua borsa mostrata, avvenne che una 
 Era con questa giovane una vecchia similmente ciciliana, la quale, come vide Andreuccio, lasciata oltre la giovane andare, affettuosamente corse a abbracciarlo: il che la giovane veggendo, senza dire alcuna cosa, da una delle parti la cominciò a attendere. Andreuccio, alla vecchia rivoltosi e conosciutala, le fece gran festa, e promettendogli essa di venire a lui all’albergo, senza quivi tenere troppo lungo sermone, si partì: e Andreuccio si tornò a mercatare ma niente comperò la mattina[...]
 """),
     Stop(title: "Quartiere Malpertugio (oggi Via Medina)", description: "bla", content: "bla"),
-    Stop(title: "bla", description: "bla", content: "bla"),
-    Stop(title: "bla", description: "bla", content: "bla"),
+    Stop(title: "Rua Catalana", description: "bla", content: "bla"),
+    Stop(title: "Duomo", description: "bla", content: "bla"),
 ]
 
 
