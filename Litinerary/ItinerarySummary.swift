@@ -28,7 +28,7 @@ struct ItinerarySummary: View {
                     .font(Font.custom("Raleway", size: 18))
             }
             
-            NavigationLink(destination: mapView(itinerario: self.itinerary.itinerario)) {
+            NavigationLink(destination: ModalView ()) {
                 VStack {
                     Image("InizioItinerarioRosso")
                         .resizable()
