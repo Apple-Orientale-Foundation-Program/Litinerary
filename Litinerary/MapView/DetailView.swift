@@ -40,7 +40,6 @@ struct DetailView: View {
                             ){Image(systemName: "speaker.wave.2.circle")
                                     .font(Font.system(.largeTitle))                        }
                     
-                          
                         
                 ScrollView{
                 Text(stop.description)
