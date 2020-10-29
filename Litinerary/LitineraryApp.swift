@@ -15,8 +15,6 @@ struct LitineraryApp: App {
     var body: some Scene {
         WindowGroup {
           ContentView().environmentObject(litineraryData)
-            
-            
         }
     }
 }
