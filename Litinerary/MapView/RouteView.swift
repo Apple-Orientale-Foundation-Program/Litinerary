@@ -8,7 +8,22 @@
 import SwiftUI
 import MapKit
 
-
+//Modal structure
+//struct RouteView: View {
+//    @State var modal = false
+//    var body: some View {
+//        VStack{
+//            Text("Read more")
+            
+//        }
+//        .onTapGesture {
+//            self.modal.toggle()
+//        }
+//        .sheet(isPresented: $modal) {
+//            ModalView()
+//        }
+//    }
+    
 func initAnnotations(itinerario: [Pin])->[MKAnnotation]{
   let req = MKDirections.Request()
   var oldPin = Pin(lat: 0.0, long: 0.0, title: "")
