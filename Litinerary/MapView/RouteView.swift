@@ -79,7 +79,11 @@ struct mapView : UIViewRepresentable {
   }
 
   class Coordinator : NSObject, MKMapViewDelegate{
-
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+          print(view.annotation?.coordinate)
+        }
+    
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) ->
     MKOverlayRenderer {
       let render = MKPolylineRenderer(overlay: overlay)
