@@ -18,12 +18,14 @@ struct DetailView: View {
 
           var body: some View {
 
-            VStack{
+            ZStack{
                 Image("Skyline")
                     .resizable()
                     .frame(height: 170.0)
                     .scaledToFit()
-                    .overlay(
+                    .padding(.bottom, 630.0)
+                    
+            VStack{
                         HStack {
                             Text(stop.title)
                                 .font(Font.custom("Raleway", size: 38))
@@ -31,22 +33,25 @@ struct DetailView: View {
                                 .foregroundColor(Color("darkGray"))
                                 .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                                 .padding(.trailing, 20.0)
-                            
+
                             Button(action: {
                                     self.isPlaying.toggle()
-                                    Sounds.playSounds(soundfile: "agletturadue.wav")
-
-                            }
+                                    Sounds.playSounds(soundfile: stop.audio) }
                             ){Image(systemName: "speaker.wave.2.circle")
                                     .font(Font.system(.largeTitle))                        }
-                    
-                        
-                ScrollView{
-                Text(stop.description)
-                    .fontWeight(.semibold)
-                    .multilineTextAlignment(.leading)
-                    .padding()
-                    .font(Font.custom("Raleway", size: 20))
+                        }
+//
+//
+//
+//
+//
+                            VStack {
+                                Text(stop.description)
+                        .fontWeight(.semibold)
+                        .multilineTextAlignment(.leading)
+                        .padding()
+                                    .font(Font.custom("Raleway", size: 20))
+                            
                 Text(stop.content)
                     .fontWeight(.regular)
                     .multilineTextAlignment(.leading)
@@ -62,9 +67,12 @@ struct DetailView: View {
                         .multilineTextAlignment(.leading)
                         .padding()
                         .font(Font.custom("Raleway", size: 20))
+                            }
+                        
                 }
-                }
-        )
+                    }
+                
+        
 
 
     //struct ModalView_Previews: PreviewProvider {
@@ -73,11 +81,12 @@ struct DetailView: View {
     //    }
     }
 
-    }
-    }
+//    }
+
     
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         DetailView(stop: Stop())
     }
+}
 }
