@@ -87,7 +87,16 @@ struct mapView : UIViewRepresentable {
       render.lineWidth = 4
       return render
     }
-
+    
+//    func mapView(_ mapView: MKMapView, viewFor
+//         annotation: MKAnnotation) -> MKAnnotationView?{
+//      //Custom View for Annotation
+//      let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "customView")
+//      annotationView.canShowCallout = true
+//      //Your custom image icon
+//      annotationView.image = UIImage(named: "TappaChiusa")
+//      return annotationView
+//     }
 
   }
 }
@@ -123,6 +132,9 @@ extension MKMapView{
     map.setRegion(MKCoordinateRegion(center: CLLocationCoordinate2DMake(center.0, center.1), span: MKCoordinateSpan(latitudeDelta: span.0, longitudeDelta: span.1)), animated: true)
   }
 }
+
+
+
 
 struct RouteView_Previews: PreviewProvider {
   static var previews: some View {
