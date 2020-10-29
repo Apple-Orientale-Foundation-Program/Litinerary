@@ -9,6 +9,7 @@ import SwiftUI
 import AVFoundation
 struct ModalView: View {
     @State var audioPlayer:AVAudioPlayer?
+//    @State var player : AVAudioPlayer!
     @State var isPlaying = false
     var body: some View {
         
