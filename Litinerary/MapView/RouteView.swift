@@ -78,13 +78,13 @@ struct mapView : UIViewRepresentable {
         
         func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
             if let title = view.annotation?.title {
-                if let findstop = findStop(Stops: actualStops[0], title: title!){
+                if let findstop = findStop(Stops: actualStops[0], title: title!)
+                {
                     parent.viewModel.stop = findstop
                     parent.detail = true
                 }
             }
         }
-        
     }
 }
 
@@ -155,9 +155,9 @@ func initAnnotations(itinerario: [Pin])->[MKAnnotation]{
 }
 
 
-struct RouteView_Previews: PreviewProvider {
-    static var previews: some View {
-        mapView2(itinerario: AmicaGeniale, detail: false, viewModel: MapViewModel(stop: Stop()))
-    }
-}
+//struct RouteView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        mapView2(itinerario: AmicaGeniale, detail: false, viewModel: MapViewModel(stop: Stop()))
+//    }
+//}
 
