@@ -12,7 +12,6 @@ struct Pin{
   var lat: Double
   var long: Double
   var title: String
-//  var contenuto: [Stop]
 
   func coord()->CLLocationCoordinate2D{
     return CLLocationCoordinate2D(latitude: self.lat, longitude: self.long)
@@ -21,7 +20,7 @@ struct Pin{
 
 var AmicaGeniale = [
   Pin(lat: 40.844877, long: 14.257189, title: "Via Mezzocannone"),
-  Pin(lat: 40.846120, long: 14.256317, title: "Libreria Dante & Descartes"),
+  Pin(lat: 40.846206, long: 14.256281, title: "Libreria Dante & Descartes"),
   Pin(lat: 40.848586, long: 14.252477, title: "Liceo Vittorio Emanuele II"),
   Pin(lat: 40.849539, long: 14.250640, title: "Port'Alba"),
   Pin(lat: 40.840177, long: 14.252188, title: "Piazza Municipio"),
