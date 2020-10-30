@@ -61,7 +61,7 @@ if self.favorites.contains(itinerary) {
                   Text(itinerary.itineraryName)
                     .font(Font.custom("Raleway", size: 20))
                     .fontWeight(.semibold)
-                    .foregroundColor(Color("darkGray"))
+                    .foregroundColor(.accentColor)
                 }
               }
                 
