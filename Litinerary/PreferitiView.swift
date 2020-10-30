@@ -13,8 +13,6 @@ struct PreferitiView: View {
     @ObservedObject var favorites: Favorites
     
     var body: some View {
-        NavigationView{
-            
             VStack{
                 ScrollView(.vertical, showsIndicators: false) {
                   Spacer(minLength: 15.0)
@@ -66,7 +64,6 @@ VStack {
               }
         }.navigationTitle("Preferiti")
     }
-}
 }
 //struct PreferitiView_Previews: PreviewProvider {
 //    static var previews: some View {
