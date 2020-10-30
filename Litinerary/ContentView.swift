@@ -52,7 +52,6 @@ if self.favorites.contains(itinerary) {
                         .foregroundColor(.accentColor)
                 }
 
-                        
                     }
                     .padding([.top, .leading], 170.0)
                     .shadow(color: .gray, radius: 0.1, x:0.5, y:0.5)
@@ -72,7 +71,7 @@ if self.favorites.contains(itinerary) {
       .navigationTitle("Passeggiate letterarie")
 
       .navigationBarItems(trailing: NavigationLink(
-        destination: PreferitiView())
+        destination: PreferitiView(favorites: favorites))
       {
         Image("PreferitiRosso")
           .resizable()
