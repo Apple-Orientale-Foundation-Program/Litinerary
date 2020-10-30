@@ -33,7 +33,7 @@ struct mapView2: View{
 
 struct mapView : UIViewRepresentable {
     
-//    @State var annotations: [MKAnnotation]
+    //    @State var annotations: [MKAnnotation]
     @State var itinerario: [Pin]
     @Binding var detail: Bool
     @ObservedObject var viewModel: MapViewModel
@@ -53,6 +53,7 @@ struct mapView : UIViewRepresentable {
     
     class Coordinator : NSObject, MKMapViewDelegate{
         var parent: mapView
+        let actualStops = [AmicaGenialeStops,AndreuccioStops,CaccioppoliStops]
         
         init(_ parent: mapView) {
             self.parent = parent
@@ -79,6 +80,16 @@ struct mapView : UIViewRepresentable {
         func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
             if let title = view.annotation?.title {
                 if let findstop = findStop(Stops: actualStops[0], title: title!)
+                {
+                    parent.viewModel.stop = findstop
+                    parent.detail = true
+                }
+                else if let findstop = findStop(Stops: actualStops[1], title: title!)
+                {
+                    parent.viewModel.stop = findstop
+                    parent.detail = true
+                }
+                else if let findstop = findStop(Stops: actualStops[2], title: title!)
                 {
                     parent.viewModel.stop = findstop
                     parent.detail = true
