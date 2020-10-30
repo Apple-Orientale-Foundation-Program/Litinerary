@@ -40,11 +40,7 @@ struct DetailView: View {
                     ){Image(systemName: "speaker.wave.2.circle")
                         .font(Font.system(.largeTitle))                        }
                 }
-                //
-                //
-                //
-                //
-                //
+                
                 ScrollView{
                     VStack {
                         Text(stop.description)
