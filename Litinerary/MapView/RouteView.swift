@@ -58,6 +58,16 @@ struct mapView : UIViewRepresentable {
             self.parent = parent
         }
         
+        func mapView(_ mapView: MKMapView, viewFor
+                        annotation: MKAnnotation) -> MKAnnotationView?{
+            //Custom View for Annotation
+            let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "customView")
+            annotationView.canShowCallout = true
+            //Your custom image icon
+            annotationView.image = UIImage(named: "TappaAperta")
+            return annotationView
+        }
+        
         func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) ->
         MKOverlayRenderer {
             let render = MKPolylineRenderer(overlay: overlay)
@@ -74,15 +84,7 @@ struct mapView : UIViewRepresentable {
                 }
             }
         }
-        func mapView(_ mapView: MKMapView, viewFor
-                        annotation: MKAnnotation) -> MKAnnotationView?{
-            //Custom View for Annotation
-            let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "customView")
-            annotationView.canShowCallout = true
-            //Your custom image icon
-            annotationView.image = UIImage(named: "TappaAperta")
-            return annotationView
-        }
+        
     }
 }
 
