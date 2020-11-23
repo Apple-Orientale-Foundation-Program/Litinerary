@@ -29,12 +29,6 @@ var AmicaGeniale = [
   Pin(lat: 40.8318695, long: 14.2347563, title: "Lungomare Caracciolo")
 ]
 
-var AndreuccioPerugia = [
-  Pin(lat: 40.8471205, long: 14.2581617, title: "Piazza Mercato"),
-  Pin(lat: 40.8430241, long: 14.2526411, title: "Quartiere Malpertugio (oggi via Medina)"),
-  Pin(lat: 40.842183, long: 14.2539457, title: "Rua Catalana"),
-  Pin(lat: 40.8525582, long: 14.259689, title: "Duomo")
-]
 
 var RenatoCaccioppoli = [
     Pin(lat: 40.8454113, long: 14.2555455, title: "Università degli Studi di Napoli Federico II"),
@@ -43,4 +37,12 @@ var RenatoCaccioppoli = [
     Pin(lat: 40.837819, long: 14.2418831, title: "Gran Caffè Gambrinus"),
     Pin(lat: 40.8386956, long: 14.242441, title: "Teatro San Carlo"),
     Pin(lat: 40.8340526, long: 14.241411, title: "Castel dell'Ovo")
+]
+
+
+var AndreuccioPerugia = [
+  Pin(lat: 40.8471205, long: 14.2581617, title: "Piazza Mercato"),
+  Pin(lat: 40.8430241, long: 14.2526411, title: "Quartiere Malpertugio (oggi via Medina)"),
+  Pin(lat: 40.842183, long: 14.2539457, title: "Rua Catalana"),
+  Pin(lat: 40.8525582, long: 14.259689, title: "Duomo")
 ]

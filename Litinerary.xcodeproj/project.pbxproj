@@ -11,6 +11,11 @@
 		33E82379254AB8BE0048C2EF /* AudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E82378254AB8BE0048C2EF /* AudioModel.swift */; };
 		9E359B1625430E5E0028FB46 /* PreferitiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E359B1525430E5E0028FB46 /* PreferitiView.swift */; };
 		9E4CD82725470B450001E389 /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4CD82625470B450001E389 /* RouteView.swift */; };
+		9EB17694256BB29A00BEEA12 /* rcletturauno.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EB17693256BB29A00BEEA12 /* rcletturauno.wav */; };
+		9EB1769C256BB2A900BEEA12 /* rcletturaquattro.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EB17698256BB2A600BEEA12 /* rcletturaquattro.wav */; };
+		9EB1769D256BB2A900BEEA12 /* rcletturatre.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EB17699256BB2A700BEEA12 /* rcletturatre.wav */; };
+		9EB1769E256BB2A900BEEA12 /* rcletturacinque.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EB1769A256BB2A800BEEA12 /* rcletturacinque.wav */; };
+		9EB1769F256BB2A900BEEA12 /* rcletturadue.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EB1769B256BB2A900BEEA12 /* rcletturadue.wav */; };
 		9EB438D7254B0F50000199B5 /* agletturauno.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EB438D6254B0F50000199B5 /* agletturauno.wav */; };
 		9EB438E0254B0F5F000199B5 /* agletturaquattro.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EB438DB254B0F5C000199B5 /* agletturaquattro.wav */; };
 		9EB438E2254B0F5F000199B5 /* agletturacinque.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9EB438DD254B0F5E000199B5 /* agletturacinque.wav */; };
@@ -57,6 +62,11 @@
 		33E82378254AB8BE0048C2EF /* AudioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioModel.swift; sourceTree = "<group>"; };
 		9E359B1525430E5E0028FB46 /* PreferitiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferitiView.swift; sourceTree = "<group>"; };
 		9E4CD82625470B450001E389 /* RouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteView.swift; sourceTree = "<group>"; };
+		9EB17693256BB29A00BEEA12 /* rcletturauno.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rcletturauno.wav; sourceTree = "<group>"; };
+		9EB17698256BB2A600BEEA12 /* rcletturaquattro.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rcletturaquattro.wav; sourceTree = "<group>"; };
+		9EB17699256BB2A700BEEA12 /* rcletturatre.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rcletturatre.wav; sourceTree = "<group>"; };
+		9EB1769A256BB2A800BEEA12 /* rcletturacinque.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rcletturacinque.wav; sourceTree = "<group>"; };
+		9EB1769B256BB2A900BEEA12 /* rcletturadue.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rcletturadue.wav; sourceTree = "<group>"; };
 		9EB438D6254B0F50000199B5 /* agletturauno.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = agletturauno.wav; sourceTree = "<group>"; };
 		9EB438DB254B0F5C000199B5 /* agletturaquattro.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = agletturaquattro.wav; sourceTree = "<group>"; };
 		9EB438DD254B0F5E000199B5 /* agletturacinque.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = agletturacinque.wav; sourceTree = "<group>"; };
@@ -151,6 +161,11 @@
 				9EB438DE254B0F5F000199B5 /* agletturasei.wav */,
 				9EB438DF254B0F5F000199B5 /* agletturatre.wav */,
 				9EB438F4254B1413000199B5 /* agletturadue.wav */,
+				9EB17693256BB29A00BEEA12 /* rcletturauno.wav */,
+				9EB1769A256BB2A800BEEA12 /* rcletturacinque.wav */,
+				9EB1769B256BB2A900BEEA12 /* rcletturadue.wav */,
+				9EB17698256BB2A600BEEA12 /* rcletturaquattro.wav */,
+				9EB17699256BB2A700BEEA12 /* rcletturatre.wav */,
 				E3F8A05B25485D8500AF8790 /* fonts */,
 				E3F89FF52546D36700AF8790 /* Data */,
 				C750CCDE2541C96A00660581 /* Litinerary */,
@@ -333,6 +348,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EB1769F256BB2A900BEEA12 /* rcletturadue.wav in Resources */,
+				9EB17694256BB29A00BEEA12 /* rcletturauno.wav in Resources */,
 				9EB438E2254B0F5F000199B5 /* agletturacinque.wav in Resources */,
 				C750CCE72541C96A00660581 /* Preview Assets.xcassets in Resources */,
 				9EB438E4254B0F5F000199B5 /* agletturatre.wav in Resources */,
@@ -342,8 +359,11 @@
 				C7147B84254B43FB0067E69E /* Launch Screen.storyboard in Resources */,
 				E3F8A05D25485D9300AF8790 /* Raleway.ttf in Resources */,
 				9EB438E3254B0F5F000199B5 /* agletturasei.wav in Resources */,
+				9EB1769C256BB2A900BEEA12 /* rcletturaquattro.wav in Resources */,
+				9EB1769D256BB2A900BEEA12 /* rcletturatre.wav in Resources */,
 				9EB438E0254B0F5F000199B5 /* agletturaquattro.wav in Resources */,
 				9EB438F5254B1413000199B5 /* agletturadue.wav in Resources */,
+				9EB1769E256BB2A900BEEA12 /* rcletturacinque.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,7 +567,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bla.Litinerary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartcookies.litinerary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -569,7 +589,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bla.Litinerary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartcookies.litinerary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
