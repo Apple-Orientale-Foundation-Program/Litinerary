@@ -133,7 +133,7 @@ extension MKMapView{
 
 func initAnnotations(itinerario: [Pin])->[MKAnnotation]{
     let req = MKDirections.Request()
-    var oldPin = Pin(lat: 0.0, long: 0.0, title: "")
+    var oldPin = Pin(lat: 0.0, long: 0.0, title: "", subtitle: "")
     var index = 0
     
     map.removeOverlays(map.overlays)
