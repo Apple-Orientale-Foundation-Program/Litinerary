@@ -48,6 +48,7 @@ struct DetailView: View {
                             .multilineTextAlignment(.leading)
                             .padding()
                             .font(Font.custom("Raleway", size: 20))
+
                         Text(stop.content)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.leading)
