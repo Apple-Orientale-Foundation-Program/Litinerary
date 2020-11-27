@@ -19,7 +19,7 @@ struct DetailView: View {
     var body: some View {
         
         ZStack{
-            Image("Skyline")
+            Image("newskyline2")
                 .resizable()
                 .frame(height: 170.0)
                 .scaledToFit()
