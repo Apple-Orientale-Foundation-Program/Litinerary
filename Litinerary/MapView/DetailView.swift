@@ -21,7 +21,7 @@ struct DetailView: View {
         ZStack{
             Image("newskyline2")
                 .resizable()
-                .frame(height: 170.0)
+                .frame(maxWidth: .infinity, maxHeight: 336)
                 .scaledToFit()
                 .padding(.bottom, 550.0)
             
