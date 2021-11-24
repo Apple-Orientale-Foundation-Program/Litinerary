@@ -34,32 +34,36 @@ struct DetailView: View {
                         .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                         .padding(.trailing, 20.0)
                     
-//BOTTONE VECCHIO
-//                    Button(action: {
-//                        self.isPlaying.toggle()
-//                            Sounds.playSounds( soundfile: stop.audio)
-//
-//                    }
-                    
-                    
+  
 //24/11/2021 Aggiunta funzione pausa
+                    
                     Button(action: {
-
                         if self.isPlaying {
                                 self.isPlaying.toggle()
-                                Sounds.playSounds( soundfile: stop.audio)
-//                            provaA.toggle()
+                                Sounds.playSounds(soundfile: stop.audio)
                             }
                             else {
-                                self.isPlaying.toggle()    //funzione che pausa
+                                self.isPlaying.toggle()
                                 Sounds.pauseSounds(soundfile: stop.audio)
-//                                provaA.toggle()
                             }
-                        }){Image(systemName: "speaker.wave.2.circle")
-                        .font(Font.system(.largeTitle))                        }
+                    }){
+                    if (self.isPlaying) {
+                    Image(systemName: "pause.circle")
+                    .font(Font.system(.largeTitle))
+                    }
+                    else {
+                    Image(systemName: "play.circle")
+                    .font(Font.system(.largeTitle))
+                        }
+                    }
                 }
                 
-//24/11/2021 grazie Manghia <3 <3 <3 <3 <3 nyoron nyoreron
+//                {
+//                Image(systemName: "speaker.wave.2.circle")
+//                .font(Font.system(.largeTitle))
+//                }
+                
+//24/11/2021 grazie Manghia
                 
                 ScrollView{
                     VStack {
