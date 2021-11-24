@@ -41,6 +41,8 @@ struct DetailView: View {
 //
 //                    }
                     
+                    
+//24/11/2021 Aggiunta funzione pausa
                     Button(action: {
 
                         if self.isPlaying {
@@ -57,7 +59,7 @@ struct DetailView: View {
                         .font(Font.system(.largeTitle))                        }
                 }
                 
-//                24/11/2021 grazie Manghia <3 <3 <3 <3 <3 nyoron nyoreron
+//24/11/2021 grazie Manghia <3 <3 <3 <3 <3 nyoron nyoreron
                 
                 ScrollView{
                     VStack {
