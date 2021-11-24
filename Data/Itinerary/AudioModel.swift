@@ -38,4 +38,23 @@ import AVFoundation
            }
        }
     }
+     
+     static func pauseSounds(soundfile: String) {
+
+         if let path = Bundle.main.path(forResource: soundfile, ofType: nil){
+
+             do{
+
+                 audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path))
+                 audioPlayer?.pause()
+
+             }catch {
+                 print("Error")
+             }
+         }
+      }
+     
+     // func pause(soundfile: String)
+     // if ...
+     
  }

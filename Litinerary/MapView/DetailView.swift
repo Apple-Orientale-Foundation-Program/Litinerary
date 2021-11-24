@@ -15,7 +15,7 @@ struct DetailView: View {
     @State var isPlaying = false
     
     var stop: Stop
-    
+        
     var body: some View {
         
         ZStack{
@@ -34,12 +34,30 @@ struct DetailView: View {
                         .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                         .padding(.trailing, 20.0)
                     
+//BOTTONE VECCHIO
+//                    Button(action: {
+//                        self.isPlaying.toggle()
+//                            Sounds.playSounds( soundfile: stop.audio)
+//
+//                    }
+                    
                     Button(action: {
-                            self.isPlaying.toggle()
-                            Sounds.playSounds( soundfile: stop.audio) }
-                    ){Image(systemName: "speaker.wave.2.circle")
+
+                        if self.isPlaying {
+                                self.isPlaying.toggle()
+                                Sounds.playSounds( soundfile: stop.audio)
+//                            provaA.toggle()
+                            }
+                            else {
+                                self.isPlaying.toggle()    //funzione che pausa
+                                Sounds.pauseSounds(soundfile: stop.audio)
+//                                provaA.toggle()
+                            }
+                        }){Image(systemName: "speaker.wave.2.circle")
                         .font(Font.system(.largeTitle))                        }
                 }
+                
+//                24/11/2021 grazie Manghia <3 <3 <3 <3 <3 nyoron nyoreron
                 
                 ScrollView{
                     VStack {
