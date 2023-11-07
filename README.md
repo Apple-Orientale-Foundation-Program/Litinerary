@@ -1,6 +1,6 @@
 # Litinerary: an app for book lovers to rediscover urban places through the eyes of literature.
 
-Made by Team Smart Cookies - Alina Brandizzi, Angela Caiazza, Fabiano Colucci, Giusy Ferrigno, Sonia di Nicoli, Wanda Punzi Zarino.
+Oct 2020, Team Smart Cookies - Alina Brandizzi, Angela Caiazza, Fabiano Colucci, Giusy Ferrigno, Sonia di Nicoli, Wanda Punzi Zarino.
 
 [Linktr.ee](https://linktr.ee/Litinerary)
 [Instagram Page](https://www.instagram.com/litineraryapp/)
